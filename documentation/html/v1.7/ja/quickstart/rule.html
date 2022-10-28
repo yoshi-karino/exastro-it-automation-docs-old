@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>3.5. ルール作成とルール適用 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="3.6. アクションの確認" href="confirm.html" />
+    <link rel="prev" title="3.4. アクションドライバの作成" href="action_driver.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/quickstart/rule
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v1.7/ja/quickstart/rule
+                  <option value="#"
+                  selected
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/quickstart/rule
+                  <option value="../../../v1.6/ja/quickstart/rule.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/quickstart/rule
+                  <option value="../../../v1.5/ja/quickstart/rule.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.7/ja/quickstart/rule
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.7/en/quickstart/rule
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="action_driver.html" title="前のトピックへ"><span class="section-number">3.4. </span>アクションドライバの作成</a></li>
+        <li class="next"><a href="confirm.html" title="次のトピックへ"><span class="section-number">3.6. </span>アクションの確認</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.7</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.7 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">3. クイックスタート</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="login.html">3.1. ログイン</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_table.html">3.2. ディシジョンテーブルの作成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="monitoring_adapter.html">3.3. 監視アダプタの作成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="action_driver.html">3.4. アクションドライバの作成</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.5. ルール作成とルール適用</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#new-rule">ルール作成</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">新規トークンの払い出し</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">ルールの検証</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id5">ルールの本番適用</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="confirm.html">3.6. アクションの確認</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.7</a></li>
+    <li><a href="../index.html">Exastro OASE 1.7 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">3. </span>クイックスタート</a></li>
+    
+    <li><span class="section-number">3.5. </span>ルール作成とルール適用</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">3.5. </span>ルール作成とルール適用<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">監視アプリケーションからのアラート情報に対して実施する対処(アクション)の定義のことをルールと言います。</div>
+<div class="line">本項では、ルールの作成方法とその適用方法について説明します。</div>
+</div>
+<section id="new-rule">
+<span id="id2"></span><h2>ルール作成<a class="headerlink" href="#new-rule" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">ルールの作成には、ディシジョンテーブルファイルを利用します。</div>
+<div class="line">ディシジョンテーブルファイルの取得は、画面上部のメニューの <span class="menuselection">ルール ‣ ディシジョンテーブル</span> から行います。</div>
+<div class="line"><a class="reference internal" href="decision_table.html"><span class="doc">ディシジョンテーブルの作成</span></a> で作成した <strong class="program">新規ディシジョンテーブル</strong> のダウンロードボタン <span class="guilabel"></span> 、ディシジョンテーブルファイルをダウンロードします。</div>
+</div>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../../_images/new_rule_01.png"><img alt="../../../_images/new_rule_01.png" src="../../../_images/new_rule_01.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.17 </span><span class="caption-text">ディシジョンテーブルダウンロード</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">ディシジョンテーブルファイルを開き、ルールを追加します。</div>
+<div class="line">記載内容の詳細についてはここでは省略します。詳細は、<a class="reference internal" href="../rule_definition/action.html"><span class="doc">アクション定義</span></a> を参照して下さい。</div>
+</div>
+<div class="line-block">
+<div class="line">特に重要な項目としては、下記となります。</div>
+</div>
+<dl>
+<dt>アラートメッセージ(正規表現可 一致)</dt><dd><div class="line-block">
+<div class="line">監視アプリケーションから取得したアラートメッセージのマッチ条件を定義します。今回は、取得したアラート全てに対して、ITA を実行する条件となります。</div>
+</div>
+</dd>
+<dt>アクションパラメータ情報（必須）</dt><dd><div class="line-block">
+<div class="line">自動化ソフトウェアのアクションドライバとそのパラメータを指定します。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong class="program">ITA_NAME</strong></div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="action_driver.html"><span class="doc">アクションドライバの作成</span></a> で作成したアクションドライバのアクションドライバ名を指定します。</div>
+</div>
+<div class="line"><strong class="program">CONDUCTOR_CLASS_ID</strong></div>
+<div class="line-block">
+<div class="line">Exastro OASE から実行する ITA の ConductorクラスIDを指定します。</div>
+</div>
+<div class="line"><strong class="program">OPERATION_ID</strong></div>
+<div class="line-block">
+<div class="line">Exastro OASE から実行する ITA の Conductor に紐付けるオペレーション ID を指定します。</div>
+</div>
+</div>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line">また、本項で扱う全ての項目は下記となります。</div>
+</div>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>ルール説明</p></td>
+<td><p>クイックスタート</p></td>
+</tr>
+<tr class="row-even"><td><p>アラートメッセージ(正規表現可 一致)</p></td>
+<td><p>.*</p></td>
+</tr>
+<tr class="row-odd"><td><p>ルール名 （必須）</p></td>
+<td><p>新規ルール</p></td>
+</tr>
+<tr class="row-even"><td><p>発生事象（必須）</p></td>
+<td><p>アラートを検知</p></td>
+</tr>
+<tr class="row-odd"><td><p>対処概要（必須）</p></td>
+<td><p>ITAを実行</p></td>
+</tr>
+<tr class="row-even"><td><p>アクション種別</p></td>
+<td><p>ITA(ver1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>アクションパラメータ情報（必須）</p></td>
+<td><p>ITA_NAME=新規ZABBIXアクションドライバ,CONDUCTOR_CLASS_ID=1,OPERATION_ID=1</p></td>
+</tr>
+<tr class="row-even"><td><p>承認メールパラメータ情報（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p>リトライ間隔（必須）</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>リトライ回数（必須）</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>抑止間隔（必須）</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>条件回数（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p>条件期間(秒)（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>大グループ（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p>優先順位（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>小グループ（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p>優先順位（必須）</p></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>有効日</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>無効日</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../../_images/new_rule_02.png"><img alt="../../../_images/new_rule_02.png" src="../../../_images/new_rule_02.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.18 </span><span class="caption-text">ディシジョンテーブルファイル(一部)</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">ルールの記述が完了したら、ファイルを保存します。</div>
+</div>
+</section>
+<section id="id3">
+<h2>新規トークンの払い出し<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">クイックスタートでは Exastro OASE で提供されている Web API を使ってアラート情報の投入を行います。本項では、Web API 利用で必要なトークンの払い出しを行います。</div>
+<div class="line">新規トークンの払い出しは、画面上部のメニューの <span class="menuselection">ルール ‣ トークン払い出し</span> から行います。</div>
+<div class="line">トークンの詳細については、<a class="reference internal" href="../api/token.html"><span class="doc">トークン</span></a> を参照してください。</div>
+</div>
+<div class="line-block">
+<div class="line">画面上部にある、<span class="guilabel"> 新規トークン払い出し</span> をクリックします。</div>
+</div>
+<figure class="align-left" id="id8">
+<a class="reference internal image-reference" href="../../../_images/new_token_01.png"><img alt="../../../_images/new_token_01.png" src="../../../_images/new_token_01.png" style="width: 238.5px; height: 167.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.19 </span><span class="caption-text">トークン払い出し</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<dl>
+<dt>トークン名</dt><dd><div class="line-block">
+<div class="line">トークン名を入力します。</div>
+<div class="line">クイックスタートでは <strong class="program">新規トークン</strong> として登録します。</div>
+</div>
+</dd>
+<dt>有効期限</dt><dd><div class="line-block">
+<div class="line">トークンの有効期限を指定します。</div>
+<div class="line">クイックスタートでは、未記入(有効期限なし)として登録します</div>
+</div>
+</dd>
+<dt>権限の設定</dt><dd><div class="line-block">
+<div class="line">グループに割り当てる権限を定義します。</div>
+<div class="line">クイックスタートでは <strong class="program">権限あり</strong> に設定します。</div>
+</div>
+</dd>
+</dl>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line">項目の入力が完了したら、<span class="guilabel"> トークン払い出し</span> をクリックします。</div>
+<div class="line">トークンが画面上に表示されますが、後から確認できます。</div>
+</div>
+</section>
+<section id="id4">
+<h2>ルールの検証<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">ルールの設定は、画面上部のメニューの <span class="menuselection">ルール ‣ ルール</span> から行います。</div>
+<div class="line">画面上部にある <span class="guilabel"> ファイルを選択</span> をクリックし、 <a class="reference internal" href="#new-rule"><span class="std std-ref">ルール作成</span></a> で作成したディシジョンテーブルファイルを選択します。</div>
+<div class="line">選択したファイルが正しいことを確認し、<span class="guilabel"> アップロード</span> をクリックします。</div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/rule_apply_01.png"><img alt="../../../_images/rule_apply_01.png" src="../../../_images/rule_apply_01.png" style="width: 800px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><span class="menuselection">作業ステータス</span> が <strong class="program">ステージング適用完了</strong> になっていることを確認し、ルールの検証のために <span class="guilabel"> テストリクエスト</span> をクリックします。</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line">ファイルアップロード時に何らかの問題が発生してエラーとなった場合は、 ダウンロードボタン <span class="guilabel"></span> をクリックし、ダウンロードした ZIP ファイルに梱包されているログファイルを確認して下さい。</div>
+</div>
+</div>
+<figure class="align-left" id="id9">
+<a class="reference internal image-reference" href="../../../_images/test_request_01.png"><img alt="../../../_images/test_request_01.png" src="../../../_images/test_request_01.png" style="width: 240.0px; height: 279.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.20 </span><span class="caption-text">テストリクエスト(ディシジョンテーブル選択)</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<dl>
+<dt>ディシジョンテーブル名選択</dt><dd><div class="line-block">
+<div class="line">テストを行う対象のディシジョンテーブルを選択します。</div>
+<div class="line">クイックスタートでは <strong class="program">新規ディシジョンテーブル</strong> を選択します。</div>
+</div>
+</dd>
+</dl>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> テストリクエスト設定へ</span> をクリックします。</div>
+</div>
+<figure class="align-left" id="id10">
+<a class="reference internal image-reference" href="../../../_images/test_request_02.png"><img alt="../../../_images/test_request_02.png" src="../../../_images/test_request_02.png" style="width: 239.39999999999998px; height: 278.7px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.21 </span><span class="caption-text">テストリクエスト(テストリクエスト設定)</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<dl>
+<dt>アラートメッセージ</dt><dd><div class="line-block">
+<div class="line">テストリクエストで送信するメッセージを設定します。</div>
+<div class="line-block">
+<div class="line"><span class="menuselection">単発テスト</span> でアラートメッセージを <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">This</kbd> <kbd class="kbd docutils literal notranslate">is</kbd> <kbd class="kbd docutils literal notranslate">test</kbd> <kbd class="kbd docutils literal notranslate">alert.</kbd></kbd> と入力します。</div>
+</div>
+</div>
+</dd>
+</dl>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> 実行</span> をクリックします。</div>
+</div>
+<figure class="align-left" id="id11">
+<a class="reference internal image-reference" href="../../../_images/test_request_03.png"><img alt="../../../_images/test_request_03.png" src="../../../_images/test_request_03.png" style="width: 239.7px; height: 279.59999999999997px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 3.22 </span><span class="caption-text">テストリクエスト(テストリクエスト設定)</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">テストリクエストで送信したメッセージがディシジョンテーブルファイルで定義したルールにマッチしていることを確認します。</div>
+</div>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> 閉じる</span> をクリックします。</div>
+<div class="line">運用ステータスを <strong class="program">検証完了</strong> にするかどうかの確認があるので、<span class="guilabel">OK</span> をクリックします。</div>
+</div>
+</section>
+<section id="id5">
+<h2>ルールの本番適用<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">ルールの本番適用は、画面上部のメニューの <span class="menuselection">ルール ‣ ルール</span> から行います。</div>
+<div class="line">画面上部の <span class="menuselection">ステージング適用ルール</span> にある適用ボタン <span class="guilabel"></span> をクリックします。</div>
+</div>
+<div class="line-block">
+<div class="line">数秒～数分後に、 <span class="menuselection">作業ステータス</span> が <strong class="program">プロダクション適用完了</strong> になります。</div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/rule_apply_02.png"><img alt="../../../_images/rule_apply_02.png" src="../../../_images/rule_apply_02.png" style="width: 800px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line">Exastro OASE が監視アプリケーションからアラートメッセージを取得すると、ITA の Conductor を実行します。</div>
+</div>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="action_driver.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">3.4. </span>アクションドライバの作成</a></li>
+    <li class="next"><a href="confirm.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">3.6. </span>アクションの確認</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

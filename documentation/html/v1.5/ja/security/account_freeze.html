@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>6.1. アカウント凍結 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="6.2. IP ブロック" href="ip_blocking.html" />
+    <link rel="prev" title="6. セキュリティ" href="index.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/security/account_freeze
+                  <option value="../../../v1.7/ja/security/account_freeze.html"
+                  >current</option>
+                file_path: v1.7/ja/security/account_freeze
+                  <option value="../../../v1.7/ja/security/account_freeze.html"
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/security/account_freeze
+                  <option value="../../../v1.6/ja/security/account_freeze.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/security/account_freeze
+                  <option value="#"
+                  selected
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.5/ja/security/account_freeze
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.5/en/security/account_freeze
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="index.html" title="前のトピックへ"><span class="section-number">6. </span>セキュリティ</a></li>
+        <li class="next"><a href="ip_blocking.html" title="次のトピックへ"><span class="section-number">6.2. </span>IP ブロック</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.7/index.html">Exastro OASE 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">6. セキュリティ</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">6.1. アカウント凍結</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">アカウント凍結の設定</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">アカウント凍結の解除</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ip_blocking.html">6.2. IP ブロック</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.5</a></li>
+    <li><a href="../index.html">Exastro OASE 1.5 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>セキュリティ</a></li>
+    
+    <li><span class="section-number">6.1. </span>アカウント凍結</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">6.1. </span>アカウント凍結<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">アカウント凍結は、パスワードの認証の失敗によりアカウントロックされたユーザが自身の操作によるロック解除を制限する機能です。</div>
+<div class="line">アカウント凍結されたユーザは、システム管理者(Administrator)、もしくは、 <strong class="program">メール通知先ログインID</strong> で設定されているユーザにより登録を解除することが可能です。</div>
+</div>
+<section id="id2">
+<h2>アカウント凍結の設定<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">アカウントロックに関連する設定ついては、システム設定の <a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の下記の項目を参考にして下さい。</div>
+</div>
+<dl>
+<dt>パスワード誤り閾値</dt><dd><div class="line-block">
+<div class="line">パスワード入力の誤り回数が閾値を超えたユーザは、アカウントが一時的にロックします。</div>
+</div>
+</dd>
+<dt>アカウントロック継続期間</dt><dd><div class="line-block">
+<div class="line">アカウントロックが解除されるまでの時間。</div>
+</div>
+</dd>
+<dt>アカウントロック上限回数</dt><dd><div class="line-block">
+<div class="line">アカウントロック上限を超えたユーザを、アカウント凍結し、アカウントロックユーザに登録します。</div>
+</div>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line">例えば、パスワード誤り閾値が 5 (回)、アカウントロック上限回数が 3 (回)と設定されていた場合、15 回連続でパスワードの認証に失敗したタイミングでアカウント凍結されます。</div>
+</div>
+</section>
+<section id="id3">
+<h2>アカウント凍結の解除<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">アカウント凍結されたユーザは、経過時間や凍結されたユーザ自身の操作によるアカウント凍結の解除をおこなうことはできません。</div>
+<div class="line">アカウントロックユーザ画面の編集権限を持つ別のユーザにより登録を解除することが可能です。</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line">AD連携時はメニューバーにアカウントロックユーザ画面へ遷移するメニューボタンが表示されません。</div>
+</div>
+</div>
+<section id="id4">
+<h3>前提条件<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">アカウントロックの解除には、下記の条件を満たしている必要があります。</div>
+</div>
+<ul class="simple">
+<li><p>アカウントロック解除を行うユーザは、システム管理者(Administrator)、もしくは、メール通知先ログインIDであること。</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line">メール通知先ログインID は、<a class="reference internal" href="../system/password.html"><span class="doc">パスワード設定</span></a> の <strong class="program">メール通知先ログインID</strong> を参照して下さい。</div>
+</div>
+</div>
+</section>
+<section id="id5">
+<h3>操作手順<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">画面上部のメニューから <span class="menuselection">システム ‣ アカウントロックユーザ</span> を開きます。</div>
+<div class="line">ロックされているアカウントの一覧を表示します。</div>
+</div>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../../_images/locked_user_02.png"><img alt="../../../_images/locked_user_02.png" src="../../../_images/locked_user_02.png" style="width: 903.0px; height: 199.79999999999998px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 6.11 </span><span class="caption-text">アカウントロックユーザ画面</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">解除ボタン <span class="guilabel"></span> をクリックし, アカウントロックを解除します。</div>
+</div>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="index.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">6. </span>セキュリティ</a></li>
+    <li class="next"><a href="ip_blocking.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">6.2. </span>IP ブロック</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<mxfile host="65bd71144e">
+    <diagram id="qDVQ5Jdp69yAJvKG-rfH" name="ページ1">
+        <mxGraphModel dx="1221" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="DeploymentTarget1" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="10" width="760" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Node1" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;" parent="3" vertex="1">
+                    <mxGeometry width="260" height="200" relative="1" as="geometry">
+                        <mxPoint x="60" y="80" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Node1" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;" parent="3" vertex="1">
+                    <mxGeometry x="419.31034482758616" y="105" width="340.6896551724138" height="233.33333333333334" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

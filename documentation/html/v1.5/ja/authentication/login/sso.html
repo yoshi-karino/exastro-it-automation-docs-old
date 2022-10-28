@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>シングルサインオン(SSO) &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../../search.html" />
+    <link rel="next" title="初期パスワードの変更" href="change_default_password.html" />
+    <link rel="prev" title="通常のログイン" href="login.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/authentication/login/sso
+                  <option value="../../../../v1.7/ja/authentication/login/sso.html"
+                  >current</option>
+                file_path: v1.7/ja/authentication/login/sso
+                  <option value="../../../../v1.7/ja/authentication/login/sso.html"
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/authentication/login/sso
+                  <option value="../../../../v1.6/ja/authentication/login/sso.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/authentication/login/sso
+                  <option value="#"
+                  selected
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.5/ja/authentication/login/sso
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.5/en/authentication/login/sso
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="login.html" title="前のトピックへ">通常のログイン</a></li>
+        <li class="next"><a href="change_default_password.html" title="次のトピックへ">初期パスワードの変更</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../v1.7/index.html">Exastro OASE 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Exastro OASE 1.5</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">5. アカウントと認証</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../group.html">5.1. グループ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user.html">5.2. ユーザ</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">5.3. ログイン</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="login.html">通常のログイン</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">シングルサインオン(SSO)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="change_default_password.html">初期パスワードの変更</a></li>
+<li class="toctree-l5"><a class="reference internal" href="reset_password.html">パスワードのリセット</a></li>
+<li class="toctree-l5"><a class="reference internal" href="expired_password.html">パスワードの有効期限切れ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../../index.html">HOME</a></li>
+    <li><a href="../../../index.html">Exastro OASE 1.5</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.5 操作マニュアル</a></li>
+    <li><a href="../index.html"><span class="section-number">5. </span>アカウントと認証</a></li>
+    <li><a href="index.html"><span class="section-number">5.3. </span>ログイン</a></li>
+    
+    <li>シングルサインオン(SSO)</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="sso">
+<h1>シングルサインオン(SSO)<a class="headerlink" href="#sso" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">Exastro OASE における <span class="xref std std-term">シングルサインオン</span> (以降、「SSO」と表記)の設定方法と、それを利用したログイン方法について説明します。</div>
+<div class="line">SSO 設定画面では、Exastro OASE を利用して作業を行う上で共通に必要となる以下の機能を提供します。</div>
+</div>
+<ul class="simple">
+<li><p>SSO設定情報の登録、更新、削除</p></li>
+</ul>
+<section id="id1">
+<h2>基本画面構成<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
+<p>SSO設定画面の画面構成は次のとおりです。</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_01.png"><img alt="../../../../_images/sso_info_01.png" src="../../../../_images/sso_info_01.png" style="width: 765.0px; height: 431.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.76 </span><span class="caption-text">図 2.1-1 画面構成</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>SSO設定画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id16">
+<caption><span class="caption-number">表 5.50 </span><span class="caption-text">表 2.1-1 機能説明</span><a class="headerlink" href="#id16" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>新規追加ボタン</p></td>
+<td><p>新規追加画面に遷移し、SSO基本情報、SSO属性情報を登録します。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>一覧</p></td>
+<td><p>現在登録されているSSO設定情報が表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+<p>SSO設定情報が1件も登録されていない場合は以下のように表示されます。</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_02.png"><img alt="../../../../_images/sso_info_02.png" src="../../../../_images/sso_info_02.png" style="width: 958.8px; height: 478.79999999999995px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.77 </span><span class="caption-text">図 2.1-2 画面構成</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>新規追加(SSO基本情報)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id18">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_03.png"><img alt="../../../../_images/sso_info_03.png" src="../../../../_images/sso_info_03.png" style="width: 384.0px; height: 283.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.78 </span><span class="caption-text">図 2.1-3 画面構成</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>新規追加(SSO基本情報)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">表 5.51 </span><span class="caption-text">表 2.1-3 機能説明</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>任意のプロバイダー名を入力できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>認証方式</p></td>
+<td><p>認証方式をプルダウン選択できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ロゴ</p></td>
+<td><p>ファイルを選択ボタンを押下し、ロゴとなる画像ファイルを選択できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>表示フラグ</p></td>
+<td><p>表示フラグをプルダウン選択できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>SSO属性情報の設定へボタン</p></td>
+<td><p>SSO基本情報タブの情報を保持したままSSO属性情報タブへ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><p>新規追加(SSO属性情報タブ)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id20">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_04.png"><img alt="../../../../_images/sso_info_04.png" src="../../../../_images/sso_info_04.png" style="width: 384.0px; height: 281.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.79 </span><span class="caption-text">図 2.1-4 画面構成</span><a class="headerlink" href="#id20" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>新規追加(SSO属性情報タブ)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id21">
+<caption><span class="caption-number">表 5.52 </span><span class="caption-text">表 2.1-4 機能説明</span><a class="headerlink" href="#id21" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>clientId</p></td>
+<td><p>認証クライアント識別子を入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>clientSecret</p></td>
+<td><p>認証クライアントシークレットを入力することができます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>authorizationUri</p></td>
+<td><p>ユーザー認証エンドポイントを入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>accessTokenUri</p></td>
+<td><p>accessToken 取得エンドポイントを入力することができます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>resourceOwnerUri</p></td>
+<td><p>ユーザー情報取得エンドポイントを入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>scope</p></td>
+<td><p>ユーザー情報の開示(取得)範囲を入力することができます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>id</p></td>
+<td><p>ユーザーID キー名を入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>name</p></td>
+<td><p>ユーザー名キー名を入力することができます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>email</p></td>
+<td><p>ユーザーメールアドレスキー名を入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>imageUrl</p></td>
+<td><p>ユーザー画像 URL キー名を入力することができます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>proxy</p></td>
+<td><p>プロキシを入力することができます。</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>保存ボタン</p></td>
+<td><p>新規追加情報を保存してSSO設定画面に戻ります。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><p>プロバイダー詳細(SSO基本情報)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id22">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_05.png"><img alt="../../../../_images/sso_info_05.png" src="../../../../_images/sso_info_05.png" style="width: 384.0px; height: 281.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.80 </span><span class="caption-text">図 2.1-5 画面構成</span><a class="headerlink" href="#id22" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>プロバイダー詳細(SSO基本情報)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id23">
+<caption><span class="caption-number">表 5.53 </span><span class="caption-text">表 2.1-5 機能説明</span><a class="headerlink" href="#id23" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>プロバイダー詳細画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>SSO設定画面で選択したプロバイダー名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>認証方式</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証方式が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ロゴ</p></td>
+<td><p>SSO設定画面で選択したSSO情報のロゴのファイル名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>表示フラグ</p></td>
+<td><p>SSO設定画面で選択したSSO情報の表示フラグが表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>削除ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を削除しプロバイダー詳細画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>編集ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を編集することができます。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><p>プロバイダー詳細(SSO属性情報)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id24">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_06.png"><img alt="../../../../_images/sso_info_06.png" src="../../../../_images/sso_info_06.png" style="width: 384.0px; height: 281.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.81 </span><span class="caption-text">図 2.1-6 画面構成</span><a class="headerlink" href="#id24" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>プロバイダー詳細(SSO属性情報)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id25">
+<caption><span class="caption-number">表 5.54 </span><span class="caption-text">表 2.1-6 機能説明</span><a class="headerlink" href="#id25" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>プロバイダー詳細画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>clientId</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアント識別子が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>clientSecret</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアントシークレットが表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>authorizationUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー認証エンドポイントが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>accessTokenUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のaccessToken 取得エンドポイントが表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>resourceOwnerUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報取得エンドポイントが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>scope</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報の開示(取得)範囲が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>id</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーID キー名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>name</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー名キー名をが表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>email</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーメールアドレスキー名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>imageUrl</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー画像 URL キー名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>proxy</p></td>
+<td><p>SSO設定画面で選択したSSO情報のプロキシが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>削除ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を削除しプロバイダー詳細画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>編集ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を編集することができます。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><p>プロバイダー編集(SSO基本情報)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id26">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_07.png"><img alt="../../../../_images/sso_info_07.png" src="../../../../_images/sso_info_07.png" style="width: 384.0px; height: 282.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.82 </span><span class="caption-text">図 2.1-7 画面構成</span><a class="headerlink" href="#id26" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>プロバイダー編集(SSO基本情報)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id27">
+<caption><span class="caption-number">表 5.55 </span><span class="caption-text">表 2.1-7 機能説明</span><a class="headerlink" href="#id27" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>プロバイダー編集画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>SSO設定画面で選択したSSO情報のプロバイダー名が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>認証方式</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証方式が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ロゴ</p></td>
+<td><p>SSO設定画面で選択したSSO情報のロゴが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>表示フラグ</p></td>
+<td><p>SSO設定画面で選択したSSO情報の表示フラグが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>SSO属性情報の設定へボタン</p></td>
+<td><p>SSO基本情報タブの情報を保持したままSSO属性情報タブへ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><p>プロバイダー編集(SSO属性情報)画面の画面構成は次のとおりです。</p>
+<figure class="align-left" id="id28">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_08.png"><img alt="../../../../_images/sso_info_08.png" src="../../../../_images/sso_info_08.png" style="width: 384.0px; height: 282.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.83 </span><span class="caption-text">図 2.1-8 画面構成</span><a class="headerlink" href="#id28" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>プロバイダー編集(SSO属性情報)画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="docutils align-default" id="id29">
+<caption><span class="caption-number">表 5.56 </span><span class="caption-text">表 2.1-8 機能説明</span><a class="headerlink" href="#id29" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>プロバイダー編集画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>作業タブ名</p></td>
+<td><p>現在表示している作業タブの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>clientId</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアント識別子が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>clientSecret</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアントシークレットが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>authorizationUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー認証エンドポイントが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>accessTokenUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のaccessToken 取得エンドポイントが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>resourceOwnerUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報取得エンドポイントが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>scope</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報の開示(取得)範囲が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>id</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーID キー名が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>name</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー名キー名をが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>email</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーメールアドレスキー名が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>imageUrl</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー画像 URL キー名が表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>proxy</p></td>
+<td><p>SSO設定画面で選択したSSO情報のプロキシが表示され、編集可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>プロバイダー編集画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>保存ボタン</p></td>
+<td><p>編集情報を保存してSSO設定画面に戻ります。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id2">
+<h2>SSO設定画面の操作方法<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<p>構成要素に対する操作方法を説明します。</p>
+<section id="id3">
+<h3>(1)SSO設定画面<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">登録されているSSO設定情報を一覧で表示します。</div>
+<div class="line">新規追加ボタンについては各権限ごとに異なります。ここでは共通機能について説明します。</div>
+</div>
+<section id="id4">
+<h4>詳細表示ボタン<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h4>
+<p>選択したプロダイバー名の詳細を表示します。</p>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_09.png"><img alt="../../../../_images/sso_info_09.png" src="../../../../_images/sso_info_09.png" style="width: 770.4px; height: 433.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.84 </span><span class="caption-text">図 2.2-1-1 <strong class="program">GitHub</strong> の詳細表示ボタンを押下した場合に表示される画面</span><a class="headerlink" href="#id30" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id5">
+<h4>一覧<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h4>
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_10.png"><img alt="../../../../_images/sso_info_10.png" src="../../../../_images/sso_info_10.png" style="width: 763.8px; height: 430.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.85 </span><span class="caption-text">図 2.2-1-2 SSO設定画面の一覧の各項目</span><a class="headerlink" href="#id31" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id32">
+<caption><span class="caption-number">表 5.57 </span><span class="caption-text">表 2.2-1-2 機能説明</span><a class="headerlink" href="#id32" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>プロバイダー名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>最終更新者</p></td>
+<td><p>SSO設定情報を更新したユーザの名前が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>最終更新日時</p></td>
+<td><p>SSO設定情報を更新した日時が表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">SSO設定画面へのアクセス権限が <strong class="program">更新可能</strong> 以外の場合、新規追加ボタンは表示されません。</div>
+</div>
+</div>
+</section>
+</section>
+<section id="id6">
+<h3>(2)新規追加画面(SSO基本情報)<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h3>
+<p>SSO設定画面へのアクセス権限が <strong class="program">更新可能</strong> の場合のみ、新規追加画面を表示することができます。</p>
+<section id="id7">
+<h4>入力欄<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h4>
+<figure class="align-left" id="id33">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_11.png"><img alt="../../../../_images/sso_info_11.png" src="../../../../_images/sso_info_11.png" style="width: 509.20000000000005px; height: 288.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.86 </span><span class="caption-text">図 2.2-2-1 新規追加画面(SSO基本情報)</span><a class="headerlink" href="#id33" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id34">
+<caption><span class="caption-number">表 5.58 </span><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id34" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>入力必須項目です。128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>認証方式</p></td>
+<td><p>必須項目です。プルダウン選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>ロゴ</p></td>
+<td><p>任意項目です。アップロードする画像ファイル名は64文字以内にしてください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>表示フラグ</p></td>
+<td><p>必須項目です。プルダウン選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>SSO属性情報の設定へボタン</p></td>
+<td><p>SSO基本情報タブの情報を保持したままSSO属性情報タブへ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+</section>
+<section id="id8">
+<h3>(3)新規追加画面(SSO属性情報)<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h3>
+<p>SSO設定画面へのアクセス権限が <strong class="program">更新可能</strong> の場合のみ、新規追加画面を表示することができます。</p>
+<section id="id9">
+<h4>入力欄<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">¶</a></h4>
+<figure class="align-left" id="id35">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_12.png"><img alt="../../../../_images/sso_info_12.png" src="../../../../_images/sso_info_12.png" style="width: 509.20000000000005px; height: 289.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.87 </span><span class="caption-text">図 2.2-3-1 新規追加画面(SSO属性情報)</span><a class="headerlink" href="#id35" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id36">
+<caption><span class="caption-number">表 5.59 </span><span class="caption-text">表 2.2-3-1 機能説明</span><a class="headerlink" href="#id36" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>clientId</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>clientSecret</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>authorizationUri</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>accessTokenUri</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>resourceOwnerUri</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>scope</p></td>
+<td><p>任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>id</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>name</p></td>
+<td><p>必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>email</p></td>
+<td><p>任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>imageUrl</p></td>
+<td><p>任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>proxy</p></td>
+<td><p>任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>新規追加画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>保存ボタン</p></td>
+<td><p>新規追加情報を保存してSSO設定画面に戻ります。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+</section>
+<section id="id10">
+<h3>(4)プロバイダー詳細画面<a class="headerlink" href="#id10" title="この見出しへのパーマリンク">¶</a></h3>
+<p>SSO設定画面へのアクセス権限が :program:<a href="#id11"><span class="problematic" id="id12">`</span></a>更新可能`の場合のみ、編集/削除ボタンを表示することができます。</p>
+<figure class="align-left" id="id37">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_14.png"><img alt="../../../../_images/sso_info_14.png" src="../../../../_images/sso_info_14.png" style="width: 509.20000000000005px; height: 290.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.88 </span><span class="caption-text">図 2.2-4-1 プロバイダー詳細画面</span><a class="headerlink" href="#id37" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id38">
+<caption><span class="caption-number">表 5.60 </span><span class="caption-text">表 2.2-4-1 機能説明</span><a class="headerlink" href="#id38" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>プロバイダー詳細画面を閉じ、SSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>削除ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を削除しプロバイダー詳細画面を閉じてSSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>編集ボタン</p></td>
+<td><p>SSO設定画面で選択したSSO情報を編集することができます。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id13">
+<h3>(5)プロバイダー編集画面(SSO基本情報)<a class="headerlink" href="#id13" title="この見出しへのパーマリンク">¶</a></h3>
+<figure class="align-left" id="id39">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_13.png"><img alt="../../../../_images/sso_info_13.png" src="../../../../_images/sso_info_13.png" style="width: 509.20000000000005px; height: 290.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.89 </span><span class="caption-text">図 2.2-5-1 プロバイダー編集画面(SSO基本情報)</span><a class="headerlink" href="#id39" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id40">
+<caption><span class="caption-number">表 5.61 </span><span class="caption-text">表 2.2-5-1 機能説明</span><a class="headerlink" href="#id40" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>変更内容を破棄してプロバイダー編集画面を閉じ、SSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>プロバイダー名</p></td>
+<td><p>SSO設定画面で選択したSSO情報のプロバイダー名が表示され、編集可能です。入力必須項目です。128文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>認証方式</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証方式が表示され、編集可能です。必須項目です。プルダウン選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>ロゴ</p></td>
+<td><p>SSO設定画面で選択したSSO情報のロゴが表示され、編集可能です。任意項目です。アップロードする画像ファイル名は64文字以内にしてください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>表示フラグ</p></td>
+<td><p>SSO設定画面で選択したSSO情報の表示フラグが表示され、編集可能です。必須項目です。プルダウン選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>SSO属性情報の設定へボタン</p></td>
+<td><p>SSO基本情報タブの情報を保持したままSSO属性情報タブへ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id14">
+<h3>(6)プロバイダー編集画面(SSO属性情報)<a class="headerlink" href="#id14" title="この見出しへのパーマリンク">¶</a></h3>
+<figure class="align-left" id="id41">
+<a class="reference internal image-reference" href="../../../../_images/sso_info_15.png"><img alt="../../../../_images/sso_info_15.png" src="../../../../_images/sso_info_15.png" style="width: 509.20000000000005px; height: 290.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 5.90 </span><span class="caption-text">図 2.2-6-1 プロバイダー編集画面(SSO属性情報)</span><a class="headerlink" href="#id41" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id42">
+<caption><span class="caption-number">表 5.62 </span><span class="caption-text">表 2.2-6-1 機能説明</span><a class="headerlink" href="#id42" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>変更内容を破棄してプロバイダー編集画面を閉じ、SSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>clientId</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアント識別子が表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>clientSecret</p></td>
+<td><p>SSO設定画面で選択したSSO情報の認証クライアントシークレットが表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>authorizationUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー認証エンドポイントが表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>accessTokenUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のaccessToken 取得エンドポイントが表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>resourceOwnerUri</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報取得エンドポイントが表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>scope</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー情報の開示(取得)範囲が表示され、編集可能です。任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>id</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーID キー名が表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>name</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー名キー名をが表示され、編集可能です。必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>email</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザーメールアドレスキー名が表示され、編集可能です。任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>imageUrl</p></td>
+<td><p>SSO設定画面で選択したSSO情報のユーザー画像 URL キー名が表示され、編集可能です。任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>proxy</p></td>
+<td><p>SSO設定画面で選択したSSO情報のプロキシが表示され、編集可能です。任意項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>変更内容を破棄してプロバイダー詳細画面を閉じ、SSO設定画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>保存ボタン</p></td>
+<td><p>編集情報を保存してSSO設定画面に戻ります。入力変更がない場合、保存ボタンは活性化されません。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="login.html" title="前のトピックへ"><span>前のトピックへ</span>通常のログイン</a></li>
+    <li class="next"><a href="change_default_password.html" title="次のトピックへ"><span>次のトピックへ</span>初期パスワードの変更</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

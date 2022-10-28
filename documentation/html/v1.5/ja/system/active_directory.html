@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>4.4. Active Directory連携 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="4.5. 個人設定" href="personal.html" />
+    <link rel="prev" title="4.3. パスワード設定" href="password.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/system/active_directory
+                  <option value="../../../v1.7/ja/system/active_directory.html"
+                  >current</option>
+                file_path: v1.7/ja/system/active_directory
+                  <option value="../../../v1.7/ja/system/active_directory.html"
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/system/active_directory
+                  <option value="../../../v1.6/ja/system/active_directory.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/system/active_directory
+                  <option value="#"
+                  selected
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.5/ja/system/active_directory
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.5/en/system/active_directory
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="password.html" title="前のトピックへ"><span class="section-number">4.3. </span>パスワード設定</a></li>
+        <li class="next"><a href="personal.html" title="次のトピックへ"><span class="section-number">4.5. </span>個人設定</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.7/index.html">Exastro OASE 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">4. システム設定</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="logging.html">4.1. ログ管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="authentication.html">4.2. 認証設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="password.html">4.3. パスワード設定</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">4.4. Active Directory連携</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id1">概要</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id2">システム構成</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">Active Directory 設定</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">Active Directory 連携の有効・無効切り替え時の動作</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="personal.html">4.5. 個人設定</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.5</a></li>
+    <li><a href="../index.html">Exastro OASE 1.5 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">4. </span>システム設定</a></li>
+    
+    <li><span class="section-number">4.4. </span>Active Directory連携</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="active-directory">
+<h1><span class="section-number">4.4. </span>Active Directory連携<a class="headerlink" href="#active-directory" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">Exastro OASE における Active Directory連携（以降、「AD連携」と表記）機能を利用する為に必要なシステム構成と環境構築について説明します。</div>
+</div>
+<section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">AD連携機能は、以下の機能を提供します。</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>機能名</p></th>
+<th class="head"><p>用途</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ユーザ認証</p></td>
+<td><p>Exastro OASE からドメインコントローラに対して AD 認証(LDAP 認証)を行います。</p></td>
+</tr>
+<tr class="row-odd"><td><p>ミラーリング</p></td>
+<td><p>ドメインコントローラ上のユーザ情報およびグループ情報を Exastro OASE 上の「ユーザ」および「グループ」にミラーリングをします。(一方向同期)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id2">
+<h2>システム構成<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">AD連携機能は、ドメインを構成するドメインコントローラと連携します。</div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/system_configuration.png"><img alt="../../../_images/system_configuration.png" class="align-center" src="../../../_images/system_configuration.png" style="width: 950.4000000000001px; height: 426.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line">※ userPrincipalName … Active Directory 上のログインID</div>
+<div class="line">※ displayName       … 表示名</div>
+<div class="line">※ commonName        … オブジェクト名（上図では、グループオブジェクトの名称）</div>
+<div class="line">※ memberof          … ユーザが所属するグループ名</div>
+</div>
+</section>
+<section id="id3">
+<h2>Active Directory 設定<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<div class="line-block">
+<div class="line">AD連携を実行するとシステム管理者を除く現在登録中のグループ・ユーザ情報が全て削除され、ADから取得したグループ・ユーザを設定します。</div>
+<div class="line">AD連携を解除するとADから取得したグループ・ユーザが全て削除されます。</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">画面上部のメニューから <span class="menuselection">システム ‣ システム設定</span> を開きます。</div>
+<div class="line">左メニューから <span class="menuselection">Active Directory設定</span> を選択します。</div>
+</div>
+<figure class="align-left" id="id5">
+<a class="reference internal image-reference" href="../../../_images/ADLinkage_column_edit.png"><img alt="../../../_images/ADLinkage_column_edit.png" src="../../../_images/ADLinkage_column_edit.png" style="width: 500.0px; height: 344.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.26 </span><span class="caption-text">Active Directory 設定編集画面</span><a class="headerlink" href="#id5" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-number">表 4.20 </span><span class="caption-text">Active Directory 設定項目</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Active Directory連携</p></td>
+<td><p>AD連携の状態を選択してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>管理者ユーザ</p></td>
+<td><p>認証サーバ接続ユーザ名を入力して下さい。64文字以内で入力する必要があります。</p></td>
+</tr>
+<tr class="row-even"><td><p>管理者パスワード</p></td>
+<td><p>認証サーバ接続パスワードを入力して下さい。</p></td>
+</tr>
+<tr class="row-odd"><td><p>接続先</p></td>
+<td><p>認証サーバ接続先ドメインを優先度が高い順にカンマ区切りで設定して下さい。512文字以内で入力する必要があります。</p></td>
+</tr>
+<tr class="row-even"><td><p>連携時刻</p></td>
+<td><p>ドメインコントローラとの同期時刻(0-23時)を入力して下さい。複数時間設定する場合はカンマ区切りで設定してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>接続タイムアウト</p></td>
+<td><p>接続時無応答時のタイムアウト時間(秒)を設定します。<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">1</kbd>-<kbd class="kbd docutils literal notranslate">99999</kbd></kbd> の値を設定できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>読み取りタイムアウト</p></td>
+<td><p>情報取得時のタイムアウト時間(秒)を設定します。<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">1</kbd>-<kbd class="kbd docutils literal notranslate">99999</kbd></kbd> の値を設定できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>認証サーバ検索文字</p></td>
+<td><p>ドメインコントローラから取得できる識別名を指定してください。256文字以内で入力する必要があります。</p></td>
+</tr>
+<tr class="row-even"><td><p>行追加ボタン</p></td>
+<td><p>対象グループリスト情報入力欄を1行ずつ追加します。対象グループリストは30件まで登録可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>属性値</p></td>
+<td><p>ドメインコントローラに設定済みのグループ(CommonName)を属性値に指定してください。40文字以内で入力する必要があります。</p></td>
+</tr>
+<tr class="row-even"><td><p>所属部署名</p></td>
+<td><p>所属部署名はOASEのグループ名として使用されます。40文字以内で入力する必要があります。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">設定が完了したら <span class="guilabel"> 保存</span> をクリックします。</div>
+<div class="line">設定前の状態に戻すには、<span class="guilabel"> リセット</span> をクリックします。</div>
+</div>
+</section>
+<section id="id4">
+<h2>Active Directory 連携の有効・無効切り替え時の動作<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">Active Directory との連携を行う契機として、以下の3つが挙げられます。</div>
+</div>
+<ul class="simple">
+<li><p>システム設定画面の「Active Directory連携」の設定項目を <span class="guilabel">OFF</span> から <span class="guilabel">ON</span> に切り替え保存する</p></li>
+<li><p>システム設定画面の「Active Directory連携」の設定項目を <span class="guilabel">ON</span> から <span class="guilabel">OFF</span> に切り替え保存する</p></li>
+<li><p>システム設定画面の「AD連携時刻」に設定された時刻を迎える</p></li>
+</ul>
+<div class="line-block">
+<div class="line">これらを契機に処理される連携関連の処理は、それぞれ異なる挙動をします。</div>
+</div>
+<section id="offon">
+<h3>OFFからONに切り替えた際の動作<a class="headerlink" href="#offon" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line"><span class="guilabel">OFF</span> から <span class="guilabel">ON</span> に切り替えた際、システム画面にて入力された「Active Directory設定」の各項目をDBに保存します。</div>
+<div class="line">その後、一台のサーバに対して、Active Directory連携の crontab を設定します。</div>
+</div>
+<div class="line-block">
+<div class="line">DBの保存、および、 crontab の設定が成功すると、認証サーバへ接続、認証を行い、ユーザとグループの情報を取得します。</div>
+<div class="line">取得されたユーザとグループの情報は、Exastro OASE 内のユーザとグループの情報として保存されます。</div>
+</div>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../../_images/ADLinkage_Dialog01.png"><img alt="../../../_images/ADLinkage_Dialog01.png" src="../../../_images/ADLinkage_Dialog01.png" style="width: 300.0px; height: 150.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.27 </span><span class="caption-text">Active Directory連携ON時のメッセージ</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<div class="line-block">
+<div class="line">画面に表示されているとおり、処理が完了するまでブラウザを閉じたり、別のページへ移動しないようご注意ください。</div>
+<div class="line">もし、ブラウザを閉じたり、別ページへ移動した場合、正常に連携が行われていない可能性があります。</div>
+<div class="line">その際は、一度「Active Directory連携」の設定項目を <span class="guilabel">OFF</span> にして保存した後、再度、<span class="guilabel">ON</span> にして設定をやり直してください。</div>
+<div class="line">また、エラーにより正常に連携ができなかった際も、同様の試みをしてください。</div>
+</div>
+</div>
+</section>
+<section id="onoff">
+<h3>ONからOFFに切り替えた際の動作<a class="headerlink" href="#onoff" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line"><span class="guilabel">ON</span> から <span class="guilabel">OFF</span> に切り替えた際、既存の「Active Directory設定」の各項目は初期化されます。</div>
+<div class="line">その後、Active Directory連携の crontab 設定が削除されます。</div>
+</div>
+<div class="line-block">
+<div class="line">各項目の初期化、および、crontab 設定の削除が成功すると、ドメインコントローラから取得したグループ・ユーザが全て削除されます。</div>
+</div>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../../_images/ADLinkage_Dialog02.png"><img alt="../../../_images/ADLinkage_Dialog02.png" src="../../../_images/ADLinkage_Dialog02.png" style="width: 300.0px; height: 136.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.28 </span><span class="caption-text">Active Directory連携OFF時のメッセージ</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ad">
+<h3>AD 連携時刻を迎えた際の動作<a class="headerlink" href="#ad" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">Active Directory連携が <span class="guilabel">ON</span> の場合、「AD連携時刻」に設定された時刻に crontab による連携処理が行われます。</div>
+</div>
+<div class="line-block">
+<div class="line">そのため、ドメインコントローラへユーザやグループの情報を更新しても、即時に Exastro OASE へは反映されません。</div>
+<div class="line">AD連携時刻を迎えるまでは、更新前の情報が Exastro OASE 内では有効となっております。</div>
+</div>
+<div class="line-block">
+<div class="line">AD連携時刻を迎えると、認証サーバへ接続、認証を行い、ユーザとグループの情報を取得します。</div>
+<div class="line">取得されたユーザとグループの情報は、Exastro OASE 内のユーザとグループの情報として保存されます。</div>
+</div>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="password.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">4.3. </span>パスワード設定</a></li>
+    <li class="next"><a href="personal.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">4.5. </span>個人設定</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

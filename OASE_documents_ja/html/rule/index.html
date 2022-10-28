@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>利用手順マニュアル -ルール画面編- &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="はじめに" href="introduction.html" />
+    <link rel="prev" title="3 OASE トークン払い出し画面で表示されるメッセージ" href="../token/03_messages.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="../token/03_messages.html" title="3 OASE トークン払い出し画面で表示されるメッセージ">前へ</a></li>
+        <li class="next"><a href="introduction.html" title="はじめに">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">利用手順マニュアル -ルール画面編-</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_summary.html">1 OASE ルール画面の概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_screen_structure.html">2 OASE ルール画面のメニュー 、画面構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_request_type.html">3 OASE ステージングとプロダクションについて</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html">4 OASE 一括テスト用Excelファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_messages.html">5 OASE ルール画面で表示されるメッセージ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    
+    <li>利用手順マニュアル -ルール画面編-</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1>利用手順マニュアル -ルール画面編-<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">目次</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_summary.html">1 OASE ルール画面の概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_screen_structure.html">2 OASE ルール画面のメニュー 、画面構成</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_screen_structure.html#id1">2.1 基本画面構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_screen_structure.html#id2">2.2 ルール画面の操作方法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_screen_structure.html#label-stg-button">(1)ルール画面(ステージング)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id4">一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id5">ファイルを選択</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id6">アップロード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id7">テストリクエスト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id8">過去を含め表示</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id9">運用ステータスの変更</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id10">ダウンロード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id11">適用</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#label-stg-ope-sts">運用ステータス</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#label-stg-sys-sts">作業ステータス</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_screen_structure.html#label-prd-button">(2)ルール画面(プロダクション)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id15">一覧</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id16">過去を含め表示</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id17">ダウンロード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id18">切り戻し</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#label-prd-ope-sts">運用ステータス</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#label-prd-sys-sts">作業ステータス</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_screen_structure.html#id21">(3)テストリクエスト(ディシジョンテーブルタブ)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id22">ディシジョンテーブル名選択</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id23">テストリクエスト設定へ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id24">設定タブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id25">ログタブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id26">閉じる</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_screen_structure.html#id27">(4)テストリクエスト(設定タブ)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id28">単発テスト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#label-get-button">一括テスト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id30">ディシジョンテーブル名選択</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id31">ディシジョンテーブルタブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id32">ログタブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id33">閉じる</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_screen_structure.html#id34">(5)テストリクエスト(ログタブ)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id35">リクエスト送信の確認</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id36">実行ログ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id37">ログクリア</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id38">ログダウンロード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id39">再実行</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id40">ディシジョンテーブルタブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id41">設定タブ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_screen_structure.html#id42">閉じる</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_request_type.html">3 OASE ステージングとプロダクションについて</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_request_type.html#id1">3.1 ステージングとは</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_request_type.html#id2">3.2 プロダクションとは</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_bulk_request.html">4 OASE 一括テスト用Excelファイル</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html#id1">4.1 ファイル取得</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html#id2">4.2 ファイル構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html#label-ex-button">4.3 記述例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_messages.html">5 OASE ルール画面で表示されるメッセージ</a></li>
+</ul>
+</div>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="../token/03_messages.html" title="前の章へ"><span>前のトピックへ</span>3 OASE トークン払い出し画面で表示されるメッセージ</a></li>
+    <li class="next"><a href="introduction.html" title="次の章へ"><span>次のトピックへ</span>はじめに</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

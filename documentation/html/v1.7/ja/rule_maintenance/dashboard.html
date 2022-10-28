@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>10.1. ダッシュボード &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="10.2. アクション履歴" href="action_history.html" />
+    <link rel="prev" title="10. ルールメンテナンス" href="index.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/rule_maintenance/dashboard
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v1.7/ja/rule_maintenance/dashboard
+                  <option value="#"
+                  selected
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/rule_maintenance/dashboard
+                  <option value="../../../v1.6/ja/rule_maintenance/dashboard.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/rule_maintenance/dashboard
+                  <option value="../../../v1.5/ja/rule_maintenance/dashboard.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.7/ja/rule_maintenance/dashboard
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.7/en/rule_maintenance/dashboard
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="index.html" title="前のトピックへ"><span class="section-number">10. </span>ルールメンテナンス</a></li>
+        <li class="next"><a href="action_history.html" title="次のトピックへ"><span class="section-number">10.2. </span>アクション履歴</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.7</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.7 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">10. ルールメンテナンス</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">10.1. ダッシュボード</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">画面構成</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">パネル構成</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="action_history.html">10.2. アクション履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.7</a></li>
+    <li><a href="../index.html">Exastro OASE 1.7 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">10. </span>ルールメンテナンス</a></li>
+    
+    <li><span class="section-number">10.1. </span>ダッシュボード</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">10.1. </span>ダッシュボード<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">本項では、ダッシュボード画面の機能について説明します。</div>
+<div class="line">ダッシュボード画面は、Exastro OASE が取得したイベント情報がどれだけルールにマッチしたかどうかを可視化します。</div>
+<div class="line">アンマッチとなっているイベントに対するルールを定義することでカバレッジの割合を100%に近づけ、運用業務の自動化の割合を高めることが重要です。</div>
+</div>
+<section id="id2">
+<h2>画面構成<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">ダッシュボード画面の画面構成は次のとおりです。</div>
+</div>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../../_images/dashboard_01.png"><img alt="../../../_images/dashboard_01.png" src="../../../_images/dashboard_01.png" style="width: 640.0px; height: 314.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.1 </span><span class="caption-text">画面構成</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">ダッシュボード画面の各パネルは次の表のとおりです。</div>
+</div>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 10.1 </span><span class="caption-text">ダッシュボード画面のパネル</span><a class="headerlink" href="#id9" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>パネル</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>カバレッジ(24h)</p></td>
+<td><p>直近24時間以内に発生しているルールのマッチ、アンマッチの件数の円グラフを表示します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>マッチ ランキング(24h)</p></td>
+<td><p>直近24時間以内に発生しているルールマッチのランキングと円グラフを表示します。</p></td>
+</tr>
+<tr class="row-even"><td><p>アンマッチ ランキング(24h)</p></td>
+<td><p>直近24時間以内に発生しているルールアンマッチのランキングと円グラフを表示します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>リクエスト件数(時間帯別)</p></td>
+<td><p>前日24時までの直近30日間の時間帯別のルールのマッチ、アンマッチの件数の棒グラフを表示します。</p></td>
+</tr>
+<tr class="row-even"><td><p>リクエスト件数(月別)</p></td>
+<td><p>前月の直近12カ月の月別のルールのマッチ、アンマッチの件数の棒グラフを表示します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h2>パネル構成<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<section id="h">
+<h3>カバレッジ(24h)<a class="headerlink" href="#h" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">カバレッジとは、Exastro OASE が取得したイベント件数のうち定義済みのルールにマッチしたイベント件数の割合を示したものです。</div>
+<div class="line">カバレッジ(24h)では、24時間以内のカバレッジ割合を表示します。</div>
+</div>
+<figure class="align-left" id="id10">
+<a class="reference internal image-reference" href="../../../_images/dashboard_02.png"><img alt="../../../_images/dashboard_02.png" src="../../../_images/dashboard_02.png" style="width: 279.2px; height: 489.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.2 </span><span class="caption-text">カバレッジ(24h)の画面構成</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-number">表 10.2 </span><span class="caption-text">カバレッジ(24h)の項目</span><a class="headerlink" href="#id11" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目名</p></td>
+<td><p>現在表示しているグラフの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>円グラフ</p></td>
+<td><p>ディシジョンテーブルのルールにマッチ/アンマッチした直近24時間の件数の円グラフです。</p></td>
+</tr>
+<tr class="row-even"><td><p>Match</p></td>
+<td><p>ディシジョンテーブルのルールにマッチした直近24時間の件数です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unmatch</p></td>
+<td><p>ディシジョンテーブルのルールにアンマッチした直近24時間の件数です。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id4">
+<h3>マッチ ランキング(24h)<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">マッチ ランキング(24h)では、24時間以内に発生したイベントのうちマッチしたルールのランキングを表示します。</div>
+</div>
+<figure class="align-left" id="id12">
+<a class="reference internal image-reference" href="../../../_images/dashboard_03.png"><img alt="../../../_images/dashboard_03.png" src="../../../_images/dashboard_03.png" style="width: 290.40000000000003px; height: 489.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.3 </span><span class="caption-text">マッチ ランキング(24h)の画面構成</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id13">
+<caption><span class="caption-number">表 10.3 </span><span class="caption-text">マッチ ランキング(24h)の項目</span><a class="headerlink" href="#id13" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目名</p></td>
+<td><p>現在表示しているグラフとランキングの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>円グラフ</p></td>
+<td><p>ディシジョンテーブルのルールにマッチした直近24時間の件数の円グラフです。</p></td>
+</tr>
+<tr class="row-even"><td><p>ランキング項目</p></td>
+<td><p>件数上位1から5位のディシジョンテーブル名とイベント情報と件数です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>詳細情報</p></td>
+<td><p>ボタンを押下すると対象のイベント情報にフィルタリングされたリクエスト履歴のページに遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>その他</p></td>
+<td><p>6位以下をまとめた件数です。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id5">
+<h3>アンマッチ ランキング(24h)<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">アンマッチ ランキング(24h)では、24時間以内に発生したイベントのうちマッチしなかったイベントのランキングを表示します。</div>
+</div>
+<figure class="align-left" id="id14">
+<a class="reference internal image-reference" href="../../../_images/dashboard_04.png"><img alt="../../../_images/dashboard_04.png" src="../../../_images/dashboard_04.png" style="width: 290.40000000000003px; height: 494.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.4 </span><span class="caption-text">アンマッチ ランキング(24h)の画面構成</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id15">
+<caption><span class="caption-number">表 10.4 </span><span class="caption-text">アンマッチ ランキング(24h)の項目</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目名</p></td>
+<td><p>現在表示しているグラフとランキングの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>円グラフ</p></td>
+<td><p>ディシジョンテーブルのルールにアンマッチした直近24時間の件数の円グラフです。</p></td>
+</tr>
+<tr class="row-even"><td><p>ランキング項目</p></td>
+<td><p>件数上位1から5位のディシジョンテーブル名とイベント情報と件数です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>詳細情報</p></td>
+<td><p>ボタンを押下すると対象のイベント情報にフィルタリングされたリクエスト履歴のページに遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>その他</p></td>
+<td><p>6位以下をまとめた件数です。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id6">
+<h3>リクエスト件数(時間帯別)<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">リクエスト件数(時間帯別)では、時間帯別にマッチもしくはアンマッチとなったイベント件数を表示します。</div>
+</div>
+<figure class="align-left" id="id16">
+<a class="reference internal image-reference" href="../../../_images/dashboard_05.png"><img alt="../../../_images/dashboard_05.png" src="../../../_images/dashboard_05.png" style="width: 411.5px; height: 150.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.5 </span><span class="caption-text">リクエスト件数(時間帯別)の画面構成</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-number">表 10.5 </span><span class="caption-text">リクエスト件数(時間帯別)の項目</span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目名</p></td>
+<td><p>現在表示しているグラフの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>棒グラフ</p></td>
+<td><p>30日間の時間帯別のディシジョンテーブルのルールにマッチ/アンマッチした件数の棒グラフです。縦軸が件数、横軸が時間(24時間表記)です。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+<section id="id7">
+<h3>リクエスト件数(月別)<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h3>
+<div class="line-block">
+<div class="line">リクエスト件数(時間帯別)では、月別にマッチもしくはアンマッチとなったイベント件数を表示します。</div>
+</div>
+<figure class="align-left" id="id18">
+<a class="reference internal image-reference" href="../../../_images/dashboard_06.png"><img alt="../../../_images/dashboard_06.png" src="../../../_images/dashboard_06.png" style="width: 414.0px; height: 153.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 10.6 </span><span class="caption-text">リクエスト件数(月別)の画面構成</span><a class="headerlink" href="#id18" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">表 10.6 </span><span class="caption-text">リクエスト件数(月別)の項目</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目名</p></td>
+<td><p>現在表示しているグラフの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>棒グラフ</p></td>
+<td><p>12カ月分のディシジョンテーブルのルールにマッチ/アンマッチした件数を月別にした棒グラフです。縦軸が件数、横軸が月です。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div></section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="index.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">10. </span>ルールメンテナンス</a></li>
+    <li class="next"><a href="action_history.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">10.2. </span>アクション履歴</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

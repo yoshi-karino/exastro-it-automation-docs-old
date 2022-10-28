@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>10. ルールメンテナンス &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="10.1. ダッシュボード" href="dashboard.html" />
+    <link rel="prev" title="9.7. ルール適用" href="../rule_definition/apply_rule.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/rule_maintenance/index
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v1.7/ja/rule_maintenance/index
+                  <option value="#"
+                  selected
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/rule_maintenance/index
+                  <option value="../../../v1.6/ja/rule_maintenance/index.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/rule_maintenance/index
+                  <option value="../../../v1.5/ja/rule_maintenance/index.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.7/ja/rule_maintenance/index
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.7/en/rule_maintenance/index
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="../rule_definition/apply_rule.html" title="前のトピックへ"><span class="section-number">9.7. </span>ルール適用</a></li>
+        <li class="next"><a href="dashboard.html" title="次のトピックへ"><span class="section-number">10.1. </span>ダッシュボード</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.7</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.7 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">10. ルールメンテナンス</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dashboard.html">10.1. ダッシュボード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="action_history.html">10.2. アクション履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.7</a></li>
+    <li><a href="../index.html">Exastro OASE 1.7 操作マニュアル</a></li>
+    
+    <li><span class="section-number">10. </span>ルールメンテナンス</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">10. </span>ルールメンテナンス<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dashboard.html">10.1. ダッシュボード</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html#id2">画面構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html#id3">パネル構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dashboard.html#h">カバレッジ(24h)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dashboard.html#id4">マッチ ランキング(24h)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dashboard.html#id5">アンマッチ ランキング(24h)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dashboard.html#id6">リクエスト件数(時間帯別)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dashboard.html#id7">リクエスト件数(月別)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="action_history.html">10.2. アクション履歴</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="action_history.html#id2">アクション履歴確認</a></li>
+<li class="toctree-l2"><a class="reference internal" href="action_history.html#id3">アクション実行状況の確認</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="action_history.html#exastro-it-automation">Exastro IT Automation 実行結果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="action_history.html#id4">メール送信結果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="action_history.html#servicenow">ServiceNow 連携結果</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="action_history.html#id5">アクション履歴詳細の取得</a></li>
+<li class="toctree-l2"><a class="reference internal" href="action_history.html#id6">アクション再実行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="action_history.html#id7">作業承認</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="../rule_definition/apply_rule.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">9.7. </span>ルール適用</a></li>
+    <li class="next"><a href="dashboard.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">10.1. </span>ダッシュボード</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

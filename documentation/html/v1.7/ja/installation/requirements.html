@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>2.2. システム要件 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="2.3. インストーラ版" href="installer/index.html" />
+    <link rel="prev" title="2.1. Exastro OASE の入手" href="getting_oase.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/installation/requirements
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v1.7/ja/installation/requirements
+                  <option value="#"
+                  selected
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/installation/requirements
+                  <option value="../../../v1.6/ja/installation/requirements.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/installation/requirements
+                  <option value="../../../v1.5/ja/installation/requirements.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.7/ja/installation/requirements
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.7/en/installation/requirements
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="getting_oase.html" title="前のトピックへ"><span class="section-number">2.1. </span>Exastro OASE の入手</a></li>
+        <li class="next"><a href="installer/index.html" title="次のトピックへ"><span class="section-number">2.3. </span>インストーラ版</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.7</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.7 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">2. インストール</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="getting_oase.html">2.1. Exastro OASE の入手</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.2. システム要件</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">ハードウェア要件(参考値)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">システム構成パターン</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">通信要件</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id5">ソフトウェア要件</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id6">クライアントにおけるシステム要件</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="installer/index.html">2.3. インストーラ版</a></li>
+<li class="toctree-l4"><a class="reference internal" href="container/index.html">2.4. コンテナ版</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.7</a></li>
+    <li><a href="../index.html">Exastro OASE 1.7 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">2. </span>インストール</a></li>
+    
+    <li><span class="section-number">2.2. </span>システム要件</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">2.2. </span>システム要件<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">Exastro OASE によるシステム運用のために必要なシステム構成と環境構築について説明します。</div>
+</div>
+<section id="id2">
+<h2>ハードウェア要件(参考値)<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">OASEシステムを構築するための、サーバスペックの参考値を記載します。</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>OS</p></td>
+<td><p>Linux Centos7</p></td>
+</tr>
+<tr class="row-even"><td><p>CPUコア数</p></td>
+<td><p>4コア</p></td>
+</tr>
+<tr class="row-odd"><td><p>メモリ</p></td>
+<td><p>8GB</p></td>
+</tr>
+<tr class="row-even"><td><p>HDD</p></td>
+<td><p>100GB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>実際の構成は、連携する監視アプリケーションやアラート発生件数、ルール数、連携ドライバによって異なります。</p>
+</div>
+</section>
+<section id="id3">
+<h2>システム構成パターン<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">Webコンテンツ、BackYardコンテンツ、データベースは、次のようなサーバ構成で運用が可能です。</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 39%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成</p></th>
+<th class="head"><p>説明</p></th>
+<th class="head"><p>特徴</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>オールインワン構成</p></td>
+<td><p>OASE システムを一つの基盤上で稼働させる最も簡単で安価な構築型</p></td>
+<td><p>構築作業や構成がシンプルで、かつ、低コストに実現可能。</p></td>
+</tr>
+<tr class="row-odd"><td><p>ハイアベイラビリティ構成</p></td>
+<td><p>高い可用性や拡張性がある構築型</p></td>
+<td><p>SPoF(単一障害点)がないため基盤の障害が発生した場合にもサービス継続可能な可用性や拡張性がある。</p></td>
+</tr>
+</tbody>
+</table>
+<p>以降に、各型のイメージ図を記載します。</p>
+<figure class="align-left" id="id7">
+<a class="reference internal image-reference" href="../../../_images/deploy_all_in_one.png"><img alt="../../../_images/deploy_all_in_one.png" src="../../../_images/deploy_all_in_one.png" style="width: 524.7px; height: 206.91px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 2.1 </span><span class="caption-text">オールインワン構成例</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-right" id="id8">
+<a class="reference internal image-reference" href="../../../_images/deploy_high_availability.png"><img alt="../../../_images/deploy_high_availability.png" src="../../../_images/deploy_high_availability.png" style="width: 524.7px; height: 260.04px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 2.2 </span><span class="caption-text">ハイアベイラビリティ構成例</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div style="clear:both;"></div></section>
+<section id="id4">
+<h2>通信要件<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">本システム構成において、各サービス間の通信要件は以下の通りです。</div>
+</div>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 2.1 </span><span class="caption-text">通信要件一覧</span><a class="headerlink" href="#id9" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 25%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>FROM</p></th>
+<th class="head"><p>TO</p></th>
+<th class="head"><p>プロトコル</p></th>
+<th class="head"><p>主な用途</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>作業端末</p></td>
+<td><p>Exastro OASE</p></td>
+<td><p>http(s) [80,443/tcp]</p></td>
+<td><p>Exastro OASE の Web コンソールへのアクセス</p></td>
+</tr>
+<tr class="row-odd"><td><p>Exastro OASE</p></td>
+<td><p>RDB(MariaDB)</p></td>
+<td><p>3306/tcp</p></td>
+<td><p>DB通信</p></td>
+</tr>
+<tr class="row-even"><td><p>Exastro OASE</p></td>
+<td><p>RabbitMQ</p></td>
+<td><p>5672/tcp</p></td>
+<td><p>イベントメッセージの送受信</p></td>
+</tr>
+<tr class="row-odd"><td><p>Exastro OASE</p></td>
+<td><p>RHDM or Drools</p></td>
+<td><p>http [8080/tcp]</p></td>
+<td><p>ディシジョンテーブルのコンテナ管理</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>必須項目を記載。OASE外部のサービスに準拠するため適宜変更してください。</p>
+</div>
+</section>
+<section id="id5">
+<h2>ソフトウェア要件<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">本システムはLinuxサーバで稼働し、クライアントPCからブラウザ経由でアクセスします。</div>
+<div class="line">システムインストールするにあたっては、次の要件を満たしているサーバをご用意ください。</div>
+</div>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td rowspan="2"><p>OS</p></td>
+<td><p>CentOS</p></td>
+<td><p>7.5.1804</p></td>
+</tr>
+<tr class="row-even"><td><p>RHEL</p></td>
+<td><p>7.8 , 8.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>webサーバ</p></td>
+<td><p>Apache</p></td>
+<td><p>2.4.6-97</p></td>
+</tr>
+<tr class="row-even"><td><p>フレームワーク</p></td>
+<td><p>Django</p></td>
+<td><p>2.1.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>データベース</p></td>
+<td><p>MariaDB</p></td>
+<td><p>10.5.8-1</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>言語</p></td>
+<td><p>python</p></td>
+<td><p>3.6.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>OpenJDK</p></td>
+<td><p>1.8.0_212</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonライブラリ</p></td>
+<td><p>openpyxl</p></td>
+<td><p>2.5.14</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>Red Hat</p></td>
+<td><p>Decision Manager</p></td>
+<td><p>7.3.1</p></td>
+</tr>
+<tr class="row-even"><td><p>JBoss EAP</p></td>
+<td><p>7.2.0</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><p>Drools</p></td>
+<td><p>Business Central</p></td>
+<td><p>7.22.0</p></td>
+</tr>
+<tr class="row-even"><td><p>WildFly</p></td>
+<td><p>14.0.1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>その他のOSについては確認できておりません。
+Red Hat Decision ManagerまたはDroolsのどちらかをご使用することになります。
+インストール時に選択することができます。</p>
+</div>
+</section>
+<section id="id6">
+<h2>クライアントにおけるシステム要件<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">本製品の機能を利用するにあたって、クライアント側PCの動作環境要件は次の通りです。</div>
+</div>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>OS</p></td>
+<td><p>windows</p></td>
+<td><p>Windows7 以上</p></td>
+</tr>
+<tr class="row-even"><td><p>ソフトウェア</p></td>
+<td><p>Excel</p></td>
+<td><p>MS Office 2016 以上</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><p>ブラウザ</p></td>
+<td><p>Edge</p></td>
+<td><p>20以上</p></td>
+</tr>
+<tr class="row-even"><td><p>FireFox</p></td>
+<td><p>64.0以上</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chrome</p></td>
+<td><p>72.x以上</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="getting_oase.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">2.1. </span>Exastro OASE の入手</a></li>
+    <li class="next"><a href="installer/index.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">2.3. </span>インストーラ版</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

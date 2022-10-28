@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>3 OASE ディシジョンテーブルファイルの説明 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="4 OASE ディシジョンテーブル画面で表示されるメッセージ" href="04_messages.html" />
+    <link rel="prev" title="2 OASE ディシジョンテーブル画面のメニュー 、画面構成" href="02_screen_structure.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="02_screen_structure.html" title="2 OASE ディシジョンテーブル画面のメニュー 、画面構成">前へ</a></li>
+        <li class="next"><a href="04_messages.html" title="4 OASE ディシジョンテーブル画面で表示されるメッセージ">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_summary.html">1 OASE ディシジョンテーブル画面の概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_screen_structure.html">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3 OASE ディシジョンテーブルファイルの説明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">3.1 ディシジョンテーブルファイルとは</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_messages.html">4 OASE ディシジョンテーブル画面で表示されるメッセージ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+    
+    <li>3 OASE ディシジョンテーブルファイルの説明</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="oase">
+<h1>3 OASE ディシジョンテーブルファイルの説明<a class="headerlink" href="#oase" title="Permalink to this heading">¶</a></h1>
+<p>本章では、ディシジョンテーブルファイルについて説明します。</p>
+<section id="id1">
+<h2>3.1 ディシジョンテーブルファイルとは<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>ディシジョンテーブル画面でディシジョンテーブルを登録したうえで、ダウンロードしたディシジョンテーブルファイルを編集しルール画面にアップロードすることで、テストリクエストおよびルールマッチング結果によるアクションの実行を行うことができます。</p></li>
+<li><p>ディシジョンテーブルファイルでは、実行されるアクションについて条件を設定できます。</p></li>
+</ul>
+<section id="tables">
+<h3>(1)Tablesシート全体<a class="headerlink" href="#tables" title="Permalink to this heading">¶</a></h3>
+<p>テストリクエストおよびルールマッチング結果によるアクションの実行を行うため、ディシジョンテーブルファイルのTablesシートに判定の基準となる条件を記述する必要があります。</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/decision_table_29.png"><img alt="../_images/decision_table_29.png" src="../_images/decision_table_29.png" style="width: 1606.0px; height: 924.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-1-1 ディシジョンテーブル新規追加画面</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/decision_table_20.png"><img alt="../_images/decision_table_20.png" src="../_images/decision_table_20.png" style="width: 1602.0px; height: 863.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-1-2 ディシジョンテーブルファイル(Tablesシート)</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id9">
+<caption><span class="caption-text">表 3.1-1-2 機能説明</span><a class="headerlink" href="#id9" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ファイル名</p></td>
+<td><p>ディシジョンテーブル画面で新規追加および複製時に自動生成された文字列がエクセルファイルの初期ファイル名になります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>コメント部</p></td>
+<td><p>ダウンロードしたエクセルファイルの背景色緑色の箇所です。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>条件部(条件式)</p></td>
+<td><p>ディシジョンテーブル画面で新規追加および複製時に入力した条件式は生成されるエクセルファイルの条件部（背景色水色箇所）になります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>アクション部</p></td>
+<td><p>ダウンロードしたエクセルファイルの背景色黄色の箇所です。入力必須項目です。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>アクション条件部</p></td>
+<td><p>ダウンロードしたエクセルファイルの背景色赤色の箇所です。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id2">
+<h3>(2)コメント部<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tablesシートの背景色緑色の箇所です。</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/decision_table_30.png"><img alt="../_images/decision_table_30.png" src="../_images/decision_table_30.png" style="width: 1026.0px; height: 645.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-2-1 ディシジョンテーブルファイル(Tablesシート)のコメント部</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><strong>ルール説明</strong></div>
+</div>
+<ul class="simple">
+<li><p>任意の文章を入力できます。ルール説明等に使うことが可能です。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">エラー001</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>(3)条件部<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tablesシートの背景色水色の箇所です。</p></li>
+<li><p>記入方法は前述の <a class="reference internal" href="02_screen_structure.html#label-table-1"><span class="std std-ref">表 2.2-3-2 機能説明</span></a> をご参照ください。</p></li>
+</ul>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/decision_table_31.png"><img alt="../_images/decision_table_31.png" src="../_images/decision_table_31.png" style="width: 1179.0px; height: 614.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-3-1 ディシジョンテーブルファイル(Tablesシート)の条件部</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>ディシジョンテーブル画面で新規追加および複製時に入力した&quot;時間[HH:mm](From-to)&quot;は、エクセルファイルでは&quot;[HH:mm](from)&quot;と&quot;[HH:mm](to)&quot;の2列に分かれます。開始日時と終了日時をそれぞれ入力して下さい。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>条件部を空欄にすると、どのような値でも条件にマッチします。しかし、１つのルールに対して全ての条件部を空欄にすることはできません。</p>
+</div>
+</section>
+<section id="id4">
+<h3>(4)アクション部<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tablesシートの背景色黄色の箇所です。</p></li>
+<li><p>ルール名ごとにどのようなアクションを実行するか設定することができます。</p></li>
+<li><p>アクションを実行してよいか、実行する前に事前承認メールを送る設定をすることができます。</p></li>
+<li><p>アクションの実行が失敗した場合何回リトライするか、リトライの間隔および回数を設定することができます。</p></li>
+<li><p>同一アクションを何度も実行するのを避けたい場合、抑止の間隔および回数を設定することで制御できます。</p></li>
+<li><p>アクション種別ごとに記入方法が異なります。設定内容に合わせて記入してください。</p></li>
+<li><p>複数のルールをグルーピングすることで、コリレーション機能を利用することができます。</p></li>
+</ul>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/decision_table_32.png"><img alt="../_images/decision_table_32.png" src="../_images/decision_table_32.png" style="width: 1602.0px; height: 859.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-4-1 ディシジョンテーブルファイル(Tablesシート)のアクション部</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<section id="id5">
+<h4>共通<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line"><strong>ルール名（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>一意となる名称を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rule1</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>発生事象（必須）※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>発生した事象を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ハードウェアの故障</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>対処概要（必須）※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>対処概要を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITAによる対処</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクション種別（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>実行したいアクション種別をプルダウンで選択してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mail</span><span class="p">(</span><span class="n">ver1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
+</div>
+<p>記入方法は後述の <a class="reference internal" href="#labelcap1"><span class="std std-ref">ITAドライバ</span></a> 、 <a class="reference internal" href="#labelcap2"><span class="std std-ref">mailドライバ</span></a> および <a class="reference internal" href="#labelcap3"><span class="std std-ref">ServiceNowドライバ</span></a> をご参照ください。</p>
+<div class="line-block">
+<div class="line"><strong>アクション実行前パラメータ情報（必須）※ダブルクオーテーションは使用不可 ※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>MAIL_NAMEは必須です。OASE画面のシステム-アクション設定-mail_driverの名前と紐づけます。</p></li>
+<li><p>「MAIL_TO=,MAIL_CC=,MAIL_BCC=」は送信したいメールアドレスを記述してください。</p></li>
+<li><p>「MAIL_TEMPLATE=」はテンプレート名を記述してください。未記入の場合はデフォルトのメールが送信されます。</p></li>
+<li><p>宛先やテンプレート名は空白でも良いですが、記述例のように、「MAIL_TO=,MAIL_CC=,MAIL_BCC=,MAIL_TEMPLATE=」の記述は必要です。また、MAIL_TOにメールアドレスの指定、またはMAIL_TEMPLATEで指定したテンプレートに宛先があること、のどちらかが必要です。</p></li>
+<li><p>2つ以上、送信したいアドレスがある場合は「;」でつなげてください。</p></li>
+<li><p>MAIL_TEMPLATEはOASE画面のシステム-アクション設定-メールテンプレートのテンプレート名と紐づけます。</p></li>
+<li><p>不要の場合はXを記述してください。</p></li>
+<li><p>MAIL_TO、MAIL_CC、MAIL_BCCの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="n">aaa</span><span class="nd">@aaa</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="n">bbb</span><span class="nd">@bbb</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクション実行後パラメータ情報（必須）※ダブルクオーテーションは使用不可 ※不要の場合は「X」を定義</strong></div>
+</div>
+<ul class="simple">
+<li><p>SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。</p></li>
+<li><p>不要の場合はXを記述してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクションリトライ間隔（必須）※「1」以上を定義して下さい。</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションのリトライ間隔を記述します。</p></li>
+<li><p>リトライ間隔の単位は秒になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクションリトライ回数（必須）※「1」以上を定義して下さい。</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションのリトライ回数を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクション抑止間隔（必須）※「0」以上を定義して下さい。</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの抑止間隔を記述します。</p></li>
+<li><p>抑止間隔の単位は秒になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>アクション抑止回数（必須）※「0」以上を定義して下さい。</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの抑止回数を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>条件回数（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの条件回数を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>条件期間(秒)（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>アクションの条件期間を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">300</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>大グループ（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>グルーピングしたいルールに対してグループ名を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">group1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>優先順位（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>大グループでグルーピングしたルールの優先順位を記述します。1が最優先になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>小グループ（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>大グループからさらにグルーピングしたいルールに対してグループ名を記述します。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">group10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>優先順位（必須）</strong></div>
+</div>
+<ul class="simple">
+<li><p>小グループでグルーピングしたルールの優先順位を記述します。1が最優先になります。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span>
+</pre></div>
+</div>
+</section>
+<section id="ita">
+<span id="labelcap1"></span><h4>ITAドライバ<a class="headerlink" href="#ita" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
+</div>
+<ul class="simple">
+<li><p>ITA_NAMEおよびSYMPHONY_CLASS_IDまたはCONDUCTOR_CLASS_IDは必須です。</p></li>
+<li><p>ITA_NAMEはOASE画面のシステム-アクション設定-ITA_driverの名前と紐づけます。</p></li>
+<li><p>SYMPHONY_CLASS_IDはITA画面のSymphony-Symphonyクラス一覧のSymphonyクラスIDと紐づけます。</p></li>
+<li><p>SYMPHONY_NAMEはITA画面のSymphony-Symphonyクラス一覧のSymphony名称と紐づけます。</p></li>
+<li><p>CONDUCTOR_CLASS_IDはITA画面のConductor-Conductorクラス一覧のConductorクラスIDと紐づけます。</p></li>
+<li><p>CONDUCTOR_NAMEはITA画面のConductor-Conductorクラス一覧のConductor名称と紐づけます。</p></li>
+<li><p>OPERATION_IDはITA画面の基本コンソール-投入オペレーション一覧のオペレーションIDと紐づけます。</p></li>
+<li><p>OPERATION_NAMEはITA画面の基本コンソール-投入オペレーション一覧のオペレーション名と紐づけます。また、オペレーション一覧にない場合は設定されている文言を利用してOASEから登録して使用します。</p></li>
+<li><p>SERVER_LISTは実行対象となるホスト名を記述します。ホスト名はITA画面の基本コンソール-機器一覧のホスト名と紐づけます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
+<li><p>MENU_IDはITAで作成されたパラメータシートのメニューIDと紐づけます。メニューIDはITA画面の管理コンソール-メニュー管理から確認できます。複数記載する場合はコロン(:)で区切って記述します。</p></li>
+<li><p>HOSTGROUP_NAMEはMENU_IDに紐づいたホストグループIDを記載します。MENU_IDと併せてコロン（:）で区切って記載します。1つのMENU_IDに複数のホストグループを紐づける場合はアンド（&amp;）で区切って記載します。</p></li>
+<li><p>複数のMENU_IDを設定する場合はパイプ（|）で区切って記載します。HOST_NAMEにつきましても、HOSTGROUP_NAMEと同様です。</p></li>
+<li><p>CONVERT_FLGはTRUEまたはFALSEを設定します。MENU_ID指定の時に必須になります。</p></li>
+<li><p>MENUはITAで作成されたパラメータシートのメニューIDと、カラム名、連携したい値をJSON形式で記述します。</p></li>
+<li><p>SYMPHONY_CLASS_ID,CONDUCTOR_CLASS_ID,OPERATION_ID,SERVER_LIST,MENU_IDの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><strong>OPERATION_IDを指定した場合</strong></div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Symphony ] で作業を実行できます。</div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Conductor ] で作業を実行できます。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>OPERATION_NAMEを指定した場合</strong></div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Symphony ] で作業を実行できます。</div>
+<div class="line">ITAに事前に準備しておいた [ オペレーション - Conductor ] で作業を実行できます。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>SERVER_LISTを指定した場合</strong></div>
+<div class="line">ITAのSymphonyまたはConductorに対して、OASEから作業対象ホストを指定して作業を実行できます。</div>
+<div class="line">OPERATION_NAMEを利用すると、ITAのオペレーションを再利用することができます。</div>
+<div class="line">OPERATION_NAMEの記述がない場合は自動払い出しになります。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_IDを指定した場合</strong></div>
+<div class="line">ITAのパラメータシートと連携して、指定したSymphonyまたはConductorに対して作業を実行できます。</div>
+<div class="line">OPERATION_NAMEを利用すると、ITAのオペレーションを再利用することができます。</div>
+<div class="line">OPERATION_NAMEの記述がない場合は自動払い出しになります。</div>
+<div class="line">MENU_ID指定の場合は、CONVERT_FLGが必須になります。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_ID指定かつCONVERT_FLGがTRUEの場合</strong></div>
+<div class="line">条件部におけるルールの記述を以下のように加工した場合、使用することができます。</div>
+<div class="line">・始めの条件を作業対象ホスト名でマッチングできるようにする。</div>
+<div class="line">・2番目以降の条件をパラメータシートに連携する値でマッチングできるようにする。</div>
+<div class="line">ルールにマッチングされた値がそのままパラメータシートへ登録を行います。</div>
+<div class="line">パラメータシートへ値が登録される順番はイベント情報の順番になります。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENU_ID指定かつCONVERT_FLGがFALSEの場合</strong></div>
+<div class="line">条件部におけるルールの記述を加工せずに使用することができます。</div>
+<div class="line">ITAのパラメータシートへ連携される値はマッチングされた文言から指定された抽出条件によって抽出します。</div>
+<div class="line">抽出する値には作業対象ホストが必要です。</div>
+<div class="line">パラメータシートへ値が登録される順番はメニューID毎に指定することができます。</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>MENUを指定した場合</strong></div>
+<div class="line">ITAのパラメータシートと連携して、指定したSymphonyまたはConductorに対して作業を実行できます。</div>
+<div class="line">OPERATION_NAMEを利用すると、ITAのオペレーションを再利用することができます。</div>
+<div class="line">OPERATION_NAMEの記述がない場合は自動払い出しになります。</div>
+</div>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_NAME</span><span class="o">=</span><span class="n">プロセス再起動</span><span class="p">,</span><span class="n">OPERATION_NAME</span><span class="o">=</span><span class="n">プロセス再起動</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">TRUE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="o">|</span><span class="mi">3</span><span class="p">:</span><span class="n">H4</span><span class="o">|</span><span class="mi">4</span><span class="p">:</span><span class="n">H5</span><span class="o">&amp;</span><span class="n">H6</span><span class="o">&amp;</span><span class="n">H7</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_NAME</span><span class="o">=</span><span class="n">プロセス再起動</span><span class="p">,</span><span class="n">OPERATION_NAME</span><span class="o">=</span><span class="n">プロセス再起動</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">OPERATION_ID</span><span class="o">=</span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">TRUE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">MENU_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="o">|</span><span class="mi">3</span><span class="p">:</span><span class="n">H4</span><span class="o">|</span><span class="mi">4</span><span class="p">:</span><span class="n">H5</span><span class="o">&amp;</span><span class="n">H6</span><span class="o">&amp;</span><span class="n">H7</span><span class="p">,</span><span class="n">CONVERT_FLG</span><span class="o">=</span><span class="n">FALSE</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">CONDUCTOR_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">SERVER_LIST</span><span class="o">=</span><span class="n">hostname1</span><span class="p">:</span><span class="n">hostname2</span><span class="p">,</span><span class="n">MENU</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;ID&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;VALUES&quot;</span><span class="p">:{</span><span class="s2">&quot;カラムグループ/カラム1&quot;</span><span class="p">:</span><span class="s2">&quot;値1&quot;</span><span class="p">,</span><span class="s2">&quot;カラムグループ/カラム2&quot;</span><span class="p">:</span><span class="s2">&quot;値2&quot;</span><span class="p">}}]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ITA_NAME</span><span class="o">=</span><span class="n">action43</span><span class="p">,</span><span class="n">SYMPHONY_CLASS_ID</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">HOSTGROUP_NAME</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">HG1</span><span class="p">,</span><span class="n">HOST_NAME</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span><span class="n">H2</span><span class="o">&amp;</span><span class="n">H3</span><span class="p">,</span><span class="n">MENU</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;ID&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;VALUES&quot;</span><span class="p">:{</span><span class="s2">&quot;カラムグループ/カラム1&quot;</span><span class="p">:</span><span class="s2">&quot;値1&quot;</span><span class="p">,</span><span class="s2">&quot;カラムグループ/カラム2&quot;</span><span class="p">:</span><span class="s2">&quot;値2&quot;</span><span class="p">}},{</span><span class="s2">&quot;ID&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;VALUES&quot;</span><span class="p">:{</span><span class="s2">&quot;カラムグループ/カラム1&quot;</span><span class="p">:</span><span class="s2">&quot;値1&quot;</span><span class="p">,</span><span class="s2">&quot;カラムグループ/カラム2&quot;</span><span class="p">:</span><span class="s2">&quot;値2&quot;</span><span class="p">}}]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>OPERATION_ID,SERVER_LIST,MENU_IDを同時に設定した場合エラーとなります。</p>
+</div>
+</section>
+<section id="mail">
+<span id="labelcap2"></span><h4>mailドライバ<a class="headerlink" href="#mail" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
+</div>
+<ul class="simple">
+<li><p>MAIL_NAMEは必須です。OASE画面のシステム-アクション設定-mail_driverの名前と紐づけます。</p></li>
+<li><p>「MAIL_TO=,MAIL_CC=,MAIL_BCC=」は送信したいメールアドレスを記述してください。</p></li>
+<li><p>「MAIL_TEMPLATE=」はテンプレート名を記述してください。</p></li>
+<li><p>宛先やテンプレート名は空白でも良いですが、記述例のように、「MAIL_TO=,MAIL_CC=,MAIL_BCC=,AIL_TEMPLATE=」の記述は必要です。また、MAIL_TOにメールアドレスの指定、またはMAIL_TEMPLATEで指定したテンプレートに宛先があること、のどちらかが必要です。</p></li>
+<li><p>2つ以上、送信したいアドレスがある場合は「;」でつなげてください。</p></li>
+<li><p>MAIL_TEMPLATEはOASE画面のシステム-アクション設定-メールテンプレートのテンプレート名と紐づけます。</p></li>
+<li><p>MAIL_TO、MAIL_CC、MAIL_BCCの値に {{ VAR_条件名 }} と記入すると条件部の値を当てはめることができます。</p></li>
+<li><p>{{ VAR_条件名 }} の条件名には <a class="reference internal" href="02_screen_structure.html"><span class="doc">2 OASE ディシジョンテーブル画面のメニュー 、画面構成</span></a> の新規追加画面にて入力された条件名を記入してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="n">aaa</span><span class="nd">@aaa</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="n">bbb</span><span class="nd">@bbb</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIL_NAME</span><span class="o">=</span><span class="n">oasetest</span><span class="p">,</span><span class="n">MAIL_TO</span><span class="o">=</span><span class="p">{{</span> <span class="n">VAR_条件名</span> <span class="p">}},</span><span class="n">MAIL_CC</span><span class="o">=</span><span class="n">ccc</span><span class="nd">@ccc</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_BCC</span><span class="o">=</span><span class="n">ddd</span><span class="nd">@ddd</span><span class="o">.</span><span class="n">com</span><span class="p">,</span><span class="n">MAIL_TEMPLATE</span><span class="o">=</span><span class="n">test_template</span>
+</pre></div>
+</div>
+</section>
+<section id="servicenow">
+<span id="labelcap3"></span><h4>ServiceNowドライバ<a class="headerlink" href="#servicenow" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line"><strong>アクションパラメータ情報（必須）※ダブルクオーテーションは使用不可</strong></div>
+</div>
+<ul class="simple">
+<li><p>SERVICENOW_NAMEは必須です。OASE画面のシステム-アクション設定-ServiceNow_driverの名前と紐づけます。</p></li>
+<li><p>INCIDENT_STATUSはインシデント管理の際に必要です。ServiceNowインシデント管理のレコードを新規登録する「NEW」、インシデント対処中となる「IN PROGRESS」、インシデント解決済みとなる「RESOLVED」またはインシデントを閉じる「CLOSED」を記述します。</p></li>
+<li><p>WORKFLOW_IDはワークフローの実行に必要です。ServiceNowのワークフロースケジュール編集画面から、sys_idを取得してください。</p></li>
+<li><p>WORK_NOTES_APPROVAL、WORK_NOTES_REJECTEDはそれぞれ、ServiceNow側で承認・却下を必要とするインシデント管理の際に必要です。承認・却下時にServiceNowの作業メモに書き込まれる文言を記述してください。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">INCIDENT_STATUS</span><span class="o">=</span><span class="n">OPEN</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">WORKFLOW_ID</span><span class="o">=</span><span class="n">abcdef1234567890</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SERVICENOW_NAME</span><span class="o">=</span><span class="n">ServiceNowTest</span><span class="p">,</span><span class="n">INCIDENT_STATUS</span><span class="o">=</span><span class="n">IN_PROGRESS</span><span class="p">,</span><span class="n">WORK_NOTES_APPROVAL</span><span class="o">=</span><span class="n">APPROVED</span><span class="p">,</span><span class="n">WORK_NOTES_REJECTED</span><span class="o">=</span><span class="n">REJECTED</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id6">
+<h3>(5)アクション条件部<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Tablesシートの背景色赤色の箇所です。</p></li>
+</ul>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/decision_table_33.png"><img alt="../_images/decision_table_33.png" src="../_images/decision_table_33.png" style="width: 1166.0px; height: 557.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.3-5-1 ディシジョンテーブルファイル(Tablesシート)のアクション条件部</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><strong>有効日</strong></div>
+</div>
+<ul class="simple">
+<li><p>ルールの有効日を設定できます。</p></li>
+<li><p>有効日を設定しない場合は空欄にします。</p></li>
+<li><p>yyyy-mm-dd HH:mm形式で入力して下さい。</p></li>
+<li><p>有効日を2020-01-01 01:00に設定した場合、2020-01-01 01:00:01以降のイベントにマッチします。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2010</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mi">01</span><span class="p">:</span><span class="mi">00</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>無効日</strong></div>
+</div>
+<ul class="simple">
+<li><p>ルールの無効日を設定できます。</p></li>
+<li><p>無効日を設定しない場合は空欄にします。</p></li>
+<li><p>yyyy-mm-dd HH:mm形式で入力して下さい。</p></li>
+<li><p>無効日を2020-01-01 01:00に設定した場合2020-01-01 01:00:00以降のイベントはマッチしません。</p></li>
+</ul>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2020</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span> <span class="mi">23</span><span class="p">:</span><span class="mi">59</span>
+</pre></div>
+</div>
+</section>
+<section id="example">
+<h3>(6)exampleシート<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ディシジョンテーブルファイルのTablesシートに記述すべき値の例が記載されたシートです。</p></li>
+<li><p>項目によっては記述フォーマットについても例が記載されています。</p></li>
+</ul>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../_images/decision_table_34.png"><img alt="../_images/decision_table_34.png" src="../_images/decision_table_34.png" style="width: 727.0px; height: 800.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 3.1-6-1 ディシジョンテーブルファイル(exampleシート)</span><a class="headerlink" href="#id14" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="02_screen_structure.html" title="前の章へ"><span>前のトピックへ</span>2 OASE ディシジョンテーブル画面のメニュー 、画面構成</a></li>
+    <li class="next"><a href="04_messages.html" title="次の章へ"><span>次のトピックへ</span>4 OASE ディシジョンテーブル画面で表示されるメッセージ</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

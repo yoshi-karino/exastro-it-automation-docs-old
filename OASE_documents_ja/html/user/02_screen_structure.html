@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>2 OASE ユーザ画面のメニュー 、画面構成 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="3 OASE ユーザ画面で表示されるメッセージ" href="03_messages.html" />
+    <link rel="prev" title="1 OASE ユーザ画面の概要" href="01_summary.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="01_summary.html" title="1 OASE ユーザ画面の概要">前へ</a></li>
+        <li class="next"><a href="03_messages.html" title="3 OASE ユーザ画面で表示されるメッセージ">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">利用手順マニュアル -ユーザ画面編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_summary.html">1 OASE ユーザ画面の概要</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2 OASE ユーザ画面のメニュー 、画面構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.1 基本画面構成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.2 ユーザ画面の操作方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_messages.html">3 OASE ユーザ画面で表示されるメッセージ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+    
+    <li>2 OASE ユーザ画面のメニュー 、画面構成</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="oase">
+<h1>2 OASE ユーザ画面のメニュー 、画面構成<a class="headerlink" href="#oase" title="Permalink to this heading">¶</a></h1>
+<p>本章では、OASE ユーザ画面の画面構成と、各構成要素について説明します。</p>
+<section id="id1">
+<h2>2.1 基本画面構成<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>ユーザ画面の画面構成は次のとおりです。</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/disp1.png"><img alt="../_images/disp1.png" src="../_images/disp1.png" style="width: 1280.0px; height: 698.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1 画面構成</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>ユーザ画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="colwidths-given docutils align-default" id="id10">
+<caption><span class="caption-text">表 2.1-1 機能説明</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>編集ボタン</p></td>
+<td><p>編集画面に遷移し、ユーザの追加、編集、削除をします。※AD連携時には表示されません。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>システム管理者</p></td>
+<td><p>最初から登録されてるユーザです。編集できません。※AD連携時でも表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>グループボタン</p></td>
+<td><p>ユーザの所属グループが6つ以上の場合表示されます。このボタンをクリックすると、所属しているグループを全て表示します。</p></td>
+</tr>
+</tbody>
+</table>
+<p>グループの画面構成は次のとおりです。</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/disp2.png"><img alt="../_images/disp2.png" src="../_images/disp2.png" style="width: 1280.0px; height: 700.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-2 画面構成</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id12">
+<caption><span class="caption-text">表 2.1-2 機能説明</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>グループ画面を閉じてユーザ画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>ユーザ名</p></td>
+<td><p>グループ画面を表示されているユーザ名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>所属グループ</p></td>
+<td><p>所属しているグループが全て表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>グループ画面を閉じてユーザ画面に戻ります。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">ユーザの編集画面の画面構成は次のとおりです。</div>
+<div class="line">※AD連携時には表示されません。</div>
+</div>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/edit1.png"><img alt="../_images/edit1.png" src="../_images/edit1.png" style="width: 1477.0px; height: 1041.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-3 画面構成</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>ユーザの編集画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="colwidths-given docutils align-default" id="id14">
+<caption><span class="caption-text">表 2.1-3 機能説明</span><a class="headerlink" href="#id14" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>編集作業をキャンセルし、グループ画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>リセットボタン</p></td>
+<td><p>編集途中の内容を編集前の値にリセットします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>追加ボタン</p></td>
+<td><p>グループ情報入力欄を1行ずつ追加します。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>保存ボタン</p></td>
+<td><p>編集内容を保存します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>更新メニュー</p></td>
+<td><p>既存のグループに対し「更新」または「削除」を選択できます。※「4.追加ボタン」押下による新規追加グループには表示されません。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ユーザ名</p></td>
+<td><p>任意のユーザ名を入力できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>ログインID</p></td>
+<td><p>ログインIDを入力できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>メールアドレス</p></td>
+<td><p>メールアドレスを入力できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>グループの選択ボタン</p></td>
+<td><p>グループ画面を表示します。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>削除ボタン</p></td>
+<td><p>追加した行を削除します。</p></td>
+</tr>
+</tbody>
+</table>
+<p>グループの選択画面の画面構成は次のとおりです。</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/edit2.png"><img alt="../_images/edit2.png" src="../_images/edit2.png" style="width: 1406.0px; height: 995.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-4 画面構成</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id16">
+<caption><span class="caption-text">表 2.1-4 機能説明</span><a class="headerlink" href="#id16" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>所属グループ編集画面を閉じてユーザ画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>グループ選択</p></td>
+<td><p>編集途中の内容を編集前の値にリセットします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>編集作業をキャンセルし、ユーザの編集画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>適用ボタン</p></td>
+<td><p>編集内容を適用します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id2">
+<h2>2.2 ユーザ画面の操作方法<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>構成要素に対する操作方法を説明します。</p>
+<section id="id3">
+<h3>(1)ユーザ画面<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">登録されているユーザを一覧で表示します。</div>
+<div class="line">編集ボタンについては各権限ごとに異なります。ここでは共通機能について説明します。</div>
+</div>
+<section id="id4">
+<h4>一覧<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../_images/disp_index1.png"><img alt="../_images/disp_index1.png" src="../_images/disp_index1.png" style="width: 1280.0px; height: 498.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-1 ユーザ画面の一覧の各項目</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id18">
+<caption><span class="caption-text">表 2.2-1-1 機能説明</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ユーザ名</p></td>
+<td><p>ユーザのユーザ名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ログインID</p></td>
+<td><p>ログインIDが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>メールアドレス</p></td>
+<td><p>メールアドレスが表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>グループ</p></td>
+<td><p>所属しているグループが表示されます。所属グループが6つ以上の場合省略されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>初期パスワード</p></td>
+<td><p>アイコンをクリックすると初期パスワードが取得できます。初回ログインを行い初期パスワードから変更されたユーザのアイコンは表示されません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>最終更新者</p></td>
+<td><p>ユーザの情報を更新したユーザの名前が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>最終更新日時</p></td>
+<td><p>ユーザの情報を更新した日時が表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<div class="line-block">
+<div class="line">AD連携時はユーザ画面の編集ボタンと初期パスワードのアイコンが表示されません。</div>
+<div class="line">また、AD連携をしていない状態でも、ユーザ画面へのアクセス権限が「更新可能」以外の場合、同様に編集ボタンと初期パスワードのアイコンは表示されません。</div>
+</div>
+</div>
+</section>
+<section id="id5">
+<h4>グループ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>所属グループが6つ以上の場合、グループボタンが追加されます。グループボタンをクリックすると、グループ画面が表示され、所属しているグループをすべて見ることができます。</p></li>
+</ul>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../_images/disp_group.png"><img alt="../_images/disp_group.png" src="../_images/disp_group.png" style="width: 1280.0px; height: 660.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-2 グループ画面の各項目</span><a class="headerlink" href="#id19" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id6">
+<h3>(2)ユーザ編集画面<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ユーザを新規追加および、すでに登録されているユーザを更新、削除することができます。</div>
+<div class="line">ユーザ画面へのアクセス権限が「更新可能」の場合のみ、ユーザ編集画面を表示することができます。</div>
+</div>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../_images/disp_editbutton.png"><img alt="../_images/disp_editbutton.png" src="../_images/disp_editbutton.png" style="width: 1280.0px; height: 358.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-1 アクセス権限が「更新可能」であるため「編集ボタン」が表示される</span><a class="headerlink" href="#id20" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<section id="id7">
+<h4>入力欄<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../_images/edit_index1.png"><img alt="../_images/edit_index1.png" src="../_images/edit_index1.png" style="width: 1408.0px; height: 583.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-2 ユーザ編集画面の各項目</span><a class="headerlink" href="#id21" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id22">
+<caption><span class="caption-text">表 2.2-2-2 機能説明</span><a class="headerlink" href="#id22" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 22%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>キャンセル</p></td>
+<td><p>変更内容を破棄してユーザ編集画面を閉じ、ユーザ画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>リセット</p></td>
+<td><p>値を変更する前のユーザ編集画面に戻ります。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>追加</p></td>
+<td><p>編集欄が1行追加されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>保存</p></td>
+<td><p>変更内容を保存してユーザ編集画面を閉じ、ユーザ画面に戻ります。新規追加されたユーザには登録されたメールアドレスにログインID通知メールとパスワード通知メールが送られます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>更新</p></td>
+<td><p>既存のユーザを更新する場合はプルダウンメニューから「更新」を選択してください。また、削除する場合は「削除」を選択してください。選択状態で「保存ボタン」を押下すると、選択した内容が反映されます。※新規追加行にはプルダウンメニューは表示されません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ユーザ名</p></td>
+<td><p>入力必須項目です。64文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ログインID</p></td>
+<td><p>入力必須項目です。32文字以内で入力してください。入力可能文字は半角英数字、記号(.&#64;_-)です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>メールアドレス</p></td>
+<td><p>入力必須項目です。256文字以内で入力してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>グループ</p></td>
+<td><p>入力必須項目です。グループの選択ボタンを押下して選択してください。所属グループが6つ以上の場合省略されグループボタンが追加されます。ただし新規追加の場合は全て表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>最終更新者</p></td>
+<td><p>ユーザ編集画面の「保存ボタン」を押下したユーザ名が自動で反映されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>最終更新日時</p></td>
+<td><p>ユーザ編集画面の「保存ボタン」を押下した時刻が自動で反映されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>追加行削除ボタン</p></td>
+<td><p>ユーザ編集画面の「追加ボタン」を押下した場合、欄内に押下可能な「×」ボタンが表示されます。「×」ボタンを押下すると、追加行が削除されます。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h4>グループの選択画面の入力欄<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../_images/edit_group.png"><img alt="../_images/edit_group.png" src="../_images/edit_group.png" style="width: 1406.0px; height: 778.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-3 グループの選択画面の各項目</span><a class="headerlink" href="#id23" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id24">
+<caption><span class="caption-text">表 2.2-2-3 機能説明</span><a class="headerlink" href="#id24" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>グループの選択画面を閉じてユーザ編集画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>グループ一覧</p></td>
+<td><p>チェックボックスを有効にし、適用すると所属するグループが適用されます。1つ以上選択してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>キャンセルボタン</p></td>
+<td><p>グループの選択画面を閉じてユーザ編集画面に戻ります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>適用ボタン</p></td>
+<td><p>編集した権限情報を適用してユーザ編集画面に移ります。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>1つのユーザに複数のグループを指定すると、それらのグループの中で一番権限の強い権限が反映されます。</p>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="01_summary.html" title="前の章へ"><span>前のトピックへ</span>1 OASE ユーザ画面の概要</a></li>
+    <li class="next"><a href="03_messages.html" title="次の章へ"><span>次のトピックへ</span>3 OASE ユーザ画面で表示されるメッセージ</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

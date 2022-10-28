@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>1 イベントリクエスト &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="2 アクション履歴" href="02_action_history.html" />
+    <link rel="prev" title="はじめに" href="introduction.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="introduction.html" title="はじめに">前へ</a></li>
+        <li class="next"><a href="02_action_history.html" title="2 アクション履歴">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">RestAPI機能 利用マニュアル</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1 イベントリクエスト</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.1 リクエストの形式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">1.2 レスポンスの形式</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_action_history.html">2 アクション履歴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">RestAPI機能 利用マニュアル</a></li>
+    
+    <li>1 イベントリクエスト</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1>1 イベントリクエスト<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line">本章では、ルール画面で設定したルールに対して、</div>
+<div class="line">RestAPI機能を用いたリクエストを行うために必要なパラメータなどについて説明します。</div>
+</div>
+<section id="id2">
+<h2>1.1 リクエストの形式<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>下記の情報で HTTPS リクエストを発行します。</p>
+<section id="id3">
+<h3>1.1.1 リクエスト例<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p><strong>例）プロダクション適用ルール</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="o">-</span><span class="n">k</span> <span class="s2">&quot;https://&lt;HostName&gt;/oase_web/event/event/eventsrequest&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;accept: application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="s2">&quot;{</span><span class="se">\&quot;</span><span class="s2">decisiontable</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">decisiontable001</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">requesttype</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">1</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventdatetime</span><span class="se">\&quot;</span><span class="s2">:</span><span class="se">\&quot;</span><span class="s2">2018/12/13 15:16:29</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">eventinfo</span><span class="se">\&quot;</span><span class="s2">:[</span><span class="se">\&quot;</span><span class="s2">2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]}&quot;</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: Bearer ACCESS_TOKEN&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>1.1.2 リクエストヘッダ<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id10">
+<caption><span class="caption-text">表 1.1.2 フォーマット定義</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>物理名</p></th>
+<th class="head"><p>論理名</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Host</p></td>
+<td><p>ホスト名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Content-Type</p></td>
+<td><p>形式名</p></td>
+<td><p>値は「application/json」で固定</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>token</p></td>
+<td><p>トークン</p></td>
+<td><p>Token払い出し画面にて取得した値を設定</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h3>1.1.3 パラメータ<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<table class="colwidths-given docutils align-default" id="id11">
+<caption><span class="caption-text">表 1.1.3 フォーマット定義</span><a class="headerlink" href="#id11" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>物理名</p></th>
+<th class="head"><p>論理名</p></th>
+<th class="head"><p>属性</p></th>
+<th class="head"><p>長さ</p></th>
+<th class="head"><p>空白</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>decisiontable</p></td>
+<td><p>ディシジョンテーブル名</p></td>
+<td><p>文字列</p></td>
+<td><p>64</p></td>
+<td><p>不可</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>requesttype</p></td>
+<td><p>リクエスト種別</p></td>
+<td><p>文字列</p></td>
+<td><p>11</p></td>
+<td><p>不可</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>eventdatetime</p></td>
+<td><p>イベント発生日時</p></td>
+<td><p>文字列</p></td>
+<td><p>19</p></td>
+<td><p>不可</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>eventinfo</p></td>
+<td><p>イベント情報</p></td>
+<td><p>リスト</p></td>
+<td><p>4000</p></td>
+<td><p>不可</p></td>
+</tr>
+</tbody>
+</table>
+<section id="decisiontable">
+<h4>decisiontable<a class="headerlink" href="#decisiontable" title="Permalink to this heading">¶</a></h4>
+<p>ディシジョンテーブル画面で作成したディシジョンテーブル名を記述することができます。</p>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decisiontable001</span>
+</pre></div>
+</div>
+</section>
+<section id="requesttype">
+<h4>requesttype<a class="headerlink" href="#requesttype" title="Permalink to this heading">¶</a></h4>
+<p>投入先である「1:プロダクション」「2:ステージング」のどちらかを記述します。</p>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+</pre></div>
+</div>
+</section>
+<section id="eventdatetime">
+<h4>eventdatetime<a class="headerlink" href="#eventdatetime" title="Permalink to this heading">¶</a></h4>
+<p>「yyyy/mm/dd hh:mm:ss」または、イベント発生日時を指定しない場合「-」のどちらかを記述します。</p>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">/</span><span class="mi">12</span><span class="o">/</span><span class="mi">13</span> <span class="mi">15</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">29</span>
+</pre></div>
+</div>
+</section>
+<section id="eventinfo">
+<h4>eventinfo<a class="headerlink" href="#eventinfo" title="Permalink to this heading">¶</a></h4>
+<p>ディシジョンテーブルで作成したルール条件の数値や、文字列を記述することができます。複数ある時はカンマ区切りで記述します。</p>
+<p><strong>記述例</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>\<span class="s2">&quot;2</span><span class="se">\&quot;</span><span class="s2">,</span><span class="se">\&quot;</span><span class="s2">あああ</span><span class="se">\&quot;</span><span class="s2">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>1.2 レスポンスの形式<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>下記の情報で 応答データを受け取ります。</p>
+<section id="id7">
+<h3>1.2.1 レスポンス例<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p><strong>例）プロダクション適用ルール</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span> <span class="s2">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept request.&quot;</span><span class="p">,</span> <span class="s2">&quot;trace_id&quot;</span><span class="p">:</span> <span class="s2">&quot;TOS_20210412053112220048_0000000010&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h3>1.2.2 ヘッダ<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id9">
+<h3>1.2.3 レスポンスボディ<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">リクエストを投入し内容に問題が無い場合は、「&quot;result&quot;: true」「&quot;msg&quot;: &quot;Accept request.&quot;」となり、</div>
+<div class="line">末尾に受け付けられたリクエストのイベントシリアルNo.が表示されます。</div>
+<div class="line">内容に問題がある場合は「&quot;result&quot;: false」となり、処理が受け付けられません。</div>
+<div class="line">その場合は「&quot;msg&quot;」に記載の内容を確認し解消することでリクエストが受け付けられるようになります。</div>
+</div>
+<table class="colwidths-given docutils align-default" id="id12">
+<caption><span class="caption-text">表 1.2.1 フォーマット定義</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 40%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>物理名</p></th>
+<th class="head"><p>論理名</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>result</p></td>
+<td><p>判定</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>msg</p></td>
+<td><p>メッセージ</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>trace_id</p></td>
+<td><p>イベントシリアルNo.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="result">
+<h4>result<a class="headerlink" href="#result" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 47%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>value</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>true</p></td>
+<td><p>正常</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>false</p></td>
+<td><p>異常</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="msg">
+<h4>msg<a class="headerlink" href="#msg" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 47%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>value</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Accept request.</p></td>
+<td><p>リクエストを受け付けます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Unmatch, Number of event information elements.</p></td>
+<td><p>イベント情報の要素の数が不一致です。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Invalid request. Must be POST. Not GET.</p></td>
+<td><p>無効なリクエスト。 POSTである必要があります。GETではありません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Invalid request format. Must be JSON.</p></td>
+<td><p>無効なリクエスト形式。 JSON形式である必要があります。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Invalid request type.</p></td>
+<td><p>無効なリクエストの種類です</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Invalid request.</p></td>
+<td><p>無効なリクエストです。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Unexpected error.</p></td>
+<td><p>予想外のエラーです。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>other error.</p></td>
+<td><p>その他エラーです。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="introduction.html" title="前の章へ"><span>前のトピックへ</span>はじめに</a></li>
+    <li class="next"><a href="02_action_history.html" title="次の章へ"><span>次のトピックへ</span>2 アクション履歴</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

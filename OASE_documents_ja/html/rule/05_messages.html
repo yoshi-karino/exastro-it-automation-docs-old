@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>5 OASE ルール画面で表示されるメッセージ &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="利用手順マニュアル -アクション履歴編-" href="../action_history/index.html" />
+    <link rel="prev" title="4 OASE 一括テスト用Excelファイル" href="04_bulk_request.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="04_bulk_request.html" title="4 OASE 一括テスト用Excelファイル">前へ</a></li>
+        <li class="next"><a href="../action_history/index.html" title="利用手順マニュアル -アクション履歴編-">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">利用手順マニュアル -ルール画面編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_summary.html">1 OASE ルール画面の概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_screen_structure.html">2 OASE ルール画面のメニュー 、画面構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_request_type.html">3 OASE ステージングとプロダクションについて</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html">4 OASE 一括テスト用Excelファイル</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5 OASE ルール画面で表示されるメッセージ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">利用手順マニュアル -ルール画面編-</a></li>
+    
+    <li>5 OASE ルール画面で表示されるメッセージ</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="oase">
+<h1>5 OASE ルール画面で表示されるメッセージ<a class="headerlink" href="#oase" title="Permalink to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line">本章では、OASE ルールの画面で表示されるメッセージについて説明します。</div>
+<div class="line">以下の表はルール画面で表示されるメッセージの一覧です。xxxには該当項目に置換されます。</div>
+<div class="line">エラーメッセージはメッセージの最後にメッセージIDが追記されます。</div>
+</div>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">表 5.1-1 メッセージ一覧(画面)</span><a class="headerlink" href="#id1" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>メッセージID</p></th>
+<th class="head"><p>メッセージ</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MOSJA03001</p></td>
+<td><p>不正なリクエストです</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03002</p></td>
+<td><p>アップロードが完了しました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03003</p></td>
+<td><p>適用処理が完了しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03004</p></td>
+<td><p>ファイルが指定されていません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03005</p></td>
+<td><p>指定のファイルは Excel ではありません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03006</p></td>
+<td><p>ファイルサイズが xxxMB を超過しています</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03007</p></td>
+<td><p>アップロードに失敗しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03008</p></td>
+<td><p>切り戻しに失敗しました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03009</p></td>
+<td><p>適用に失敗しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03010</p></td>
+<td><p>該当ルールが存在しません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03011</p></td>
+<td><p>ルール種別が存在しません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03012</p></td>
+<td><p>ステージング以外に適用されています</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03013</p></td>
+<td><p>該当ルールファイルが存在しません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03014</p></td>
+<td><p>ステージングでのリクエストテスト実行を完了していません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03015</p></td>
+<td><p>一括テストリクエストの送信が完了しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03016</p></td>
+<td><p>データの取得に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03101</p></td>
+<td><p>アップロード処理開始時データ登録に失敗しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03102</p></td>
+<td><p>kjar構築用ファイルが存在しません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03104</p></td>
+<td><p>kjar構築用ファイルなし時のデータ登録に失敗しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03123</p></td>
+<td><p>リクエスト数が上限を超えています。（上限数= xxx）上限に収まるように記述してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03201</p></td>
+<td><p>既にプロダクション環境へ適用済みです</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03202</p></td>
+<td><p>不明なリクエスト種別が指定されました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03204</p></td>
+<td><p>適用処理が失敗しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03208</p></td>
+<td><p>Decision Managerコンテナの作成に失敗しました。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03209</p></td>
+<td><p>Decision Managerの接続に失敗しました。 （コンテナ作成）</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03210</p></td>
+<td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ作成）</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03215</p></td>
+<td><p>Decision Managerコンテナの削除に失敗しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03217</p></td>
+<td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ削除）</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03219</p></td>
+<td><p>適用プロセスでエラーが発生しました。再度ルールファイルのアップロードをしてください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03301</p></td>
+<td><p>指定のルール種別IDは存在しません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03302</p></td>
+<td><p>指定のルール管理IDは存在しません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03303</p></td>
+<td><p>指定のルールファイルIDは存在しません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03304</p></td>
+<td><p>指定のファイルは存在しません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03401</p></td>
+<td><p>ビルド処理開始時データ更新に失敗しました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03402</p></td>
+<td><p>ビルド後データ更新に失敗しました</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03403</p></td>
+<td><p>ビルド処理が失敗しました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12000</p></td>
+<td><p>データの取得に失敗しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12001</p></td>
+<td><p>エラーが発生しました。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12002</p></td>
+<td><p>不正なリクエストです。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12007</p></td>
+<td><p>ステージング実行をリクエストしました。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12008</p></td>
+<td><p>運用ステータスを更新しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12009</p></td>
+<td><p>ルールが存在しません。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12010</p></td>
+<td><p>運用ステータスを更新できません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12011</p></td>
+<td><p>プロダクション適用済みのため、運用ステータスを更新できません</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12012</p></td>
+<td><p>テストリクエストが実行できませんでした.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12014</p></td>
+<td><p>必須項目が入力されていません。入力をしてから、再度アップロードしてください cell=xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12015</p></td>
+<td><p>xxxには、半角数字を入力してください cell=xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12016</p></td>
+<td><p>時刻条件には、時刻(HH:mm)を入力してください cell=xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12017</p></td>
+<td><p>イベント発生日時には、年月日(%%Y-%%m-%%d %%H:%%M:%%S)を入力してください cell=xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12018</p></td>
+<td><p>フォーマットチェックに失敗しました。ファイルの記載内容を修正してから、再度アップロードしてください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12019</p></td>
+<td><p>空ファイルです。必須項目を入力してから再度アップロードしてください。 filename=xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12021</p></td>
+<td><p>xxxには、[\&quot;hoge\&quot;]のような形式で入力してください。cell=xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12022</p></td>
+<td><p>イベント発生日時には、年月日(%Y-%m-%d %H:%M:%S)を入力してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12023</p></td>
+<td><p>フォーマットチェックに失敗しました。下記のエラー内容を確認してください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12024</p></td>
+<td><p>テストリクエストの送信が完了しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12025</p></td>
+<td><p>xxxには、半角数字を入力してください。条件名: xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12026</p></td>
+<td><p>時刻条件には、時刻(HH:mm)を入力してください。条件名: xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12027</p></td>
+<td><p>xxxには、[\&quot;hoge\&quot;]のような形式で入力してください。条件名: xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12028</p></td>
+<td><p>xxxに使用できない文字が使われています。 cell=xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12029</p></td>
+<td><p>xxxに使用できない文字が使われています。条件名: xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12030</p></td>
+<td><p>必須項目が入力されていません。 条件名: xxx</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA12031</p></td>
+<td><p>xxxの権限がありません。ディシジョンテーブル画面から該当ルールの権限をご確認ください。rule_type_name=xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA12032</p></td>
+<td><p>ルールのマッチングは正常に行われましたが、ドライバー情報の取得に失敗しました。ドライバーのインストール状態をご確認のうえ、再度テストリクエストを試みてください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA32010</p></td>
+<td><p>*ユーザが取得できません</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">表 5.1-2 メッセージ一覧(ファイル)</span><a class="headerlink" href="#id2" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>メッセージID</p></th>
+<th class="head"><p>メッセージ</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MOSJA03102</p></td>
+<td><p>kjar構築用ファイルが存在しません</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03104</p></td>
+<td><p>kjar構築用ファイルなし時のデータ登録に失敗しました</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03106</p></td>
+<td><p>ルールファイルのアップロードに失敗しました。ディシジョンテーブル画面にて登録されているかご確認のうえ、再度ルールファイルのアップロードをしてください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03121</p></td>
+<td><p>フォーマットエラーです。エラー内容を確認し、修正したものを再度アップロードしてください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03201</p></td>
+<td><p>既にプロダクション環境へ適用済みです</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03206</p></td>
+<td><p>要求タイプが不明です。 reqtypeid =xxx</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03208</p></td>
+<td><p>Decision Managerコンテナの作成に失敗しました。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03209</p></td>
+<td><p>Decision Managerの接続に失敗しました。 （コンテナ作成）</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03210</p></td>
+<td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ作成）</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03215</p></td>
+<td><p>Decision Managerコンテナの削除に失敗しました。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03216</p></td>
+<td><p>Decision Managerの接続に失敗しました。 （コンテナ削除）</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03217</p></td>
+<td><p>Decision Managerで予期しないエラーが発生しました。 （コンテナ削除）</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03218</p></td>
+<td><p>指定されたルール管理IDが存在しません。 manage_id =xxx ディシジョンテーブル画面やルール画面に削除対象のルール情報が表示されていることをご確認ください。表示されていない場合は削除済です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03219</p></td>
+<td><p>適用プロセスでエラーが発生しました。再度ルールファイルのアップロードをしてください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03404</p></td>
+<td><p>ビルド処理開始時データ更新に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOSJA03405</p></td>
+<td><p>ビルド後データ更新に失敗しました。しばらく経ってからもう一度お試しください。</p></td>
+</tr>
+<tr class="row-even"><td><p>MOSJA03406</p></td>
+<td><p>アップロードされたファイルでkjarを構築できませんでした。しばらく経ってからもう一度お試しください。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="04_bulk_request.html" title="前の章へ"><span>前のトピックへ</span>4 OASE 一括テスト用Excelファイル</a></li>
+    <li class="next"><a href="../action_history/index.html" title="次の章へ"><span>次のトピックへ</span>利用手順マニュアル -アクション履歴編-</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

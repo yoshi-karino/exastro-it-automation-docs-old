@@ -1,0 +1,1307 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>2 OASE ルール画面のメニュー 、画面構成 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="3 OASE ステージングとプロダクションについて" href="03_request_type.html" />
+    <link rel="prev" title="1 OASE ルール画面の概要" href="01_summary.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="01_summary.html" title="1 OASE ルール画面の概要">前へ</a></li>
+        <li class="next"><a href="03_request_type.html" title="3 OASE ステージングとプロダクションについて">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings/index.html">環境構築マニュアル -基本編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">利用手順マニュアル -ルール画面編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_summary.html">1 OASE ルール画面の概要</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2 OASE ルール画面のメニュー 、画面構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.1 基本画面構成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.2 ルール画面の操作方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_request_type.html">3 OASE ステージングとプロダクションについて</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_bulk_request.html">4 OASE 一括テスト用Excelファイル</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_messages.html">5 OASE ルール画面で表示されるメッセージ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">利用手順マニュアル -ルール画面編-</a></li>
+    
+    <li>2 OASE ルール画面のメニュー 、画面構成</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="oase">
+<h1>2 OASE ルール画面のメニュー 、画面構成<a class="headerlink" href="#oase" title="Permalink to this heading">¶</a></h1>
+<p>本章では、OASE ルール画面の画面構成と、各構成要素について説明します。</p>
+<section id="id1">
+<h2>2.1 基本画面構成<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>ルール画面の画面構成は次のとおりです。
+4種類の表示方式から選択可能ですが、いずれも構成要素やその内容に変わりはありません。</p>
+<figure class="align-center" id="id43">
+<a class="reference internal image-reference" href="../_images/rule_01_01.png"><img alt="../_images/rule_01_01.png" src="../_images/rule_01_01.png" style="width: 1716.0px; height: 1236.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-1 画面構成(横に分割)</span><a class="headerlink" href="#id43" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id44">
+<a class="reference internal image-reference" href="../_images/rule_01_02.png"><img alt="../_images/rule_01_02.png" src="../_images/rule_01_02.png" style="width: 1714.0px; height: 1236.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-2 画面構成(縦に分割)</span><a class="headerlink" href="#id44" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id45">
+<a class="reference internal image-reference" href="../_images/rule_01_03.png"><img alt="../_images/rule_01_03.png" src="../_images/rule_01_03.png" style="width: 1716.0px; height: 1236.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-3 画面構成(ステージング適用ルール)</span><a class="headerlink" href="#id45" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id46">
+<a class="reference internal image-reference" href="../_images/rule_01_04.png"><img alt="../_images/rule_01_04.png" src="../_images/rule_01_04.png" style="width: 1716.0px; height: 1232.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-4 画面構成(プロダクション適用ルール)</span><a class="headerlink" href="#id46" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>ルール画面の各構成要素と、その機能は次の表のとおりです。</p>
+<table class="colwidths-given docutils align-default" id="id47">
+<caption><span class="caption-text">表 2.1-1 機能説明</span><a class="headerlink" href="#id47" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業フレーム名(ステージング)</p></td>
+<td><p>現在表示しているステージング環境の作業フレームの名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>作業フレーム名(プロダクション)</p></td>
+<td><p>現在表示しているプロダクション環境の作業フレームの名称です。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>一覧(ステージング)</p></td>
+<td><p>ステージング環境に適用されているルール情報が表示されます。ディシジョンテーブル画面にて、ユーザの所属グループに対して参照のみ／更新可能いずれかの権限が設定されたディシジョンテーブル名のみ表示対象となります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>一覧(プロダクション)</p></td>
+<td><p>プロダクション環境に適用されているルール情報が表示されます。ディシジョンテーブル画面にて、ユーザの所属グループに対して参照のみ／更新可能いずれかの権限が設定されたディシジョンテーブル名のみ表示対象となります。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>メニュー(ステージング)</p></td>
+<td><p>ステージング環境に対して操作を行うボタン群です。「テストリクエスト」「ファイルを選択」「アップロード」「過去を含め表示」があり、詳細は後述の操作方法 <a class="reference internal" href="#label-stg-button"><span class="std std-ref">(1)ルール画面(ステージング)</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>メニュー(プロダクション)</p></td>
+<td><p>プロダクション環境に対して操作を行うボタンです。「過去を含め表示」があり、詳細は後述の操作方法 <a class="reference internal" href="#label-prd-button"><span class="std std-ref">(2)ルール画面(プロダクション)</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>表示方式ボタン群</p></td>
+<td><p>作業フレームの表示方式を選択するボタン群です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>自動更新制御ボタン</p></td>
+<td><p>ステージング、プロダクションの一覧の自動更新をする／しないを制御するボタンです。更新間隔をバーの伸長により表現します。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">ルールが1件も適用されていない場合は以下のように表示されます。</div>
+</div>
+<figure class="align-center" id="id48">
+<a class="reference internal image-reference" href="../_images/rule_00_01.png"><img alt="../_images/rule_00_01.png" src="../_images/rule_00_01.png" style="width: 1280.0px; height: 888.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-5 画面構成(横に分割)</span><a class="headerlink" href="#id48" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id49">
+<a class="reference internal image-reference" href="../_images/rule_00_02.png"><img alt="../_images/rule_00_02.png" src="../_images/rule_00_02.png" style="width: 1280.0px; height: 888.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-6 画面構成(縦に分割)</span><a class="headerlink" href="#id49" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id50">
+<a class="reference internal image-reference" href="../_images/rule_00_03.png"><img alt="../_images/rule_00_03.png" src="../_images/rule_00_03.png" style="width: 1280.0px; height: 887.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-7 画面構成(ステージング適用ルール)</span><a class="headerlink" href="#id50" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id51">
+<a class="reference internal image-reference" href="../_images/rule_00_04.png"><img alt="../_images/rule_00_04.png" src="../_images/rule_00_04.png" style="width: 1280.0px; height: 889.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-1-8 画面構成(プロダクション適用ルール)</span><a class="headerlink" href="#id51" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>テストリクエスト画面の種別タブの画面構成は次のとおりです。</p>
+<figure class="align-center" id="id52">
+<a class="reference internal image-reference" href="../_images/rule_02_01.png"><img alt="../_images/rule_02_01.png" src="../_images/rule_02_01.png" style="width: 1132.0px; height: 841.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-2-1 画面構成(種別タブ)</span><a class="headerlink" href="#id52" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>テストリクエスト画面の種別タブの各構成要素と、その機能は次の表のとおりです。</p>
+<table class="colwidths-given docutils align-default" id="id53">
+<caption><span class="caption-text">表 2.1-2-1 機能説明</span><a class="headerlink" href="#id53" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>タブ</p></td>
+<td><p>テストリクエスト画面を構成する「ディシジョンテーブル」「設定」「ログ」の3つのタブがあり、「設定」「ログ」タブへ遷移できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>ディシジョンテーブル名選択</p></td>
+<td><p>テストリクエストの実施対象となるディシジョンテーブル名をプルダウンメニューから選択します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>選択ルール情報</p></td>
+<td><p>上記ディシジョンテーブル名選択にて選択されたディシジョンテーブル名の情報が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>テストリクエスト設定へボタン</p></td>
+<td><p>「設定」タブへ遷移します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>テストリクエスト画面を閉じます。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>テストリクエスト画面の設定タブの画面構成は次のとおりです。</p>
+<figure class="align-center" id="id54">
+<a class="reference internal image-reference" href="../_images/rule_02_02_01.png"><img alt="../_images/rule_02_02_01.png" src="../_images/rule_02_02_01.png" style="width: 1399.0px; height: 1038.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-2-2-1 画面構成(設定タブ単発テスト)</span><a class="headerlink" href="#id54" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id55">
+<a class="reference internal image-reference" href="../_images/rule_02_02_02.png"><img alt="../_images/rule_02_02_02.png" src="../_images/rule_02_02_02.png" style="width: 1398.0px; height: 1042.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-2-2-2 画面構成(設定タブ一括テスト)</span><a class="headerlink" href="#id55" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<p>テストリクエスト画面の設定タブの各構成要素と、その機能は次の表のとおりです。</p>
+<table class="colwidths-given docutils align-default" id="id56">
+<caption><span class="caption-text">表 2.1-2-2 機能説明</span><a class="headerlink" href="#id56" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>タブ</p></td>
+<td><p>テストリクエスト画面を構成する「ディシジョンテーブル」「設定」「ログ」の3つのタブがあり、「ディシジョンテーブル」「ログ」タブへ遷移できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>テスト種別選択</p></td>
+<td><p>テストリクエストの設定対象となるテスト種別をタブ形式で選択します。「単発テスト」「一括テスト」のいずれか一方を選択します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>テストリクエスト設定項目</p></td>
+<td><p>「単発テスト」でのみ入力を行う項目です。1行目の「イベント発生日時」は全てのディシジョンテーブル名で表示される項目です。2行目以降は選択されたディシジョンテーブル名に依存する情報となり、ディシジョンテーブル画面にて指定した条件名が列挙されます。同一の条件名が複数ある場合、それらは同一の値でなければならないため、入力項目は一項目に集約されて表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>クリアボタン(単発テスト)</p></td>
+<td><p>上記テストリクエスト設定項目に対して行った入力をクリアします。ただし、1行目の「イベント発生日時」は除きます。また、「一括テスト」タブの内容はクリアされません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>一括テスト用Excel</p></td>
+<td><p>一括テストリクエストに使用するExcelファイルをダウンロードできます。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ファイル選択</p></td>
+<td><p>上記一括テスト用Excelのファイルを選択します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>クリアボタン(一括テスト)</p></td>
+<td><p>上記ファイル選択項目を未選択状態へ戻します。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>ディシジョンテーブル名選択ボタン</p></td>
+<td><p>「ディシジョンテーブル」タブへ遷移します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>実行ボタン</p></td>
+<td><p>「ログ」タブへ遷移し、同時に選択中のテスト種別のテストリクエストを実行します。</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>テストリクエスト画面を閉じます。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>テストリクエスト画面のログタブの画面構成は次のとおりです。</p>
+<figure class="align-center" id="id57">
+<a class="reference internal image-reference" href="../_images/rule_02_03.png"><img alt="../_images/rule_02_03.png" src="../_images/rule_02_03.png" style="width: 1220.0px; height: 907.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.1-2-3 画面構成(ログタブ)</span><a class="headerlink" href="#id57" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id58">
+<caption><span class="caption-text">表 2.1-2-3 機能説明</span><a class="headerlink" href="#id58" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>作業画面名</p></td>
+<td><p>現在表示している作業画面の名称です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>タブ</p></td>
+<td><p>テストリクエスト画面を構成する「ディシジョンテーブル」「設定」「ログ」の3つのタブがあり、「ディシジョンテーブル」「設定」タブへ遷移できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>ログテキスト</p></td>
+<td><p>実行したリクエスト情報と実行結果が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>ログクリアボタン</p></td>
+<td><p>上記ログテキストの内容をクリアします。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>ログダウンロード</p></td>
+<td><p>上記ログテキストの内容をファイル出力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>再実行ボタン</p></td>
+<td><p>「設定」タブへ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>テストリクエスト画面を閉じます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>閉じるボタン</p></td>
+<td><p>テストリクエスト画面を閉じます。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id2">
+<h2>2.2 ルール画面の操作方法<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>構成要素に対する操作方法を説明します。</p>
+<section id="label-stg-button">
+<span id="id3"></span><h3>(1)ルール画面(ステージング)<a class="headerlink" href="#label-stg-button" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ルール画面は、登録されているルールをステージング環境とプロダクション環境の2つのフレームに分けて表示します。</div>
+<div class="line">ここでは、ステージング環境について説明します。</div>
+</div>
+<section id="id4">
+<h4>一覧<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<figure class="align-center" id="id59">
+<a class="reference internal image-reference" href="../_images/rule_03_01.png"><img alt="../_images/rule_03_01.png" src="../_images/rule_03_01.png" style="width: 2005.0px; height: 416.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-1 一覧に表示される項目</span><a class="headerlink" href="#id59" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id60">
+<caption><span class="caption-text">表 2.2-1-1 機能説明</span><a class="headerlink" href="#id60" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ディシジョンテーブル名</p></td>
+<td><p>ディシジョンテーブル名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ルールファイル</p></td>
+<td><p>アップロードしたディシジョンテーブルファイル名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>運用ステータス</p></td>
+<td><p>ルールファイルに対する運用上の状態が表示されます。詳細は後述の <a class="reference internal" href="#label-stg-ope-sts"><span class="std std-ref">運用ステータス</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>作業ステータス</p></td>
+<td><p>ルールファイルに対するOASEシステムの処理上の状態が表示されます。詳細は後述の <a class="reference internal" href="#label-stg-sys-sts"><span class="std std-ref">作業ステータス</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>最終更新者</p></td>
+<td><p>ルールファイルを更新したユーザの名前が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>最終更新日時</p></td>
+<td><p>ルールファイルを更新した日時が表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h4>ファイルを選択<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ルールをステージング環境に適用するには、まずアップロードするディシジョンテーブルファイルを選択する必要があります。</p></li>
+<li><p>ディシジョンテーブルファイルはディシジョンテーブル画面からダウンロード可能です。</p></li>
+<li><p>ステージング環境へのアクセス権限が「更新可能」の場合のみ、ファイル選択ボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id61">
+<a class="reference internal image-reference" href="../_images/rule_03_02.png"><img alt="../_images/rule_03_02.png" src="../_images/rule_03_02.png" style="width: 2029.0px; height: 1168.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-2 ファイルを選択</span><a class="headerlink" href="#id61" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id6">
+<h4>アップロード<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ファイルを選択後にアップロードボタンを押下すると「ファイルをアップロードします。よろしいですか？」と確認メッセージが表示されます。</p></li>
+<li><p>「OK」を選択すると、ディシジョンテーブルファイルのアップロードが開始されます。</p></li>
+<li><p>ステージング環境へのアクセス権限が「更新可能」の場合のみ、アップロードボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id62">
+<a class="reference internal image-reference" href="../_images/rule_03_03.png"><img alt="../_images/rule_03_03.png" src="../_images/rule_03_03.png" style="width: 2005.0px; height: 414.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-3 アップロード</span><a class="headerlink" href="#id62" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id7">
+<h4>テストリクエスト<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>テストリクエストボタンを押下すると、テストリクエスト画面へ遷移します。</p></li>
+<li><p>ステージング環境へのアクセス権限が「参照のみ」「更新可能」の場合のみ、テストリクエストボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id63">
+<a class="reference internal image-reference" href="../_images/rule_03_04.png"><img alt="../_images/rule_03_04.png" src="../_images/rule_03_04.png" style="width: 1021.0px; height: 866.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-4 テストリクエスト</span><a class="headerlink" href="#id63" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id8">
+<h4>過去を含め表示<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>通常はOFFとなっており、押下することでON/OFFが切り替わります。</p></li>
+<li><p>OFFのとき、一覧に表示されるルール情報は、一つのディシジョンテーブル名につき1～2件となります。「最新の情報である」もしくは「現在ステージング環境に適用されている」のいずれかに該当するルール情報が表示されます。「現在ステージング環境に適用されている」状態につきましては、後述の <a class="reference internal" href="#label-stg-ope-sts"><span class="std std-ref">運用ステータス</span></a> をご参照ください。</p></li>
+<li><p>ONのとき、最新のものではない過去のルール情報も表示対象となります。</p></li>
+</ul>
+<figure class="align-center" id="id64">
+<a class="reference internal image-reference" href="../_images/rule_03_05.png"><img alt="../_images/rule_03_05.png" src="../_images/rule_03_05.png" style="width: 2031.0px; height: 496.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-5 過去を含め表示</span><a class="headerlink" href="#id64" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id9">
+<h4>運用ステータスの変更<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ルールファイルの運用ステータスが「検証未実施」「検証実施中」「検証NG」「検証完了」のいずれかに該当、かつ、プロダクション環境へ適用していない場合、運用者の任意でステータスを変更できます。</p></li>
+<li><p>ステージング環境へのアクセス権限が「更新可能」の場合のみ、運用ステータスの変更は押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id65">
+<a class="reference internal image-reference" href="../_images/rule_03_06.png"><img alt="../_images/rule_03_06.png" src="../_images/rule_03_06.png" style="width: 2030.0px; height: 362.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-6 運用ステータスの変更</span><a class="headerlink" href="#id65" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id10">
+<h4>ダウンロード<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ダウンロードボタンを押下すると、ディシジョンテーブルファイルをダウンロードすることができます。</p></li>
+<li><p>作業ステータスが異常終了の場合にダウンロードボタンを押下すると、ディシジョンテーブルファイルと異常終了時のログテキストファイルの2ファイルをzip形式でダウンロードすることができます。</p></li>
+<li><p>ステージング環境へのアクセス権限が「参照のみ」「更新可能」の場合のみ、ダウンロードボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id66">
+<a class="reference internal image-reference" href="../_images/rule_03_07.png"><img alt="../_images/rule_03_07.png" src="../_images/rule_03_07.png" style="width: 2029.0px; height: 365.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-7 ダウンロード</span><a class="headerlink" href="#id66" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id11">
+<h4>適用<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ルールファイルの運用ステータスが「検証完了」の場合、ルールファイルをプロダクション環境へ適用させることができます。</p></li>
+<li><p>プロダクション環境へのアクセス権限が「更新可能」の場合のみ、適用ボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id67">
+<a class="reference internal image-reference" href="../_images/rule_03_08.png"><img alt="../_images/rule_03_08.png" src="../_images/rule_03_08.png" style="width: 2029.0px; height: 362.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-1-8 プロダクション環境への適用</span><a class="headerlink" href="#id67" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="label-stg-ope-sts">
+<span id="id12"></span><h4>運用ステータス<a class="headerlink" href="#label-stg-ope-sts" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default" id="id68">
+<caption><span class="caption-text">表 2.2-1-8-1 運用ステータス説明</span><a class="headerlink" href="#id68" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>ステータス名</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>未適用</p></td>
+<td><p>アップロードを実施直後のルールファイルがこの状態になります。アップロード処理が正常に完了し、ステージング環境に適用されることで「検証未実施」状態へ遷移します。また、アップロード処理が異常終了した場合、この状態のままとなります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>検証未実施</p></td>
+<td><p>ステージング環境に適用されているルールに対して、テストリクエストによる検証を実行していない状態です。テストリクエストを行う、もしくは、運用者の任意で「検証実施中」「検証NG」「検証完了」へ遷移可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>検証実施中</p></td>
+<td><p>ステージング環境に適用されているルールに対して、テストリクエストによる検証が完了していない状態です。テストリクエストを行う、もしくは、運用者の任意で「検証NG」「検証完了」へ遷移可能です。また、運用者の任意で「検証未実施」へ戻すこともできます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>検証NG</p></td>
+<td><p>ステージング環境に適用されているルールに対して、テストリクエストによる検証が異常終了した状態です。運用者の任意で「検証未実施」「検証実施中」「検証完了」へ遷移可能です。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>検証完了</p></td>
+<td><p>ステージング環境に適用されているルールに対して、テストリクエストによる検証が正常終了した状態です。この状態のとき、プロダクション環境への「適用」ボタンを押下することができます。また、プロダクション適用前であれば、運用者の任意で「検証未実施」「検証実施中」「検証NG」へ遷移可能です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>検証完了(プロダクション適用済み)</p></td>
+<td><p>ルールがステージング環境に適用されている、かつ、プロダクション環境にも適用されている状態です。この状態のとき、運用者の任意で状態遷移はできません。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>適用終了</p></td>
+<td><p>ステージング環境に適用されている既存のルールと同一ディシジョンテーブル名のルールファイルを新規に適用した場合、既存のルールファイルはこの状態へ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="label-stg-sys-sts">
+<span id="id13"></span><h4>作業ステータス<a class="headerlink" href="#label-stg-sys-sts" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default" id="id69">
+<caption><span class="caption-text">表 2.2-1-8-2 作業ステータス説明</span><a class="headerlink" href="#id69" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>ステータス名</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>アップロード中</p></td>
+<td><p>アップロードを実施直後のルールファイルがこの状態になります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>アップロード異常終了</p></td>
+<td><p>アップロード処理中に異常が発生した場合、この状態へ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>アップロード完了</p></td>
+<td><p>アップロード処理が正常終了した場合、この状態へ遷移します。その後、自動的にビルド処理が実行されると「ビルド中」状態へ遷移します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>ビルド中</p></td>
+<td><p>アップロードされたルールファイルを使用し、Red Hat Decision Manager プロジェクトのビルドを実行している状態です。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>ビルド異常終了</p></td>
+<td><p>ビルド処理中に異常が発生した場合、この状態へ遷移します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ビルド完了</p></td>
+<td><p>ビルド処理が正常終了した場合、この状態へ遷移します。その後、自動的にステージング適用処理が実行されると「ステージング適用中」状態へ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ステージング適用中</p></td>
+<td><p>ビルドされたプロジェクトを使用し、Decision Server へのデプロイを実行している状態です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>ステージング適用異常終了</p></td>
+<td><p>デプロイ処理中に異常が発生した場合、この状態へ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>ステージング適用完了</p></td>
+<td><p>デプロイ処理が正常終了した場合、この状態へ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>自動更新制御ボタンがONであり、アップロード中、ビルド中、ステージング適用中のいずれかのステータスが一覧の中に一つでもある場合、5秒間隔で自動的に一覧の更新が行われます。</p>
+</div>
+</section>
+</section>
+<section id="label-prd-button">
+<span id="id14"></span><h3>(2)ルール画面(プロダクション)<a class="headerlink" href="#label-prd-button" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ルール画面は、登録されているルールをステージング環境とプロダクション環境の2つのフレームに分けて表示します。</div>
+<div class="line">ここでは、プロダクション環境について説明します。</div>
+</div>
+<section id="id15">
+<h4>一覧<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<figure class="align-center" id="id70">
+<a class="reference internal image-reference" href="../_images/rule_03_09.png"><img alt="../_images/rule_03_09.png" src="../_images/rule_03_09.png" style="width: 2054.0px; height: 440.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-1 一覧に表示される項目</span><a class="headerlink" href="#id70" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id71">
+<caption><span class="caption-text">表 2.2-2-1 機能説明</span><a class="headerlink" href="#id71" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ディシジョンテーブル名</p></td>
+<td><p>ディシジョンテーブル名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ルールファイル</p></td>
+<td><p>適用されたディシジョンテーブルファイル名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>運用ステータス</p></td>
+<td><p>ルールファイルに対する運用上の状態が表示されます。詳細は後述の <a class="reference internal" href="#label-prd-ope-sts"><span class="std std-ref">運用ステータス</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>作業ステータス</p></td>
+<td><p>ルールファイルに対するOASEシステムの処理上の状態が表示されます。詳細は後述の <a class="reference internal" href="#label-prd-sys-sts"><span class="std std-ref">作業ステータス</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>最終更新者</p></td>
+<td><p>ルールファイルを更新したユーザの名前が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>最終更新日時</p></td>
+<td><p>ルールファイルを更新した日時が表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id16">
+<h4>過去を含め表示<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>通常はOFFとなっており、押下することでON/OFFが切り替わります。</p></li>
+<li><p>OFFのとき、一覧に表示されるルール情報は、一つのディシジョンテーブル名につき1件となります。</p></li>
+<li><p>ONのとき、過去に適用されていたルール情報も表示対象となります。</p></li>
+</ul>
+<figure class="align-center" id="id72">
+<a class="reference internal image-reference" href="../_images/rule_03_10.png"><img alt="../_images/rule_03_10.png" src="../_images/rule_03_10.png" style="width: 2054.0px; height: 362.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-2 過去を含め表示</span><a class="headerlink" href="#id72" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id17">
+<h4>ダウンロード<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ダウンロードボタンを押下すると、ディシジョンテーブルファイルをダウンロードすることができます。</p></li>
+<li><p>作業ステータスが異常終了の場合にダウンロードボタンを押下すると、ディシジョンテーブルファイルと異常終了時のログテキストファイルの2ファイルをzip形式でダウンロードすることができます。</p></li>
+<li><p>プロダクション環境へのアクセス権限が「参照のみ」「更新可能」の場合のみ、ダウンロードボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id73">
+<a class="reference internal image-reference" href="../_images/rule_03_11.png"><img alt="../_images/rule_03_11.png" src="../_images/rule_03_11.png" style="width: 2054.0px; height: 365.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-3 ダウンロード</span><a class="headerlink" href="#id73" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id18">
+<h4>切り戻し<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>過去にプロダクション環境へ適用されていたルールファイルを再度プロダクション環境へ適用させることができます。</p></li>
+<li><p>プロダクション環境へのアクセス権限が「更新可能」の場合のみ、切り戻しボタンは押下することができます。</p></li>
+</ul>
+<figure class="align-center" id="id74">
+<a class="reference internal image-reference" href="../_images/rule_03_12.png"><img alt="../_images/rule_03_12.png" src="../_images/rule_03_12.png" style="width: 2054.0px; height: 371.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-2-4 プロダクション環境への再適用</span><a class="headerlink" href="#id74" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="label-prd-ope-sts">
+<span id="id19"></span><h4>運用ステータス<a class="headerlink" href="#label-prd-ope-sts" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default" id="id75">
+<caption><span class="caption-text">表 2.2-2-4-1 運用ステータス説明</span><a class="headerlink" href="#id75" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>ステータス名</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>プロダクション未適用</p></td>
+<td><p>ステージング環境に適用されているルールをプロダクション環境へ適用実施直後にこの状態になります。適用処理が異常終了した場合、この状態のままとなります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>プロダクション適用</p></td>
+<td><p>プロダクション適用処理が正常終了した場合、この状態へ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>プロダクション適用終了</p></td>
+<td><p>プロダクション環境に適用されている既存のルールと同一ディシジョンテーブル名のルールファイルを新規に適用した場合、既存のルールファイルはこの状態へ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="label-prd-sys-sts">
+<span id="id20"></span><h4>作業ステータス<a class="headerlink" href="#label-prd-sys-sts" title="Permalink to this heading">¶</a></h4>
+<table class="colwidths-given docutils align-default" id="id76">
+<caption><span class="caption-text">表 2.2-2-4-2 作業ステータス説明</span><a class="headerlink" href="#id76" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>ステータス名</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>プロダクション適用中</p></td>
+<td><p>ステージング環境に適用されているルールをプロダクション環境へ適用実施直後、もしくは、切り戻しによる再適用の実行直後の状態です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>プロダクション適用異常終了</p></td>
+<td><p>適用中に異常が発生した場合、この状態へ遷移します。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>プロダクション適用完了</p></td>
+<td><p>適用処理が正常終了した場合、この状態へ遷移します。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>自動更新制御ボタンがONであり、プロダクション適用中のステータスが一覧の中に一つでもある場合、5秒間隔で自動的に一覧の更新が行われます。</p>
+</div>
+</section>
+</section>
+<section id="id21">
+<h3>(3)テストリクエスト(ディシジョンテーブルタブ)<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">テストリクエスト画面では、ステージング環境に適用されているルールに対してリクエストを送信し、テストを行うことができます。</div>
+<div class="line">ここではテストリクエスト画面の種別タブについて説明します。</div>
+</div>
+<section id="id22">
+<h4>ディシジョンテーブル名選択<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>テストを行うためには、まずリクエスト送信対象となるディシジョンテーブル名をプルダウンから選択する必要があります。</p></li>
+<li><p>ステージング環境へのアクセス権限が「参照のみ」「更新可能」のディシジョンテーブル名が選択候補として表示されます。</p></li>
+</ul>
+<figure class="align-center" id="id77">
+<a class="reference internal image-reference" href="../_images/rule_03_13_01.png"><img alt="../_images/rule_03_13_01.png" src="../_images/rule_03_13_01.png" style="width: 705.0px; height: 844.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-1-1 ディシジョンテーブル名選択前</span><a class="headerlink" href="#id77" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id78">
+<a class="reference internal image-reference" href="../_images/rule_03_13_02.png"><img alt="../_images/rule_03_13_02.png" src="../_images/rule_03_13_02.png" style="width: 814.0px; height: 973.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-1-2 ディシジョンテーブル名選択後</span><a class="headerlink" href="#id78" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id23">
+<h4>テストリクエスト設定へ<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>設定タブへ遷移します。</p></li>
+</ul>
+<figure class="align-center" id="id79">
+<a class="reference internal image-reference" href="../_images/rule_03_14.png"><img alt="../_images/rule_03_14.png" src="../_images/rule_03_14.png" style="width: 671.0px; height: 803.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-2 「テストリクエスト設定へ」ボタン</span><a class="headerlink" href="#id79" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id24">
+<h4>設定タブ<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>設定タブへ遷移します。</p></li>
+<li><p>前述の「テストリクエスト設定へ」ボタンと同様です。</p></li>
+</ul>
+<figure class="align-center" id="id80">
+<a class="reference internal image-reference" href="../_images/rule_03_15.png"><img alt="../_images/rule_03_15.png" src="../_images/rule_03_15.png" style="width: 812.0px; height: 971.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-3 設定タブ</span><a class="headerlink" href="#id80" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id25">
+<h4>ログタブ<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ログタブへ遷移します。</p></li>
+</ul>
+<figure class="align-center" id="id81">
+<a class="reference internal image-reference" href="../_images/rule_03_16.png"><img alt="../_images/rule_03_16.png" src="../_images/rule_03_16.png" style="width: 775.0px; height: 926.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-3 ログタブ</span><a class="headerlink" href="#id81" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id26">
+<h4>閉じる<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブル名選択前の場合、押下と同時にテストリクエスト画面を閉じます。</p></li>
+<li><p>ディシジョンテーブル名選択後の場合、押下すると「変更がありますが、破棄して閉じますか？」と確認メッセージが表示されます。</p></li>
+<li><p>「OK」を選択すると、変更した値が破棄された状態でルール画面に戻ります。</p></li>
+</ul>
+<figure class="align-center" id="id82">
+<a class="reference internal image-reference" href="../_images/rule_03_17.png"><img alt="../_images/rule_03_17.png" src="../_images/rule_03_17.png" style="width: 721.0px; height: 863.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-3-4 閉じる</span><a class="headerlink" href="#id82" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id27">
+<h3>(4)テストリクエスト(設定タブ)<a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">テストリクエスト画面では、ステージング環境に適用されているルールに対してリクエストを送信し、テストを行うことができます。</div>
+<div class="line">ここではテストリクエスト画面の設定タブについて説明します。</div>
+</div>
+<section id="id28">
+<h4>単発テスト<a class="headerlink" href="#id28" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>リクエストを一つだけ送信して行うテストです。</p></li>
+</ul>
+<figure class="align-center" id="id83">
+<a class="reference internal image-reference" href="../_images/rule_03_18.png"><img alt="../_images/rule_03_18.png" src="../_images/rule_03_18.png" style="width: 693.0px; height: 819.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-1 単発テスト</span><a class="headerlink" href="#id83" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id84">
+<caption><span class="caption-text">表 2.2-4-1 機能説明</span><a class="headerlink" href="#id84" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>単発テストタブ</p></td>
+<td><p>単発テストを選択している状態です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>リクエスト項目(共通)</p></td>
+<td><p>「イベント発生日時」はディシジョンテーブルを問わずリクエストに必要となる項目です。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、この項目は表示されません。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>リクエスト項目(ディシジョンテーブル)</p></td>
+<td><p>ディシジョンテーブルタブにて選択したディシジョンテーブル名に依存して、項目の数や内容は変化します。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、この項目は表示されません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>クリアボタン</p></td>
+<td><p>上記「リクエスト項目(ディシジョンテーブル)」に入力した値をクリアします。種別タブにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>実行ボタン</p></td>
+<td><p>入力したリクエスト項目(共通／)の値から単発のリクエストを送信し、ログタブへ遷移します。ディシジョンテーブルにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="label-get-button">
+<span id="id29"></span><h4>一括テスト<a class="headerlink" href="#label-get-button" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>一括テスト用Excelファイルに記述されたリクエストを全て送信して行うテストです。</p></li>
+<li><p>一括テスト用Excelファイルにつきましては、 <a class="reference internal" href="04_bulk_request.html"><span class="doc">4 OASE 一括テスト用Excelファイル</span></a> をご参照ください。</p></li>
+</ul>
+<figure class="align-center" id="id85">
+<a class="reference internal image-reference" href="../_images/rule_03_19.png"><img alt="../_images/rule_03_19.png" src="../_images/rule_03_19.png" style="width: 715.0px; height: 848.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-2 一括テスト</span><a class="headerlink" href="#id85" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id86">
+<caption><span class="caption-text">表 2.2-4-2 機能説明</span><a class="headerlink" href="#id86" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>一括テストタブ</p></td>
+<td><p>一括テストを選択している状態です。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>一括テスト用Excel</p></td>
+<td><p>ボタンを押下すると、ダウンロードすることができます。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>ファイル選択</p></td>
+<td><p>上記「一括テスト用Excel」からダウンロードしたファイルに、リクエスト項目を記述したものを選択してください。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>クリアボタン</p></td>
+<td><p>上記「ファイル選択」の選択状態をクリアします。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>実行ボタン</p></td>
+<td><p>選択した一括テスト用Excelファイルの内容を解析し、記述された全てのリクエストを送信し、ログタブへ遷移します。ディシジョンテーブルタブにてディシジョンテーブル名が選択されていない場合、このボタンは押下することができません。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id30">
+<h4>ディシジョンテーブル名選択<a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブルタブへ遷移します。</p></li>
+</ul>
+<figure class="align-center" id="id87">
+<a class="reference internal image-reference" href="../_images/rule_03_20.png"><img alt="../_images/rule_03_20.png" src="../_images/rule_03_20.png" style="width: 876.0px; height: 1051.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-3 ディシジョンテーブル名選択ボタン</span><a class="headerlink" href="#id87" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id31">
+<h4>ディシジョンテーブルタブ<a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブルタブへ遷移します。</p></li>
+<li><p>前述の「ディシジョンテーブル名選択」ボタンと同様です。</p></li>
+</ul>
+<figure class="align-center" id="id88">
+<a class="reference internal image-reference" href="../_images/rule_03_21.png"><img alt="../_images/rule_03_21.png" src="../_images/rule_03_21.png" style="width: 849.0px; height: 1020.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-4 設定タブ</span><a class="headerlink" href="#id88" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id32">
+<h4>ログタブ<a class="headerlink" href="#id32" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ログタブへ遷移します。</p></li>
+<li><p>単発テスト／一括テストの実行ボタンと異なり、リクエストの送信を行わず、ログタブへ遷移します。</p></li>
+</ul>
+<figure class="align-center" id="id89">
+<a class="reference internal image-reference" href="../_images/rule_03_22.png"><img alt="../_images/rule_03_22.png" src="../_images/rule_03_22.png" style="width: 863.0px; height: 1036.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-5 ログタブ</span><a class="headerlink" href="#id89" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id33">
+<h4>閉じる<a class="headerlink" href="#id33" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブル名選択前の場合、押下と同時にテストリクエスト画面を閉じます。</p></li>
+<li><p>ディシジョンテーブル名選択後の場合、押下すると「変更がありますが、破棄して閉じますか？」と確認メッセージが表示されます。</p></li>
+<li><p>「OK」を選択すると、変更した値が破棄された状態でルール画面に戻ります。</p></li>
+</ul>
+<figure class="align-center" id="id90">
+<a class="reference internal image-reference" href="../_images/rule_03_23.png"><img alt="../_images/rule_03_23.png" src="../_images/rule_03_23.png" style="width: 852.0px; height: 1024.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-4-6 閉じる</span><a class="headerlink" href="#id90" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id34">
+<h3>(5)テストリクエスト(ログタブ)<a class="headerlink" href="#id34" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">テストリクエスト画面では、ステージング環境に適用されているルールに対してリクエストを送信し、テストを行うことができます。</div>
+<div class="line">ここではテストリクエスト画面のログタブについて説明します。</div>
+</div>
+<section id="id35">
+<h4>リクエスト送信の確認<a class="headerlink" href="#id35" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>設定タブから実行ボタンからログタブに遷移した場合、「リクエストを送信します。よろしいですか？」と確認メッセージが表示されます。</p></li>
+<li><p>「OK」を選択すると、リクエストが送信され、テストが開始されます。</p></li>
+</ul>
+<figure class="align-center" id="id91">
+<a class="reference internal image-reference" href="../_images/rule_03_24.png"><img alt="../_images/rule_03_24.png" src="../_images/rule_03_24.png" style="width: 958.0px; height: 1153.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-1 実行ボタン経由でのログタブ遷移</span><a class="headerlink" href="#id91" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id36">
+<h4>実行ログ<a class="headerlink" href="#id36" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>テストが開始されると、その実行状況が「実行ログ」に出力されます。</p></li>
+<li><p>実行状況は定期的に取得され、随時ログの出力内容が更新されます。</p></li>
+<li><p>実行状況の取得は、テストが完了する、もしくは、テストリクエスト画面が閉じられるまで行われます。</p></li>
+</ul>
+<figure class="align-center" id="id92">
+<a class="reference internal image-reference" href="../_images/rule_03_25_01.png"><img alt="../_images/rule_03_25_01.png" src="../_images/rule_03_25_01.png" style="width: 797.0px; height: 889.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-2-1 実行ログ(単発テスト)</span><a class="headerlink" href="#id92" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id93">
+<caption><span class="caption-text">表 2.2-5-1-1 機能説明</span><a class="headerlink" href="#id93" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ステージング実行開始</p></td>
+<td><p>テストリクエストが実行された日時が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>リクエスト情報</p></td>
+<td><p>設定タブのリクエスト項目にて入力された情報が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>実行状態</p></td>
+<td><p>テストの実行状態が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>マッチング結果</p></td>
+<td><p>テストが完了した際、Red Hat Decision Managerから受信したルールのマッチング結果が表示されます。テストが完了していない、もしくは、ルールがマッチングしなかった場合は何も表示されません。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<figure class="align-center" id="id94">
+<a class="reference internal image-reference" href="../_images/rule_03_25_02.png"><img alt="../_images/rule_03_25_02.png" src="../_images/rule_03_25_02.png" style="width: 801.0px; height: 896.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-2-2 実行ログ(一括テスト)</span><a class="headerlink" href="#id94" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id95">
+<caption><span class="caption-text">表 2.2-5-1-2 機能説明</span><a class="headerlink" href="#id95" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 24%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ステージング実行開始</p></td>
+<td><p>テストリクエストが実行された日時が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ファイル名</p></td>
+<td><p>リクエストが記述された一括リクエストファイル名が表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>処理件数</p></td>
+<td><p>分母に送信されたリクエスト数、分子にテストが完了したリクエスト数が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>実行状態</p></td>
+<td><p>各リクエストごとに、ファイル内の記述行、および、テストの実行状態が表示されます。Red Hat Decision Managerからマッチング結果を受信した場合、その件数、および、アクションパラメーターが表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id37">
+<h4>ログクリア<a class="headerlink" href="#id37" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>実行ログに表示されている内容をクリアします。</p></li>
+<li><p>また、ダウンロードボタンを押下することができなくなります。</p></li>
+</ul>
+<figure class="align-center" id="id96">
+<a class="reference internal image-reference" href="../_images/rule_03_26.png"><img alt="../_images/rule_03_26.png" src="../_images/rule_03_26.png" style="width: 900.0px; height: 1080.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-3 ログクリア</span><a class="headerlink" href="#id96" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id38">
+<h4>ログダウンロード<a class="headerlink" href="#id38" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>実行ログに表示されている内容をテキストファイルに出力して、ダウンロードします。</p></li>
+</ul>
+<figure class="align-center" id="id97">
+<a class="reference internal image-reference" href="../_images/rule_03_27.png"><img alt="../_images/rule_03_27.png" src="../_images/rule_03_27.png" style="width: 799.0px; height: 891.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-4 ログダウンロード</span><a class="headerlink" href="#id97" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id39">
+<h4>再実行<a class="headerlink" href="#id39" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>設定タブへ遷移します。</p></li>
+<li><p>テストが実行中の場合、種別タブの実行ボタンが再度押下されるまで、テストの実行状況の取得は継続して行われます。</p></li>
+</ul>
+<figure class="align-center" id="id98">
+<a class="reference internal image-reference" href="../_images/rule_03_28.png"><img alt="../_images/rule_03_28.png" src="../_images/rule_03_28.png" style="width: 799.0px; height: 891.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-5 再実行</span><a class="headerlink" href="#id98" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id40">
+<h4>ディシジョンテーブルタブ<a class="headerlink" href="#id40" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブルタブへ遷移します。</p></li>
+<li><p>テストが実行中の場合、種別タブの実行ボタンが再度押下されるまで、テストの実行状況の取得は継続して行われます。</p></li>
+</ul>
+<figure class="align-center" id="id99">
+<a class="reference internal image-reference" href="../_images/rule_03_29.png"><img alt="../_images/rule_03_29.png" src="../_images/rule_03_29.png" style="width: 799.0px; height: 891.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-6 ディシジョンテーブルタブ</span><a class="headerlink" href="#id99" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id41">
+<h4>設定タブ<a class="headerlink" href="#id41" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>設定タブへ遷移します。</p></li>
+<li><p>前述の「再実行」ボタンと同様です。</p></li>
+</ul>
+<figure class="align-center" id="id100">
+<a class="reference internal image-reference" href="../_images/rule_03_30.png"><img alt="../_images/rule_03_30.png" src="../_images/rule_03_30.png" style="width: 799.0px; height: 891.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-7 設定タブ</span><a class="headerlink" href="#id100" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id42">
+<h4>閉じる<a class="headerlink" href="#id42" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>ディシジョンテーブル名選択前の場合、押下と同時にテストリクエスト画面を閉じます。</p></li>
+<li><p>ディシジョンテーブル名選択後の場合、押下すると「変更がありますが、破棄して閉じますか？」と確認メッセージが表示されます。</p></li>
+<li><p>テストリクエストの実行状態が完了前の場合、「OK」を選択すると、テストの実行状況の取得を中止してルール画面に戻ります。</p></li>
+<li><p>テストリクエストの実行状態が完了後の場合、「OK」を選択するとルール画面に戻り、「運用ステータスを検証完了にしてよろしいですか？」と確認メッセージが表示されます。「OK」を選択すると運用ステータスが「検証完了」へ、「キャンセル」を選択すると運用ステータスが「検証実施中」へ遷移します。</p></li>
+<li><p>ボタンとアイコンのいずれも同じ挙動をします。</p></li>
+</ul>
+<figure class="align-center" id="id101">
+<a class="reference internal image-reference" href="../_images/rule_03_31.png"><img alt="../_images/rule_03_31.png" src="../_images/rule_03_31.png" style="width: 816.0px; height: 891.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図 2.2-5-8 閉じる</span><a class="headerlink" href="#id101" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="01_summary.html" title="前の章へ"><span>前のトピックへ</span>1 OASE ルール画面の概要</a></li>
+    <li class="next"><a href="03_request_type.html" title="次の章へ"><span>次のトピックへ</span>3 OASE ステージングとプロダクションについて</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

@@ -1,0 +1,900 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>インストール手順 &#8212; OASE_docs 1.6.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/option.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="インストール手順(Docker版)" href="installation_docker.html" />
+    <link rel="prev" title="構築フロー" href="construction_flow.html" /> 
+  </head>
+<body id="page" class="ja">
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../index.html">OASE_docs</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>1.6.0</dd>
+      </dl>
+    </div>
+    
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="construction_flow.html" title="構築フロー">前へ</a></li>
+        <li class="next"><a href="installation_docker.html" title="インストール手順(Docker版)">次へ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../system_construction/index.html">システム構成ガイド</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">環境構築マニュアル -基本編-</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="construction_flow.html">構築フロー</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">インストール手順</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1. 事前準備</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">2. 汎用ツール追加</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">3. 必須ソフトウェアインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">4. 注意事項</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation_docker.html">インストール手順(Docker版)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="environmental_setting.html">環境設定</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../active_directory/index.html">環境構築マニュアル -ActiveDirectory編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../driver_install/index.html">環境構築マニュアル -ドライバインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adapter_install/index.html">環境構築マニュアル -アダプタインストール編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/index.html">利用手順マニュアル -共通編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../login/index.html">利用手順マニュアル -ログイン画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dashboard/index.html">利用手順マニュアル -Dashboard画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../decision_table/index.html">利用手順マニュアル -ディシジョンテーブル画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../token/index.html">利用手順マニュアル -トークン払い出し画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rule/index.html">利用手順マニュアル -ルール画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action_history/index.html">利用手順マニュアル -アクション履歴編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system_config/index.html">利用手順マニュアル -システム設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sso_info/index.html">利用手順マニュアル -SSO設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group/index.html">利用手順マニュアル -グループ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">利用手順マニュアル -ユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../monitoring_adapter/index.html">利用手順マニュアル -監視アダプタ編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../action/index.html">利用手順マニュアル -アクション設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../locked_user/index.html">利用手順マニュアル -アカウントロックユーザ画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blacklist/index.html">利用手順マニュアル -ブラックリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whitelist/index.html">利用手順マニュアル -ホワイトリスト画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../personal_config/index.html">利用手順マニュアル -個人設定画面編-</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">RestAPI機能 利用マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameter_sheet/index.html">利用手順マニュアル-【ITAドライバ】メッセージ抽出定義画面編-</a></li>
+</ul>
+
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">HOME</a></li>
+    <li><a href="index.html">環境構築マニュアル -基本編-</a></li>
+    
+    <li>インストール手順</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1>インストール手順<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<p>OASEのインストール手順を下記に示します。</p>
+<section id="id2">
+<h2>1. 事前準備<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="id3">
+<h3>1.1. タイムゾーンを設定する<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl status
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Time zone: Asia/Tokyo <span class="o">(</span>JST, +0900<span class="o">)</span>
+</pre></div>
+</div>
+<p>★Time zone: Asia/Tokyo 以外の場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># timedatectl set-timezone Asia/Tokyo
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>1.2. 自分自身のホスト名について名前解決できること<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># ping {自ホスト名}
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ping: <span class="o">{</span>自ホスト名<span class="o">}</span>: 名前またはサービスが不明です
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">★「名前またはサービスが不明です」となる場合</div>
+<div class="line"><br /></div>
+<div class="line">hostsで指定するなど、名前解決が可能な状態にすること</div>
+</div>
+</section>
+</section>
+<section id="id5">
+<h2>2. 汎用ツール追加<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>後続の手順で必要になるツールを先にインストールしておく</p>
+</div>
+<section id="wget">
+<h3>2.1. wgetインストール<a class="headerlink" href="#wget" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep wget
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget.x86_64    <span class="m">1</span>.14-18.el7_6.1    @updates
+</pre></div>
+</div>
+<p>★インストールされていない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y wget
+</pre></div>
+</div>
+</section>
+<section id="gcc">
+<h3>2.2. gccインストール<a class="headerlink" href="#gcc" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum list | grep gcc
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gcc.x86_64     <span class="m">4</span>.8.5-36.el7_6.2    @updates
+</pre></div>
+</div>
+<p>★インストールされていない場合</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># yum install -y gcc
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id6">
+<h2>3. 必須ソフトウェアインストール<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<section id="id7">
+<h3>3.1 環境構築ツール（オンライン版）の実行<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<section id="github">
+<h4>3.1.1. Githubからの資材ダウンロード<a class="headerlink" href="#github" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">以下のコマンドで資材をDLします。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># wget https://github.com/exastro-suite/oase/releases/download/vx.x.x/exastro-oase-x.x.x.tar.gz
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>バージョン（x.x.x）は適宜変更してください。</p>
+</div>
+</section>
+<section id="id8">
+<h4>3.1.2. 資材の展開<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">tar.gzファイルを解凍します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># tar zxf exastro-oase-x.x.x.tar.gz
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h4>3.1.3. ディレクトリ移動<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">環境構築を行うシェルのあるディレクトリに移動します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># cd oase/oase_install_package/install_scripts
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h4>3.1.4. アンサーファイルの編集<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">OASEのインストール設定を行うアンサーファイル（oase_answers.txt）を事前に作成してください。</div>
+<div class="line">アンサーファイルの各項目の内容は次の表のとおりです。</div>
+<div class="line">初期値が入っているものは、使用する環境によって適宜変更してください。</div>
+</div>
+<table class="colwidths-given docutils align-default" id="id15">
+<caption><span class="caption-text">表 アンサーファイル項目説明</span><a class="headerlink" href="#id15" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>項目名</p></th>
+<th class="head"><p>初期値</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>install_mode</p></td>
+<td><p>Install_Online</p></td>
+<td><p>インストールモードの設定（オンラインインストール：Install_Online/オフラインインストール：Install_Offline/ライブラリ収集：Gather_Library/バージョンアップALL：Versionup_All/バージョンアップOASE：Versionup_OASE/アンインストール：Uninstall）</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>RabbitMQ_username</p></td>
+<td><p>admin</p></td>
+<td><p>RabbitMQのユーザ名</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>RabbitMQ_password</p></td>
+<td><p>password</p></td>
+<td><p>RabbitMQのパスワード</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>RabbitMQ_queuename</p></td>
+<td><p>oase</p></td>
+<td><p>RabbitMQで使用するキュー名</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>RabbitMQ_ipaddr</p></td>
+<td></td>
+<td><p>RabbitMQを設定したサーバのIPアドレス</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>db_root_password</p></td>
+<td><p>password</p></td>
+<td><p>MariaDBのルートユーザのパスワード</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>db_name</p></td>
+<td><p>OASE_DB</p></td>
+<td><p>MariaDBで使用するDB名</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>db_username</p></td>
+<td><p>OASE_USER</p></td>
+<td><p>MariaDBで使用するユーザ名</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>db_password</p></td>
+<td><p>OASE_PASSWD</p></td>
+<td><p>MariaDBのパスワード</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>db_erase</p></td>
+<td><p>erase</p></td>
+<td><p>アンインストール時にDBを消すかどうか（消す：erase/残す：leave）</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>jboss_root_directory</p></td>
+<td><p>/exastro/JBoss</p></td>
+<td><p>JBossのインストールディレクトリ</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>rules_engine</p></td>
+<td></td>
+<td><p>使用するルールエンジンを選択(rhdm or drools)</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>rule_engine_adminname</p></td>
+<td><p>admin0000</p></td>
+<td><p>ルールエンジンの管理者名</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>rule_engine_password</p></td>
+<td><p>password&#64;1</p></td>
+<td><p>ルールエンジンのパスワード</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>rule_engine_ipaddrport</p></td>
+<td><p>localhost:8080</p></td>
+<td><p>ルールエンジンのIPアドレスとポート番号</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>rhdm_path</p></td>
+<td></td>
+<td><p>RHDMインストーラーファイルのパス(rules_engineにrhdmを指定時のみ入力。絶対パスで指定してください)</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>jboss_eap_path</p></td>
+<td></td>
+<td><p>Jboss EAPインストーラーファイルのパス(rules_engineにrhdmを指定時のみ入力。絶対パスで指定してください)</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>rulefile_rootpath</p></td>
+<td><p>/exastro/rule</p></td>
+<td><p>ルールファイルを格納するディレクトリ</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>apply_ipaddrport</p></td>
+<td><p>127.0.0.1:50001</p></td>
+<td><p>アプライサービスを設定したサーバのIPアドレス</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>mavenrep_path</p></td>
+<td><p>/root/.m2/repository/com/oase/</p></td>
+<td><p>Mavenリポジトリのディレクトリ</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>oasemail_smtp</p></td>
+<td><p>{'IPADDR':'127.0.0.1','PORT':25,'AUTH':False}</p></td>
+<td><p>OASEで使用するメールのSMTP設定</p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>oase_directory</p></td>
+<td><p>/exastro</p></td>
+<td><p>OASEのインストールディレクトリ</p></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p>ev_location</p></td>
+<td><p>127.0.0.1</p></td>
+<td><p>EVTIMERサーバを設定したサーバのIPアドレス</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p>oase_language</p></td>
+<td><p>ja_JP</p></td>
+<td><p>OASEの言語設定（日本語：ja_JP 英語：en_US）</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>oase_os</p></td>
+<td></td>
+<td><p>OASEをインストールするサーバのOS（CentOS7/RHEL7/RHEL8）</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>oase_timezone</p></td>
+<td></td>
+<td><p>OASEのtimezone設定</p></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p>oase_base</p></td>
+<td><p>yes</p></td>
+<td><p>OASE本体のインストール有無指定</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>ita_driver</p></td>
+<td><p>yes</p></td>
+<td><p>ITAドライバのインストール有無指定</p></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p>mail_driver</p></td>
+<td><p>yes</p></td>
+<td><p>mailドライバのインストール有無指定</p></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p>servicenow_driver</p></td>
+<td><p>no</p></td>
+<td><p>ServiceNowドライバのインストール有無指定</p></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>zabbix_adapter</p></td>
+<td><p>yes</p></td>
+<td><p>Zabbixアダプタのインストール有無指定</p></td>
+</tr>
+<tr class="row-odd"><td><p>32</p></td>
+<td><p>prometheus_adapter</p></td>
+<td><p>no</p></td>
+<td><p>Prometheusアダプタのインストール有無指定</p></td>
+</tr>
+<tr class="row-even"><td><p>33</p></td>
+<td><p>grafana_adapter</p></td>
+<td><p>no</p></td>
+<td><p>Grafanaアダプタのインストール有無指定</p></td>
+</tr>
+<tr class="row-odd"><td><p>34</p></td>
+<td><p>datadog_adapter</p></td>
+<td><p>no</p></td>
+<td><p>Datadogアダプタのインストール有無指定</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p>oase_domain</p></td>
+<td><p>exastro-oase.local</p></td>
+<td><p>OASEのドメイン名</p></td>
+</tr>
+<tr class="row-odd"><td><p>36</p></td>
+<td><p>certificate_path</p></td>
+<td></td>
+<td><p>ユーザ指定のSSLサーバ証明書に使用するファイルのファイルパス(ユーザ指定のSSL証明書使用時のみ入力。絶対パスで指定してください)</p></td>
+</tr>
+<tr class="row-even"><td><p>37</p></td>
+<td><p>private_key_path</p></td>
+<td></td>
+<td><p>ユーザ指定のSSL秘密鍵に使用するファイルのファイルパス(ユーザ指定のSSL秘密鍵使用時のみ入力。絶対パスで指定してください)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<div class="line-block">
+<div class="line">OASEのログイン画面、ログイン画面にあるパスワードをお忘れの場合から遷移されるパスワード変更画面、</div>
+<div class="line">インストールで登録されるユーザ、グループ、デシジョンテーブルファイル、一括テスト用Excelファイルはインストール時のOASEの言語設定により、日本語または英語を表示します。</div>
+<div class="line">それ以外に関しては個人設定画面からユーザ毎に日本語、英語を選択/表示できます。</div>
+</div>
+</div>
+</section>
+<section id="id11">
+<h4>3.1.5. アンサーファイルのサンプル<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">アンサーファイル（oase_answers.txt）のサンプルを以下に示します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># Select install mode.
+# (&quot;Install_Online&quot;,&quot;Install_Offline&quot;,&quot;Gather_Library&quot;,&quot;Versionup_All&quot;, &quot;Versionup_OASE&quot;, &quot;Uninstall&quot;)
+# e.g) install_mode:Install_Online
+install_mode:Install_Online
+
+
+<span class="gh">##############################</span>
+<span class="gh"># RabbitMQ</span>
+<span class="gh">##############################</span>
+# Decide the RabbitMQ_username.
+# e.g) RabbitMQ_username:sample_rabbitmq_username
+RabbitMQ_username:admin
+
+# Decide the RabbitMQ_password.
+# e.g) RabbitMQ_password:sample_rabbitmq_password
+RabbitMQ_password:password
+
+
+# Decide the RabbitMQ_queuename.
+# e.g) RabbitMQ_queuename:oase
+RabbitMQ_queuename:oase
+
+# Enter IP address for RabbitMQ.
+# e.g) RabbitMQ_ipaddr:xxx.xxx.xxx.xxx
+RabbitMQ_ipaddr:127.0.0.1
+
+<span class="gh">##############################</span>
+<span class="gh"># MariaDB</span>
+<span class="gh">##############################</span>
+# Enter the MariaDB root user&#39;s password
+# e.g) db_root_password:sample_root_password
+db_root_password:password
+
+# Decide the database name, username, and password for OASE.
+# e.g) db_name:sample_db_name
+db_name:OASE_DB
+# e.g) db_username:sample_db_username
+db_username:OASE_USER
+# e.g) db_password:sample_db_password
+db_password:OASE_PASSWD
+
+# In uninstall mode,
+# Select &quot;erase&quot; or &quot;leave&quot; oase database
+# e.g) db_erase:erase
+db_erase:erase
+
+
+<span class="gh">##############################</span>
+<span class="gh"># JBoss</span>
+<span class="gh">##############################</span>
+# Enter JBoss install directory.
+# e.g) jboss_root_directory:/exastro/JBoss
+jboss_root_directory:/exastro/JBoss
+
+
+<span class="gh">##############################</span>
+<span class="gh"># Rules Engine</span>
+<span class="gh">##############################</span>
+# Rules engine to be used.(&quot;rhdm&quot; or &quot;drools&quot;)
+# e.g) rules_engine:drools
+rules_engine:rhdm
+
+# Decide the Administrator name, password.
+# e.g) rule_engine_adminname:admin0000
+rule_engine_adminname:admin0000
+# e.g) rule_engine_password:password@1
+rule_engine_password:password@1
+
+# Enter IP address &amp; port for Rule Engine.
+# e.g) rule_engine_ipaddrport:localhost:8080
+rule_engine_ipaddrport:localhost:8080
+
+
+<span class="gh">##############################</span>
+<span class="gh"># RHDM</span>
+<span class="gh">##############################</span>
+# Full path of RHDM materials.
+# e.g) rhdm_path:/tmp/rhdm-installer-x.x.x.jar
+rhdm_path:/tmp/rhdm-installer-7.3.1.jar
+
+# Full path of jboss-eap materials.
+# Only used for RHDM.
+# e.g) jboss_eap_path:/tmp/jboss-eap-x.x.x-installer.jar
+jboss_eap_path:/tmp/jboss-eap-7.2.0-installer.jar
+
+
+<span class="gh">##############################</span>
+<span class="gh"># RULEFILE</span>
+<span class="gh">##############################</span>
+# Enter root path for RULEFILE.
+# e.g) rulefile_rootpath:/exastro/rule
+rulefile_rootpath:/exastro/rule
+
+
+<span class="gh">##############################</span>
+<span class="gh"># APPLY</span>
+<span class="gh">##############################</span>
+# Enter IP address &amp; port for APPLY SERVICE.
+# e.g) apply_ipaddrport:127.0.0.1:50001
+apply_ipaddrport:127.0.0.1:50001
+
+
+<span class="gh">##############################</span>
+<span class="gh"># Maven</span>
+<span class="gh">##############################</span>
+# Enter repository path for Maven.
+# e.g) mavenrep_path:/root/.m2/repository/com/oase/
+mavenrep_path:/root/.m2/repository/com/oase/
+
+
+<span class="gh">##############################</span>
+<span class="gh"># OASEメールSMTP設定</span>
+<span class="gh">##############################</span>
+# Enter smtp settings.
+# e.g) oasemail_smtp:&quot;{&#39;IPADDR&#39;:&#39;127.0.0.1&#39;,&#39;PORT&#39;:25,&#39;AUTH&#39;:False}&quot;
+oasemail_smtp:&quot;{&#39;IPADDR&#39;:&#39;127.0.0.1&#39;,&#39;PORT&#39;:25,&#39;AUTH&#39;:False}&quot;
+
+
+<span class="gh">##############################</span>
+<span class="gh"># OASEインストールディレクトリ</span>
+<span class="gh">##############################</span>
+# Enter OASE install directory.
+# e.g) oase_directory:/exastro
+oase_directory:/exastro
+
+
+<span class="gh">##############################</span>
+<span class="gh"># settings.py</span>
+<span class="gh">##############################</span>
+# Decide the EVTIMER SERVER location
+# e.g) ev_location:127.0.0.1
+ev_location:127.0.0.1
+
+# Select language. (&quot;ja&quot; or &quot;en&quot;)
+# e.g) oase_language:ja
+oase_language:ja
+
+# Select Operation System. (&quot;CentOS7&quot; or &quot;RHEL7&quot; or &quot;RHEL8&quot;)
+# e.g) oase_os:RHEL7
+oase_os:RHEL7
+
+# Enter time_zone.
+# e.g) time_zone:Asia/Tokyo
+oase_timezone:Asia/Tokyo
+
+
+<span class="gh">##############################</span>
+<span class="gh"># Installation package</span>
+<span class="gh">##############################</span>
+# Select the target you need to install.
+# yes : need
+# no  : no need
+oase_base:yes
+ita_driver:yes
+mail_driver:yes
+servicenow_driver:no
+zabbix_adapter:yes
+prometheus_adapter:no
+grafana_adapter:no
+datadog_adapter:no
+
+
+<span class="gh">##############################</span>
+<span class="gh"># SSLサーバ証明書</span>
+<span class="gh">##############################</span>
+# Enter the oase domain name.
+# e.g) oase_domain:exastro-oase.local
+oase_domain:exastro-oase.local
+
+# Enter when using user-specified certificates and private keys.
+# If no file path is entered for both &quot;certificate_path&quot; and &quot;private_key_path&quot;,
+# the OASE installer creates and installs a self-certificate and private key
+# using the values entered in &quot;oase_domain&quot;.
+
+# Enter the file path where the certificate to be install.
+# e.g) certificate_path:/temp/etc_pki_tls_certs/exastro-oase.crt
+certificate_path:
+
+# Enter the file path where the private key to be install.
+# e.g) private_key_path:/temp/etc_pki_tls_certs/exastro-oase.key
+private_key_path:
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h4>3.1.6. 環境構築ツール（オンライン版）実行<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">1. 以下のコマンドで、環境構築ツールを実行します。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># sh oase_installer.sh
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2. 処理の確認</div>
+<div class="line">環境構築ツールを実行するとoase_install.logに処理内容が出力されます。</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>ログ格納パス： /(インストール資材展開先)/oase_install_package/install_scripts/logs</p>
+</div>
+<div class="line-block">
+<div class="line">3. インストーラー終了確認</div>
+<div class="line">標準出力に下記のように表示された場合はインストールが正常に完了しております。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[2020-11-12 08:59:43] INFO : Finished to install
+[2020-11-12 08:59:43] #####################################
+[2020-11-12 08:59:43] INFO : Install Finished
+[2020-11-12 08:59:43] #####################################
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">4. setings.pyの編集</div>
+<div class="line">settings.pyのHOST_NAMEの部分に以下のようにURLを記載してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># vi (OASEをインストールしたディレクトリのパス)/OASE/oase-root/confs/frameworkconfs/settings.py
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">HOST_NAME = '<a class="reference external" href="https:/">https:/</a>/(サーバのIPアドレス)'</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>例：HOST_NAME = &#39;https://127.0.0.1&#39;
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">その後httpdサービスを再起動してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># systemctl restart httpd
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">5. URL接続</div>
+<div class="line">以下のURLより、ログイン画面にアクセスしてください。</div>
+<div class="line">URL：<a class="reference external" href="https:/">https:/</a>/(サーバのIPアドレス)</div>
+</div>
+<div class="line-block">
+<div class="line">6. ログイン</div>
+<div class="line">OASEのログイン画面が表示されたら、指定のログインID、初期パスワードを入力して、[Login]ボタンを押下してください。</div>
+<div class="line">・ログインID　　： administrator</div>
+<div class="line">・初期パスワード： oaseoaseoase</div>
+</div>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/oase_login.png"><img alt="../_images/oase_login.png" src="../_images/oase_login.png" style="width: 1573.0px; height: 757.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図1 ログイン画面</span><a class="headerlink" href="#id16" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<div class="line-block">
+<div class="line">インストール後に初めてログインした場合は、「パスワード変更画面」に遷移します。</div>
+<div class="line">パスワード変更画面から、初期パスワードを変更してください。</div>
+<div class="line">ログイン画面の詳細については「利用手順マニュアル -ログイン画面編-」をご参照ください。</div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">7. Dashboard画面</div>
+<div class="line">ログイン後、図2の画面が表示されます。</div>
+</div>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../_images/dashboard.PNG"><img alt="../_images/dashboard.PNG" src="../_images/dashboard.PNG" style="width: 1602.0px; height: 792.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">図2 Dashboard画面</span><a class="headerlink" href="#id17" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">OASEのインストール作業は以上となります。</div>
+<div class="line">次にドライバインストールを行いますので、「環境構築マニュアル -ドライバインストール編-」をご参照ください。</div>
+<div class="line">監視ツールと連携を行う場合は「環境構築マニュアル -アダプタインストール編-」をご参照ください。</div>
+<div class="line">ActiveDirectoryを行いたい場合は「環境構築マニュアル -ActiveDirectory編-」をご参照ください。</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<div class="line-block">
+<div class="line">OASEをインストールする環境で、既にインストール済みのソフトウェアはスキップを行います。</div>
+<div class="line">標準出力に下記のようにSKIP LISTが表示された場合は、スキップ処理が行われています。</div>
+<div class="line">その場合は「7. スキップ処理の確認」の手順を実施してください。</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[2020-11-12 08:59:43] INFO : Finished to install
+[2020-11-12 08:59:43] #####################################
+[2020-11-12 08:59:43] SKIP LIST(Please check the Settings)
+[2020-11-12 08:59:43] ・rabbitmq-server
+[2020-11-12 08:59:43] ・mariadb-server
+[2020-11-12 08:59:43] #####################################
+[2020-11-12 08:59:43] INFO : Install Finished
+[2020-11-12 08:59:43] #####################################
+</pre></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">8. スキップ処理の確認</div>
+<div class="line">RabbitMQやMariaDBをスキップした場合は、OASE用に設定が必要になります。</div>
+</div>
+<div class="line-block">
+<div class="line">8.1 RabbitMQ</div>
+<div class="line">OASE用のユーザ作成を実施するため、以下のコマンドを実行してください。</div>
+</div>
+<div class="line-block">
+<div class="line">1 ユーザ作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl add_user {RabbitMQ_username} {RabbitMQ_password}
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">2 ユーザの権限設定</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl set_user_tags {RabbitMQ_username} administrator
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">3 ユーザのパーミッション設定</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># rabbitmqctl set_permissions -p / {RabbitMQ_username} &quot;.<span class="ge">*&quot; &quot;.*</span>&quot; &quot;.*&quot;
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>3.1.4 アンサーファイルの編集にて記述頂きました、ユーザ名/パスワードでユーザ作成してください。</p>
+</div>
+<div class="line-block">
+<div class="line">8.2 MariaDB</div>
+<div class="line">OASE用のデータベース、ユーザ作成を実施するため、以下のコマンドを実行してください。</div>
+</div>
+<div class="line-block">
+<div class="line">1 OASE用のデータベースとユーザ作成</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span># mysql -u root -p{db_root_password}
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>MariaDB [(none)]&gt; CREATE DATABASE {db_name} CHARACTER SET utf8;
+MariaDB [(none)]&gt; CREATE USER &#39;{db_username}&#39; IDENTIFIED BY &#39;{db_password}&#39;;
+MariaDB [(none)]&gt; GRANT ALL ON {db_name}.* TO &#39;{db_username}&#39;;
+MariaDB [(none)]&gt; quit
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<p>3.1.4 アンサーファイルの編集にて記述頂きました、rootパスワード、データベース名、ユーザ名、パスワードで作成してください。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<p>注意</p>
+<div class="line-block">
+<div class="line">OASEのインストールではインストール済みのソフトウェアはスキップを行います。</div>
+<div class="line">アップグレードは行いませんのでご注意ください。</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="id13">
+<h2>4. 注意事項<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<section id="id14">
+<h3>4 ディシジョンテーブル作成可能数<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ディシジョンマネージャは環境によって作成できるディシジョンテーブル数が変動します。</div>
+<div class="line">ディシジョンテーブルの最大作成可能数はデフォルトでは4ファイル程度となります。</div>
+<div class="line">記載ルール数またはルール自体の複雑度によってディシジョンテーブル作成数が前後する可能性があります。</div>
+<div class="line">より多くのディシジョンテーブルの作成を実施したい場合はチューニングが必要となります。</div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
+<p>注意</p>
+<div class="line-block">
+<div class="line">ディシジョンテーブルの最大作成数を超えた場合、ディシジョンテーブルのアップロード・プロダクション適用に失敗する可能性があります。</div>
+<div class="line">失敗した場合、以下のディレクトリのログを確認してください。</div>
+<div class="line">RHDMの場合</div>
+<div class="line">/var/log/jboss-eap/console.log</div>
+<div class="line">droolsの場合</div>
+<div class="line">[JBossのインストールディレクトリ]/wildfly-x.x.x.Final/standalone/log/server.log</div>
+<div class="line">OutOfMemoryErrorの障害が発生している場合は再起動コマンドを実行してください。</div>
+<div class="line">RHDMの場合</div>
+<div class="line"># systemctl restart jboss-eap-rhel.service</div>
+<div class="line">droolsの場合</div>
+<div class="line"># systemctl restart drools.service</div>
+<div class="line">再起動後、以下のコマンドを実行して、KIEコンテナーの一覧を確認します。</div>
+<div class="line"># curl -u [ルールエンジン管理ユーザー名]:[ルールエンジン管理パスワード] -H &quot;accept: application/json&quot; -X GET &quot;<a class="reference external" href="http:/">http:/</a>/[IPアドレス]:8080/decision-central/rest/controller/management/servers&quot;</div>
+<div class="line">削除したいKIEコンテナーのcontainer-idを指定して以下のコマンドを実行することにより、KIEコンテナーが削除されます。</div>
+<div class="line"># curl -u [ルールエンジン管理ユーザー名]:[ルールエンジン管理パスワード] -X DELETE &quot;<a class="reference external" href="http:/">http:/</a>/[IPアドレス]:8080/decision-central/rest/controller/management/servers/default-kieserver/containers/[container-id]&quot; -H &quot;accept: application/json&quot;</div>
+<div class="line">※IPアドレスはルールエンジンをインストールしたサーバのアドレス</div>
+<div class="line"><br /></div>
+<div class="line">※ルールエンジンを変更した場合、変更前のルールは移行されず、アンインストール時に削除されます。</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ノート</p>
+<div class="line-block">
+<div class="line">より多くのディシジョンテーブルの作成を実施したい場合はJBOSSヒープサイズのチューニングを行う必要があります。</div>
+<div class="line">チューニング方法は下記の通りです。</div>
+<div class="line">RHDMの場合</div>
+<div class="line"># systemctl stop jboss-eap-rhel.service</div>
+<div class="line"># vi {jboss_root_directory}/bin/standalone.conf</div>
+<div class="line">以下の行のサイズを修正する。</div>
+<div class="line">JAVA_OPTS=&quot;-Xms64m -Xmx1024m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=1024m -Djava.net.preferIPv4Stack=true&quot;</div>
+<div class="line"># systemctl start jboss-eap-rhel.service</div>
+<div class="line">droolsの場合</div>
+<div class="line"># systemctl stop drools.service</div>
+<div class="line"># vi {jboss_root_directory}/wildfly-x.x.x.Final/bin/standalone.conf</div>
+<div class="line">以下の行のサイズを修正する。</div>
+<div class="line">JAVA_OPTS=&quot;-Xms64m -Xmx1024m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=1024m -Djava.net.preferIPv4Stack=true&quot;</div>
+<div class="line"># systemctl start drools.service</div>
+<div class="line">※{jboss_root_directory}はoase_answers.txtのjboss_root_directory項目に記述したディレクトリパスに置換してください。</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="construction_flow.html" title="前の章へ"><span>前のトピックへ</span>構築フロー</a></li>
+    <li class="next"><a href="installation_docker.html" title="次の章へ"><span>次のトピックへ</span>インストール手順(Docker版)</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2019 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

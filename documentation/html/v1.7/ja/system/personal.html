@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>4.5. 個人設定 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="5. アカウントと認証" href="../authentication/index.html" />
+    <link rel="prev" title="4.4. Active Directory連携" href="active_directory.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/system/personal
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v1.7/ja/system/personal
+                  <option value="#"
+                  selected
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/system/personal
+                  <option value="../../../v1.6/ja/system/personal.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/system/personal
+                  <option value="../../../v1.5/ja/system/personal.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.7/ja/system/personal
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.7/en/system/personal
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="active_directory.html" title="前のトピックへ"><span class="section-number">4.4. </span>Active Directory連携</a></li>
+        <li class="next"><a href="../authentication/index.html" title="次のトピックへ"><span class="section-number">5. </span>アカウントと認証</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.7</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.7 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">4. システム設定</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="logging.html">4.1. ログ管理</a></li>
+<li class="toctree-l4"><a class="reference internal" href="authentication.html">4.2. 認証設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="password.html">4.3. パスワード設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="active_directory.html">4.4. Active Directory連携</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">4.5. 個人設定</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">アカウント情報</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">メールアドレスの変更</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">パスワードの変更</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id5">言語の変更</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.7</a></li>
+    <li><a href="../index.html">Exastro OASE 1.7 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">4. </span>システム設定</a></li>
+    
+    <li><span class="section-number">4.5. </span>個人設定</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">4.5. </span>個人設定<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">個人設定画面の機能、操作方法について説明します。</div>
+<div class="line">個人設定画面では、OASE を利用して作業を行う上で共通に必要となる以下の機能を提供します。</div>
+</div>
+<ul class="simple">
+<li><p>メールアドレスの変更</p></li>
+<li><p>パスワードの変更</p></li>
+<li><p>言語の変更</p></li>
+</ul>
+<section id="id2">
+<h2>アカウント情報<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">画面右上部にある、個人設定ボタン <span class="guilabel">⚙</span> をクリックします。</div>
+<div class="line">左メニューの <span class="menuselection">アカウント情報</span> を選択します。</div>
+</div>
+<div class="line-block">
+<div class="line">アカウントに登録されている情報が一覧で表示できます。</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line"><span class="menuselection">アカウント情報</span> はAD連携や権限に関わらず表示することができます。</div>
+</div>
+</div>
+<figure class="align-left" id="id6">
+<a class="reference internal image-reference" href="../../../_images/personal_config_05.png"><img alt="../../../_images/personal_config_05.png" src="../../../_images/personal_config_05.png" style="width: 341.75px; height: 125.25px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.7 </span><span class="caption-text">アカウント情報画面</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">表 4.5 </span><span class="caption-text">アカウント情報画面機能説明</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ユーザ名</p></td>
+<td><p>現在ログインしているユーザのユーザ名が表示されます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>ログインID</p></td>
+<td><p>現在ログインしているユーザのログインIDが表示されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>メールアドレス</p></td>
+<td><p>現在ログインしているユーザのメールアドレスが表示されます。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">「ログインID:administrator」のメールアドレスはデフォルトで「sample&#64;xxx.bbb.ccc」と設定されています。</div>
+<div class="line">初回ログイン後任意のアドレスに変更してください。</div>
+</div>
+</div>
+</section>
+<section id="id3">
+<h2>メールアドレスの変更<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">画面右上部にある、個人設定ボタン <span class="guilabel">⚙</span> をクリックします。</div>
+<div class="line">左メニューの <span class="menuselection">メールアドレスの変更</span> を選択します。</div>
+</div>
+<div class="line-block">
+<div class="line">メールアドレスの変更ができます。</div>
+</div>
+<figure class="align-left" id="id8">
+<a class="reference internal image-reference" href="../../../_images/personal_config_06.png"><img alt="../../../_images/personal_config_06.png" src="../../../_images/personal_config_06.png" style="width: 321.5px; height: 185.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.8 </span><span class="caption-text">メールアドレスの変更画面</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 4.6 </span><span class="caption-text">メールアドレスの変更画面機能説明</span><a class="headerlink" href="#id9" title="このテーブルへのパーマリンク">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>パスワード</p></td>
+<td><p>現在ログインしているユーザのパスワードを入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>パスワードをお忘れの場合</p></td>
+<td><p>詳細は「ログイン」画面の <a class="reference internal" href="../authentication/login/reset_password.html"><span class="doc">パスワードのリセット</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>新しいメールアドレス</p></td>
+<td><p>現在ログインしているユーザの新しいメールアドレスとして希望するメールアドレスを入力します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> メールアドレスを変更する</span> をクリックします。</div>
+<div class="line">入力内容に問題が無い場合、新しいメールアドレスに変更することができます。</div>
+</div>
+<div class="line-block">
+<div class="line">変更されたメールアドレスに「メールアドレスのご変更」メールが送られます。</div>
+<div class="line">有効期間内に記載のURLへアクセスすることでメールアドレスの変更が完了します。</div>
+</div>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../../_images/personal_config_09.png"><img alt="../../../_images/personal_config_09.png" src="../../../_images/personal_config_09.png" style="width: 468.40000000000003px; height: 318.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.9 </span><span class="caption-text">メールアドレス変更通知メール</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id4">
+<h2>パスワードの変更<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">画面右上部にある、個人設定ボタン <span class="guilabel">⚙</span> をクリックします。</div>
+<div class="line">左メニューの <span class="menuselection">パスワードの変更</span> を選択します。</div>
+</div>
+<div class="line-block">
+<div class="line">パスワードの変更ができます。</div>
+</div>
+<figure class="align-left" id="id11">
+<a class="reference internal image-reference" href="../../../_images/personal_config_07.png"><img alt="../../../_images/personal_config_07.png" src="../../../_images/personal_config_07.png" style="width: 321.5px; height: 185.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.10 </span><span class="caption-text">パスワードの変更画面</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-number">表 4.7 </span><span class="caption-text">パスワードの変更画面機能説明</span><a class="headerlink" href="#id12" title="このテーブルへのパーマリンク">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>現在のパスワード</p></td>
+<td><p>現在ログインしているユーザのパスワードを入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>パスワードをお忘れの場合</p></td>
+<td><p>詳細は「ログイン」画面の <a class="reference internal" href="../authentication/login/reset_password.html"><span class="doc">パスワードのリセット</span></a> をご参照ください。</p></td>
+</tr>
+<tr class="row-even"><td><p>新しいパスワード（再入力）</p></td>
+<td><p>現在ログインしているユーザの新しいパスワードとして希望するパスワードを入力します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> メールアドレスを変更する</span> をクリックします。</div>
+<div class="line">入力内容に問題が無い場合、新しいパスワードに変更することができます。</div>
+</div>
+</section>
+<section id="id5">
+<h2>言語の変更<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">画面右上部にある、個人設定ボタン <span class="guilabel">⚙</span> をクリックします。</div>
+<div class="line">左メニューの <span class="menuselection">言語の変更</span> を選択します。</div>
+</div>
+<div class="line-block">
+<div class="line">言語の変更ができます。</div>
+</div>
+<figure class="align-left" id="id13">
+<a class="reference internal image-reference" href="../../../_images/personal_config_11.png"><img alt="../../../_images/personal_config_11.png" src="../../../_images/personal_config_11.png" style="width: 514.4px; height: 295.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.11 </span><span class="caption-text">言語の変更画面</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id14">
+<caption><span class="caption-number">表 4.8 </span><span class="caption-text">言語の変更画面機能説明</span><a class="headerlink" href="#id14" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>言語</p></td>
+<td><p>変更したい言語(日本語 または 英語)を選択します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line"><span class="guilabel"> 言語を変更する</span> をクリックします。</div>
+<div class="line">選択した言語に変更されます。</div>
+</div>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="active_directory.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">4.4. </span>Active Directory連携</a></li>
+    <li class="next"><a href="../authentication/index.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">5. </span>アカウントと認証</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

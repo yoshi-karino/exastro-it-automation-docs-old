@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>4.2. 認証設定 &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="4.3. パスワード設定" href="password.html" />
+    <link rel="prev" title="4.1. ログ管理" href="logging.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/system/authentication
+                  <option value="../../../v1.7/ja/system/authentication.html"
+                  >current</option>
+                file_path: v1.7/ja/system/authentication
+                  <option value="../../../v1.7/ja/system/authentication.html"
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/system/authentication
+                  <option value="../../../v1.6/ja/system/authentication.html"
+                  >v1.6</option>
+                file_path: v1.5/ja/system/authentication
+                  <option value="#"
+                  selected
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.5/ja/system/authentication
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.5/en/system/authentication
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="logging.html" title="前のトピックへ"><span class="section-number">4.1. </span>ログ管理</a></li>
+        <li class="next"><a href="password.html" title="次のトピックへ"><span class="section-number">4.3. </span>パスワード設定</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.7/index.html">Exastro OASE 1.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.6/index.html">Exastro OASE 1.6</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.5</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.5 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">4. システム設定</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="logging.html">4.1. ログ管理</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">4.2. 認証設定</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">セッション設定</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="password.html">4.3. パスワード設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="active_directory.html">4.4. Active Directory連携</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personal.html">4.5. 個人設定</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../action/index.html">8. アクションドライバ設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.5</a></li>
+    <li><a href="../index.html">Exastro OASE 1.5 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">4. </span>システム設定</a></li>
+    
+    <li><span class="section-number">4.2. </span>認証設定</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">4.2. </span>認証設定<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">Exastro OASE における認証設定について説明します。</div>
+<div class="line">認証設定では、Exastro OASE の認証に関して以下の機能を提供します。</div>
+</div>
+<ul class="simple">
+<li><p>セッション設定</p></li>
+</ul>
+<section id="id2">
+<h2>セッション設定<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">画面上部のメニューから <span class="menuselection">システム ‣ システム設定</span> を開きます。</div>
+<div class="line">左メニューから <span class="menuselection">認証設定</span> を選択します。</div>
+</div>
+<figure class="align-left" id="id3">
+<a class="reference internal image-reference" href="../../../_images/authentication_column_edit.png"><img alt="../../../_images/authentication_column_edit.png" src="../../../_images/authentication_column_edit.png" style="width: 300.0px; height: 205.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 4.24 </span><span class="caption-text">認証設定編集画面</span><a class="headerlink" href="#id3" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-number">表 4.18 </span><span class="caption-text">認証設定項目</span><a class="headerlink" href="#id4" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 40%" />
+<col style="width: 20%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>設定項目</p></th>
+<th class="head"><p>説明</p></th>
+<th class="head"><p>設定値</p></th>
+<th class="head"><p>初期値</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>セッションタイムアウト値</p></td>
+<td><p>無操作時のセッション継続時間。</p></td>
+<td><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">1</kbd> <kbd class="kbd docutils literal notranslate"></kbd>-<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">60</kbd></kbd> (分)</p></td>
+<td><p><kbd class="kbd docutils literal notranslate">30</kbd> (分)</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line">設定が完了したら <span class="guilabel"> 保存</span> をクリックします。</div>
+<div class="line">設定前の状態に戻すには、<span class="guilabel"> リセット</span> をクリックします。</div>
+</div>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="logging.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">4.1. </span>ログ管理</a></li>
+    <li class="next"><a href="password.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">4.3. </span>パスワード設定</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

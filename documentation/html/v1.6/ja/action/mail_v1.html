@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>8.4. メールドライバ &#8212; OASE Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="8.5. ServiceNow ドライバ" href="servicenow_v1.html" />
+    <link rel="prev" title="8.3. Exastro IT Automation(ITA) ドライバ" href="ita_v1.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">OASE Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v1.7/ja/action/mail_v1
+                  <option value="../../../v1.7/ja/action/mail_v1.html"
+                  >current</option>
+                file_path: v1.7/ja/action/mail_v1
+                  <option value="../../../v1.7/ja/action/mail_v1.html"
+                  >v1.7 (current)</option>
+                file_path: v1.6/ja/action/mail_v1
+                  <option value="#"
+                  selected
+                  >v1.6</option>
+                file_path: v1.5/ja/action/mail_v1
+                  <option value="../../../v1.5/ja/action/mail_v1.html"
+                  >v1.5</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v1.6/ja/action/mail_v1
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v1.6/en/action/mail_v1
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="ita_v1.html" title="前のトピックへ"><span class="section-number">8.3. </span>Exastro IT Automation(ITA) ドライバ</a></li>
+        <li class="next"><a href="servicenow_v1.html" title="次のトピックへ"><span class="section-number">8.5. </span>ServiceNow ドライバ</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.7/index.html">Exastro OASE 1.7</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro OASE 1.6</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro OASE 1.6 操作マニュアル</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../introduction/index.html">1. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart/index.html">3. クイックスタート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system/index.html">4. システム設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../authentication/index.html">5. アカウントと認証</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/index.html">6. セキュリティ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../monitoring/index.html">7. 監視アプリケーションアダプタ設定</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">8. アクションドライバ設定</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="overview.html">8.1. 外部アプリケーション連携の概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="driver_install.html">8.2. 連携ドライバのインストール</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ita_v1.html">8.3. Exastro IT Automation(ITA) ドライバ</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">8.4. メールドライバ</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id2">新規登録</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">設定変更</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">メールテンプレート</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="servicenow_v1.html">8.5. ServiceNow ドライバ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="driver_uninstall.html">8.6. 連携ドライバのアンインストール</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_definition/index.html">9. ルール定義</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rule_maintenance/index.html">10. ルールメンテナンス</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html">11. API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trouble_shooting/index.html">12. トラブルシューティングガイド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../appendix/index.html">13. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../v1.5/index.html">Exastro OASE 1.5</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://exastro-suite.github.io/oase-docs/OASE_documents_ja/html/index.html">旧マニュアル</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro OASE 1.6</a></li>
+    <li><a href="../index.html">Exastro OASE 1.6 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>アクションドライバ設定</a></li>
+    
+    <li><span class="section-number">8.4. </span>メールドライバ</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1><span class="section-number">8.4. </span>メールドライバ<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">メールドライバは、監視アプリケーションで検知したイベントごとにメール通知を行うための仕組みです。</div>
+<div class="line">ディシジョンテーブルに対して、複数のメールサーバと連携することが可能です。</div>
+</div>
+<section id="id2">
+<h2>新規登録<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">上メニューの <span class="menuselection">システム ‣ アクション設定</span> からアクション設定画面を開きます。</div>
+<div class="line">画面上部にある、<span class="guilabel"> アクション先の追加</span> ボタンを押下します。</div>
+<div class="line"><span class="menuselection">mail Driver ver1</span> を選択します。</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line">アクション設定を追加するために、アクション設定に対する「更新可能」のアクセス権限が必要です。</div>
+</div>
+</div>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../../_images/action_06.png"><img alt="../../../_images/action_06.png" src="../../../_images/action_06.png" style="width: 1030.4px; height: 579.2px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.27 </span><span class="caption-text">アクション設定の選択</span><a class="headerlink" href="#id5" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">Mail ドライバの設定項目を入力します。</div>
+</div>
+<figure class="align-left" id="id6">
+<a class="reference internal image-reference" href="../../../_images/action_09.png"><img alt="../../../_images/action_09.png" src="../../../_images/action_09.png" style="width: 330.75px; height: 196.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.28 </span><span class="caption-text">Mail ドライバ(ver. 1)設定画面</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">表 8.9 </span><span class="caption-text">Mail ドライバ(ver. 1)設定項目</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>設定項目</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>名前</p></td>
+<td><p>Exastro OASEで管理する連携ソフトウェアの名前を設定してください。</p></td>
+</tr>
+<tr class="row-odd"><td><p>プロトコル</p></td>
+<td><p>連携先のメールサーバとの通信プロトコルを「smtp」または「smtp_auth」から選択します。</p></td>
+</tr>
+<tr class="row-even"><td><p>smtpサーバ</p></td>
+<td><p>連携先のメールサーバの FQDN もしくはおよびIPアドレスを入力できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>ポート</p></td>
+<td><p>連携先のメールサーバとの通信に用いるポート番号を入力します。</p></td>
+</tr>
+<tr class="row-even"><td><p>ユーザ名</p></td>
+<td><p>メールアカウントのユーザ名を入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>パスワード</p></td>
+<td><p>メールアカウントのユーザに紐づくパスワードを入力します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line">各項目の入力が完了したら、<span class="guilabel"> 保存</span> ボタンを押し設定を保存します。</div>
+</div>
+</section>
+<section id="id3">
+<h2>設定変更<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">上メニューの <span class="menuselection">システム ‣ アクション設定</span> からアクション設定画面を開き、 <span class="menuselection">Mail Driver ver1</span> タブを押下し、Mail ドライバの一覧を表示します。</div>
+</div>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../../_images/action_03.png"><img alt="../../../_images/action_03.png" src="../../../_images/action_03.png" style="width: 819.6px; height: 656.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.29 </span><span class="caption-text">Mail ドライバ一覧</span><a class="headerlink" href="#id8" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">編集対象のアクション設定の詳細確認ボタン <span class="guilabel"></span> をクリックし、詳細画面を開きます。</div>
+</div>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../../_images/action_10.png"><img alt="../../../_images/action_10.png" src="../../../_images/action_10.png" style="width: 548.4px; height: 306.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.30 </span><span class="caption-text">Mail ドライバ詳細画面</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">画面下部にある <span class="guilabel"> 編集</span> ボタンから編集画面を開き、該当の項目を編集します。</div>
+</div>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../../_images/action_11.png"><img alt="../../../_images/action_11.png" src="../../../_images/action_11.png" style="width: 549.0px; height: 364.8px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.31 </span><span class="caption-text">Mail ドライバ編集画面</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">各項目の入力が完了したら、<span class="guilabel"> 保存</span> ボタンを押し設定を保存します。</div>
+</div>
+</section>
+<section id="id4">
+<h2>メールテンプレート<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<div class="line-block">
+<div class="line">メールテンプレート機能を使うことで、ルールごとに個別の宛先や件名、本文などでメール通知を行うことができます。</div>
+</div>
+<div class="line-block">
+<div class="line">上メニューの <span class="menuselection">システム ‣ アクション設定</span> からアクション設定画面を開きます。</div>
+<div class="line"><span class="menuselection">mail Driver ver1</span> タブを選択し、 <span class="guilabel"> メールテンプレート</span> ボタンを押下します。</div>
+</div>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../../_images/action_08.png"><img alt="../../../_images/action_08.png" src="../../../_images/action_08.png" style="width: 1102.4px; height: 874.4000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.32 </span><span class="caption-text">メールドライバ一覧画面</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line"><span class="guilabel"> 新規追加</span> ボタンを押下します。</div>
+</div>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../../_images/action_40.png"><img alt="../../../_images/action_40.png" src="../../../_images/action_40.png" style="width: 1602.4px; height: 1170.4px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.33 </span><span class="caption-text">メールテンプレート一覧画面</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="line-block">
+<div class="line">メールテンプレートの設定項目を入力します。</div>
+</div>
+<figure class="align-left" id="id13">
+<a class="reference internal image-reference" href="../../../_images/action_42.png"><img alt="../../../_images/action_42.png" src="../../../_images/action_42.png" style="width: 500.0px; height: 364.75px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.34 </span><span class="caption-text">メールテンプレート設定画面</span><a class="headerlink" href="#id13" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id14">
+<caption><span class="caption-number">表 8.10 </span><span class="caption-text">メールテンプレートの設定項目</span><a class="headerlink" href="#id14" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>構成要素</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>テンプレート名</p></td>
+<td><p>テンプレート名を入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>宛先</p></td>
+<td><p>送信先のメールアドレスを入力します。</p></td>
+</tr>
+<tr class="row-even"><td><p>CC</p></td>
+<td><p>送信先のメールアドレスを入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>BCC</p></td>
+<td><p>送信先のメールアドレスを入力します。</p></td>
+</tr>
+<tr class="row-even"><td><p>件名</p></td>
+<td><p>メールの件名を入力します。</p></td>
+</tr>
+<tr class="row-odd"><td><p>本文</p></td>
+<td><p>メールの本文を入力します。</p></td>
+</tr>
+</tbody>
+</table>
+<div style="clear:both;"></div><div class="line-block">
+<div class="line">メールテンプレートの詳細確認や編集を行う場合は、対象のメールテンプレートの詳細確認ボタン <span class="guilabel"></span> をクリックし、詳細画面から編集できます。</div>
+</div>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../../../_images/action_45.png"><img alt="../../../_images/action_45.png" src="../../../_images/action_45.png" style="width: 1128.8px; height: 873.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">図 8.35 </span><span class="caption-text">メールテンプレートの詳細画面</span><a class="headerlink" href="#id15" title="この画像へのパーマリンク">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="line-block">
+<div class="line">メールテンプレートの編集・削除にはアクション設定画面に対する「更新可能」のアクセス権限が必要です。</div>
+</div>
+</div>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="ita_v1.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">8.3. </span>Exastro IT Automation(ITA) ドライバ</a></li>
+    <li class="next"><a href="servicenow_v1.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">8.5. </span>ServiceNow ドライバ</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>
