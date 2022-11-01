@@ -1,0 +1,1289 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>1.4. はじめに &#8212; exastro-it-automation Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="1.10. 目次" href="Connecting_AD.html" />
+    <link rel="prev" title="1.1. はじめに" href="System_architecture.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.png" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">exastro-it-automation Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v2.0/ja/IT_Automation_BASE/Basic_Console
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v2.0/ja/IT_Automation_BASE/Basic_Console
+                  <option value="#"
+                  selected
+                  >v2.0 (current)</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v2.0/ja/IT_Automation_BASE/Basic_Console
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v2.0/en/IT_Automation_BASE/Basic_Console
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+        <li class="prev"><a href="System_architecture.html" title="前のトピックへ"><span class="section-number">1.1. </span>はじめに</a></li>
+        <li class="next"><a href="Connecting_AD.html" title="次のトピックへ"><span class="section-number">1.10. </span>目次</a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro-it-automation Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Exastro-it-automation 2.0 操作マニュアル</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">1. コンテナ版</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="System_architecture.html">1.1. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_architecture.html#id2">1.2. システム要件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_architecture.html#id5">1.3. システム構成</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">1.4. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ita">1.5. ITA基本コンソールの概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">1.6. ITA基本コンソールのメニュー、画面構成</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id3">ITA基本コンソールメニュー 一覧</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">1.7. ITA基本コンソール利用手順</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id5">作業フロー</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">1.8. 機能・操作方法説明</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id7">ITA基本コンソール</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">1.9. 運用上の注意事項</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id23">オペレーション作業履歴の定期削除</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html">1.10. 目次</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html#id2">1.11. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html#id3">1.12. 機能</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html#id4">1.13. システム構成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html#id5">1.14. システム要件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Connecting_AD.html#id6">1.15. 外部認証設定ファイルの準備</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html">1.16. 目次</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id2">1.17. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id3">1.18. 機能</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id4">1.19. システム構成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id5">1.20. システム要件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#itasso">1.21. ITAでサポートしているSSO認証方式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id6">1.22. 設定フロー</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id7">1.23. ロールについて</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id8">1.24. ログイン画面</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#id9">1.25. ログイン後の画面</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#sso">1.26. SSO認証ユーザーの管理について</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#ad-activedirectory">1.27. AD(ActiveDirectory)との併用について</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSO.html#proxy">1.28. リバースPROXY環境においての注意点</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Management_Console.html">1.29. 目次</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Management_Console.html#id2">1.30. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Management_Console.html#ita">1.31. ITAシステム　管理コンソールの概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Management_Console.html#id117">1.32. 運用操作</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Management_Console.html#appendix">1.33. Appendix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html">1.34. はじめに</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html#rbac">1.35. データレコード毎のロールベースアクセス制御（RBAC）の概要</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html#id2">1.36. ロールベースアクセス制御 (RBAC)の主要機能</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html#id3">1.37. ユーザ毎のロール紐付</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html#id8">1.38. データ毎のロール紐付</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RBAC.html#id58">1.39. 紐付けロールによる表示制御</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Create_param/index.html">2. コンテナ版</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html">1. <strong>目次</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#id2">2. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#id3">3. 機能</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#id4">4. システム構成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#id8">5. システム要件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#playbook">6. Playbook連携</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/System_Architecture.html#id9">7. 初期設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html">8. 目次</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id2">9. はじめに</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#ansible-driver">10. Ansible driver概要</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id4">11. Ansible driverでの変数取り扱い</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id8">12. Ansible driver コンソールメニュー構成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id10">13. Ansible driver利用手順</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id123">14. Ansible driver機能・操作方法説明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id227">15. 構築コード記述方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id236">16. 運用操作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Ansible-driver/General_operations.html#id239">17. 付録</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro-it-automation Documentation</a></li>
+    <li><a href="../index.html">Exastro-it-automation 2.0 操作マニュアル</a></li>
+    <li><a href="index.html"><span class="section-number">1. </span>コンテナ版</a></li>
+    
+    <li><span class="section-number">1.4. </span>はじめに</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image1.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image1.png" src="v2.0/ja/IT_Automation_BASE/media/image1.png" style="width: 8.24645in; height: 11.7091in;" /></a>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image2.png"><img alt="\\\\abkfs04.nsl.ad.nec.co.jp\\a06006-01\\30_Exastro_IT-Automation\\3_全社展開チーム(サ事開本)\\FY2019_1-上期\\81_Exastro正式素材集(ロゴ等)\\PNG\\Exastro_mark+type_1.png" src="v2.0/ja/IT_Automation_BASE/media/image2.png" style="width: 3.35079in; height: 0.78565in;" /></a>
+<p>ITA_利用手順マニュアル</p>
+<p>基本コンソール</p>
+<p><em>－</em>第1.9版<em>－</em></p>
+<p>Copyright © NEC Corporation 2019. All rights reserved.</p>
+<p>免責事項</p>
+<p>本書の内容はすべて日本電気株式会社が所有する著作権に保護されています。</p>
+<p>本書の内容の一部または全部を無断で転載および複写することは禁止されています。</p>
+<p>本書の内容は将来予告なしに変更することがあります。</p>
+<p>日本電気株式会社は、本書の技術的もしくは編集上の間違い、欠落について、一切責任を負いません。</p>
+<p>日本電気株式会社は、本書の内容に関し、その正確性、有用性、確実性その他いかなる保証もいたしません。</p>
+<p>商標</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>LinuxはLinus</dt><dd><p>Torvalds氏の米国およびその他の国における登録商標または商標です。</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Red Hatは、Red Hat,</dt><dd><p>Inc.の米国およびその他の国における登録商標または商標です。</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Apache、Apache Tomcat、Tomcatは、Apache Software</dt><dd><p>Foundationの登録商標または商標です。</p>
+</dd>
+</dl>
+</li>
+<li><p>Ansibleは、Red Hat, Inc.の登録商標または商標です。</p></li>
+<li><p>AnsibleTowerは、Red Hat, Inc.の登録商標または商標です。</p></li>
+</ul>
+<p>その他、本書に記載のシステム名、会社名、製品名は、各社の登録商標もしくは商標です。</p>
+<p>なお、® マーク、TMマークは本書に明記しておりません。</p>
+<p>※本書では「Exastro IT Automation」を「ITA」として記載します。</p>
+<p><strong>目次</strong></p>
+<p><a class="reference external" href="#はじめに">はじめに</a> <a class="reference external" href="#はじめに">4</a></p>
+<p><a class="reference external" href="#ita基本コンソールの概要">1 ITA基本コンソールの概要</a>
+<a class="reference external" href="#ita基本コンソールの概要">5</a></p>
+<p><a class="reference external" href="#ita基本コンソールのメニュー画面構成">2
+ITA基本コンソールのメニュー、画面構成</a>
+<a class="reference external" href="#ita基本コンソールのメニュー画面構成">6</a></p>
+<p><a class="reference external" href="#_Toc68858635">2.1 ITA基本コンソールメニュー 一覧</a>
+<a class="reference external" href="#_Toc68858635">6</a></p>
+<p><a class="reference external" href="#ita基本コンソール利用手順">3 ITA基本コンソール利用手順</a>
+<a class="reference external" href="#ita基本コンソール利用手順">7</a></p>
+<p><a class="reference external" href="#作業フロー">3.1 作業フロー</a> <a class="reference external" href="#作業フロー">7</a></p>
+<p><a class="reference external" href="#機能操作方法説明">4 機能・操作方法説明</a> <a class="reference external" href="#機能操作方法説明">8</a></p>
+<p><a class="reference external" href="#ita基本コンソール">4.1 ITA基本コンソール</a>
+<a class="reference external" href="#ita基本コンソール">8</a></p>
+<p><a class="reference external" href="#機器一覧">4.1.1 機器一覧</a> <a class="reference external" href="#機器一覧">8</a></p>
+<p><a class="reference external" href="#紐付対象メニュー">4.1.2 紐付対象メニュー</a>
+<a class="reference external" href="#紐付対象メニュー">10</a></p>
+<p><a class="reference external" href="#投入オペレーション一覧">4.1.3 投入オペレーション一覧</a>
+<a class="reference external" href="#投入オペレーション一覧">12</a></p>
+<p><a class="reference external" href="#movement一覧">4.1.4 Movement一覧</a> <a class="reference external" href="#movement一覧">13</a></p>
+<p><a class="reference external" href="#er図表示">4.1.5 ER図表示</a> <a class="reference external" href="#er図表示">14</a></p>
+<p><a class="reference external" href="#er図メニュー管理">4.1.6 ER図メニュー管理</a>
+<a class="reference external" href="#er図メニュー管理">16</a></p>
+<p><a class="reference external" href="#er図項目管理">4.1.7 ER図項目管理</a> <a class="reference external" href="#er図項目管理">18</a></p>
+<p><a class="reference external" href="#運用上の注意事項">5 運用上の注意事項</a> <a class="reference external" href="#運用上の注意事項">20</a></p>
+<p><a class="reference external" href="#_Toc68858649">5.1 オペレーション作業履歴の定期削除</a>
+<a class="reference external" href="#_Toc68858649">20</a></p>
+<section id="id1">
+<h1><span class="section-number">1.4. </span>はじめに<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<p>本書は、ITAの基本コンソールの機能および操作方法について説明します。</p>
+</section>
+<section id="ita">
+<h1><span class="section-number">1.5. </span>ITA基本コンソールの概要<a class="headerlink" href="#ita" title="この見出しへのパーマリンク">¶</a></h1>
+<div class="line-block">
+<div class="line">本章では基本コンソールメニューの機能、操作方法について説明します。</div>
+<div class="line">基本コンソールでは、ITAを利用して作業を行う上で共通に必要となる以下の機能を提供します。</div>
+</div>
+</section>
+<section id="id2">
+<h1><span class="section-number">1.6. </span>ITA基本コンソールのメニュー、画面構成<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h1>
+<p>本章では、ITA基本コンソールのメニュー、画面構成について説明します</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<section id="id3">
+<h2>ITA基本コンソールメニュー 一覧<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<blockquote>
+<div><p>ITA共通/基本コンソールのメニューを以下に示します。</p>
+</div></blockquote>
+<p><strong>表 2.1-1 ITA画面一覧</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><ul class="simple">
+<li></li>
+<li></li>
+</ul>
+<p>N
+o
+*
+*</p>
+</th>
+<th class="head"><p><strong>メ
+ニュ
+ー</strong></p>
+<p><strong>グ
+ルー
+プ</strong></p>
+</th>
+<th class="head"><p><strong>メ
+ニュー・画面</strong></p></th>
+<th class="head"><p><strong>説明</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ITA　
+基本</p>
+<p>コ
+ンソ
+ール</p>
+</td>
+<td><p>機器一覧</p></td>
+<td><p>管理対象システム一覧をメン
+テナンス(閲覧/登録/更新/廃止)できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td></td>
+<td><p>投入オペ
+レーション一覧</p></td>
+<td><p>投入オペレーション一覧をメン
+テナンス(閲覧/登録/更新/廃止)できます。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td></td>
+<td><p>Movement一覧</p></td>
+<td><p>登録したMovementの一覧を閲覧できます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td></td>
+<td><p>ER図表示</p></td>
+<td><p>各メニューと
+参照データの紐づけをER図で表示します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id4">
+<h1><span class="section-number">1.7. </span>ITA基本コンソール利用手順<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h1>
+<section id="id5">
+<h2>作業フロー<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<p>ITA基本コンソールにおける標準的な作業フローは以下のとおりです。</p>
+<p>各作業の詳細は次項に記載しています。</p>
+<p>Movementの登録方法については、各Driverの利用手順マニュアルを参照してください。</p>
+<p><strong>図 3.1-1 作業フロー</strong></p>
+</section>
+</section>
+<section id="id6">
+<h1><span class="section-number">1.8. </span>機能・操作方法説明<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h1>
+<section id="id7">
+<h2>ITA基本コンソール<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h2>
+<section id="id8">
+<h3>機器一覧<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[機器一覧] 画面では、作業対象ホストの情報を管理します。</p></li>
+</ol>
+<p>各オーケストレータの実行前にサーバタイプに応じた必要情報を登録してください。</p>
+<p>また、再実行の際にサーバ情報が変更になっている場合は、事前に変更処理をしてください。</p>
+<img alt="v2.0/ja/IT_Automation_BASE/media/image3.png" src="v2.0/ja/IT_Automation_BASE/media/image3.png" />
+<p>図 4‑1サブメニュー画面（機器一覧）</p>
+<ol class="arabic simple" start="2">
+<li><p>「登録」-「登録開始」ボタンより、機器情報の登録を行います。</p></li>
+</ol>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image4.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image4.png" src="v2.0/ja/IT_Automation_BASE/media/image4.png" style="width: 6.20833in; height: 1.04167in;" /></a>
+<p>図 4‑2 登録画面（機器一覧 – 共通項目）</p>
+<ol class="arabic simple" start="3">
+<li><p>登録画面の共通項目一覧は以下のとおりです。</p></li>
+</ol>
+<p>作業対象の「ホスト名」、「IPアドレス」は、必ず入力してください。</p>
+<blockquote>
+<div><p>※「ログインパスワード」は、「管理」を●とした場合、登録は必須です。</p>
+</div></blockquote>
+<p><strong>表 4.1‑1　登録画面項目一覧（機器一覧 – 共通項目）</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項
+目</strong></p></th>
+<th class="head"></th>
+<th class="head"><p><strong>説明</strong></p></th>
+<th class="head"><p>**
+入
+力
+**</p>
+<p>**
+必
+須
+**</p>
+</th>
+<th class="head"><p><strong>入
+力形
+式</strong></p></th>
+<th class="head"><p>**
+制約事項**</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>管理
+シス
+テム
+項番</p></td>
+<td></td>
+<td><p>登録情報を識別する
+一意のIDが自動入力されます</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>自動
+入力</p></td>
+<td><p>管理システ
+ム項番を10
+,000,000以
+上にすると
+ホストグル
+ープ機能が
+正常に動作
+しません。</p>
+<p>ホス
+トグループ
+機能を使用
+する場合は
+、管理シス
+テム項番を
+10,000,000
+未満になる
+ようにして
+ください。</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>H
+W機器
+種別</p></td>
+<td></td>
+<td><p>HW機器の種別を選択します</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大長
+128バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>ホス
+ト名</p></td>
+<td></td>
+<td><p>ホスト名を入力します</p></td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>I
+Pアド
+レス</p></td>
+<td></td>
+<td><p>IPアドレス(xxx.xx
+x.xxx.xxx形式)を入力します</p></td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長15バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>Ethe
+rWake
+OnLan</p></td>
+<td><p>MAC</p>
+<p>アド
+レス</p>
+</td>
+<td><p>MACアドレスを入力します</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長17バイト</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>ネ
+ット
+ワー
+クデ
+バイ
+ス名</p></td>
+<td><p>ネットワ
+ークデバイス名を入力します</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大長
+256バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>ログ
+イン
+ユー
+ザID</p></td>
+<td></td>
+<td><p>ログイン
+するユーザーIDを入力します</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長30バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>ロ
+グイ
+ンパ
+スワ
+ード</p></td>
+<td><p>管理</p></td>
+<td><p>ITAでパスワードを管理
+する場合「●」を選択します</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>リ
+スト
+選択</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>ログ
+イン</p>
+<p>パ
+スワ
+ード</p>
+</td>
+<td><p>パスワードを指定します</p></td>
+<td><p>※</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大長
+128バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>ssh
+鍵
+認証
+情報</p></td>
+<td><p>ssh秘
+密鍵
+ファ
+イル</p></td>
+<td><p>ssh秘密鍵ファイルを
+指定して鍵認証する場合の秘
+密鍵ファイルを入力します。
+アップロードしたフ
+ァイルは暗号化されて保存さ
+れます。※登録後にファイル
+はダウンロードできません。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>パス
+フレ
+ーズ</p></td>
+<td><p>s
+sh秘密鍵ファイルにパスフレ
+ーズが設定されている場合、
+パスフレーズを入力します。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大長
+256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>備考</p></td>
+<td></td>
+<td><p>自由記述欄です</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><p>共通項目の他に、各Driver/オーケストレータを利用する場合に情報を登録します。</p></li>
+</ol>
+<p>各Driverの詳細はそれぞれの利用手順を参照してください。</p>
+<ol class="arabic simple">
+<li><p>Ansible利用情報</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image5.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image5.png" src="v2.0/ja/IT_Automation_BASE/media/image5.png" style="width: 5.97917in; height: 0.91667in;" /></a>
+<p>図 4‑3 登録画面（機器一覧 – Ansible）</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Ansible利用情報はAnsible driverに必要なパラメータです。</p></li>
+<li><p>詳細については、「利用手順マニュアル_Ansible-driver」を参照してください。</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>紐付対象メニュー<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic">
+<li><p>紐付対象メニューでは、代入値自動登録設定で連携するCMDBのメニューを登録／更新／廃止を行います。</p>
+<p>BackYardで自動的に作成されますが、手動で変更したい場合は本メニューをメンテナンスしてください。</p>
+<p>インストール時『紐付対象メニュー』は非表示の設定になっております。管理コンソールのロール・メニュー紐付管理メニューにて復活処理を行うことによって表示されるようになります。</p>
+<img alt="v2.0/ja/IT_Automation_BASE/media/image6.png" src="v2.0/ja/IT_Automation_BASE/media/image6.png" />
+</li>
+</ol>
+<p><strong>図 4‑4サブメニュー画面（紐付対象メニュー）</strong></p>
+<ol class="arabic" start="2">
+<li><p>「登録」-「登録開始」ボタンより、メニューの紐付けを行います。</p>
+<img alt="v2.0/ja/IT_Automation_BASE/media/image7.png" src="v2.0/ja/IT_Automation_BASE/media/image7.png" />
+</li>
+</ol>
+<p>図 4‑5 登録画面（紐付対象メニュー）</p>
+<ol class="arabic simple" start="3">
+<li><p>登録画面の項目一覧は以下のとおりです。</p></li>
+</ol>
+<p><strong>表 4.1‑2　登録画面項目一覧（紐付対象メニュー）</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項目</strong></p></th>
+<th class="head"><p><strong>説明</strong></p></th>
+<th class="head"><p>**
+入
+力
+**</p>
+<p>**
+必
+須
+**</p>
+</th>
+<th class="head"><p><strong>入
+力形
+式</strong></p></th>
+<th class="head"><ul class="simple">
+<li></li>
+</ul>
+<p><em>制約事項*</em></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>メ
+ニューグ
+ループ:メ
+ニュー※2</p></td>
+<td><p>CMDBのメニューが表示されます。</p>
+<p>代入値自動登録設定で連携す
+るCMDBのメニューを選択します。</p>
+</td>
+<td><p>○</p></td>
+<td><p>リ
+スト
+選択</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>備考</p></td>
+<td><p>自由記述欄です。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大長
+4000バイト</p></td>
+</tr>
+</tbody>
+</table>
+<p>※2 CMDBのメニューグループとメニューの登録が必要です。</p>
+<p>メニューグループとメニューの登録についての説明は、「利用手順マニュアル_管理コンソール」を参照してください。</p>
+<section id="id12">
+<h4><a href="#id10"><span class="problematic" id="id11">**</span></a><a class="headerlink" href="#id12" title="この見出しへのパーマリンク">¶</a></h4>
+</section>
+</section>
+<section id="id13">
+<h3>投入オペレーション一覧<a class="headerlink" href="#id13" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[投入オペレーション一覧]画面では、オーケストレータで実行する、作業対象ホストに対する</p></li>
+</ol>
+<p>オペレーションを管理します。</p>
+<blockquote>
+<div><p>例）「サービス追加工事作業」 など</p>
+<img alt="v2.0/ja/IT_Automation_BASE/media/image8.png" src="v2.0/ja/IT_Automation_BASE/media/image8.png" />
+</div></blockquote>
+<p><strong>図 4‑6サブメニュー画面（投入オペレーション一覧）</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>「登録」-「登録開始」ボタンより、オペレーション情報の登録を行います。</p></li>
+</ol>
+<img alt="v2.0/ja/IT_Automation_BASE/media/image9.png" src="v2.0/ja/IT_Automation_BASE/media/image9.png" />
+<p>図 4‑7 登録画面（投入オペレーション一覧）</p>
+<ol class="arabic simple" start="3">
+<li><p>登録画面の項目一覧は以下のとおりです。</p></li>
+</ol>
+<p><strong>表4.1‑3　登録画面項目一覧（投入オペレーション一覧）</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項目</strong></p></th>
+<th class="head"><p><strong>説明</strong></p></th>
+<th class="head"><p>**
+入
+力
+**</p>
+<p>**
+必
+須
+**</p>
+</th>
+<th class="head"><p><strong>入
+力形
+式</strong></p></th>
+<th class="head"><ul class="simple">
+<li></li>
+</ul>
+<p><em>制約事項*</em></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>オペレー
+ション名</p></td>
+<td><p>任意
+のオペレーション名を登録します</p></td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>実施
+予定日時</p></td>
+<td><p>オペレーシ
+ョンの実施予定日時を入力します</p>
+<p>※こ
+こで指定した日付で実際に処理が
+実行されるわけではありません。</p>
+<p>※実施予定日時が設定
+されているオペレーションに紐づ
+く作業履歴は、指定した保存期間
+を過ぎると自動で削除されます。</p>
+</td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>オペレー
+ションID</p></td>
+<td><p>オペレーションを識別
+する一意のIDが自動入力されます</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>自動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>最終
+実行日時</p></td>
+<td><p>Symphony
+実行や各ドライバの作業実行で、
+このオペレーションを選択し実行
+した実績の日時が表示されます。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>表示
+項目</p></td>
+<td><p>未実行のオ
+ペレーショ
+ンの場合は
+空白が表示
+されます。</p></td>
+</tr>
+<tr class="row-even"><td><p>備考</p></td>
+<td><p>自由記述欄です</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="movement">
+<h3>Movement一覧<a class="headerlink" href="#movement" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[Movement一覧]画面では、オーケストレータを利用する際のMovementとオーケストレータ</p></li>
+</ol>
+<p>の関連付けを確認できます（参照のみ）。</p>
+<p>Movementの実際の登録は、各Driverの利用手順マニュアルを参照し、各オーケストレータの</p>
+<p>ITA用ドライバーのコンソールメニューから行ってください。</p>
+<section id="id16">
+<h4><a href="#id14"><span class="problematic" id="id15">**</span></a><a class="headerlink" href="#id16" title="この見出しへのパーマリンク">¶</a></h4>
+</section>
+</section>
+<section id="er">
+<h3>ER図表示<a class="headerlink" href="#er" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[ER図表示]画面では、各メニューと参照データの紐づけをER図で表示します。</p></li>
+</ol>
+<p>ログインユーザが閲覧可能権限を持つメニューのみ表示されます。</p>
+<ol class="arabic simple">
+<li><p>プリント</p></li>
+</ol>
+<blockquote>
+<div><p>表示されているER図を印刷します。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>メニューグループ選択</p></li>
+</ol>
+<blockquote>
+<div><p>表示するメニューグループを選択します。</p>
+<p>※メニュー表示時では管理コンソールは選択されていません。</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>リレーション</p></li>
+</ol>
+<blockquote>
+<div><p>ER図上に表示されているリレーションの表示/非表示を選択します。</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>全体表示</p></li>
+</ol>
+<blockquote>
+<div><p>ER図の全体が表示されます。</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>表示リセット</p></li>
+</ol>
+<blockquote>
+<div><p>ER図の拡大・縮小状態がリセットされ、左上にそろえられます。</p>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>メニューの項目一覧</p></li>
+</ol>
+<blockquote>
+<div><p>各メニューの表示フィルタにある項目が表示されます。</p>
+<p>※備考・最終更新者・最終更新日は表示されません。</p>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>リレーション</p></li>
+</ol>
+<blockquote>
+<div><p>リレーションのある項目間で一方向の矢印が引かれます。</p>
+<p>※以下のリレーションは数が多く、煩雑になるため紐付けをしておりません。</p>
+<p>・オペレーション一覧のオペレーションID</p>
+<p>・オペレーション一覧のオペレーション名</p>
+<p>・機器一覧のホスト名</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image11.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image11.png" src="v2.0/ja/IT_Automation_BASE/media/image11.png" style="width: 6.65625in; height: 2.95833in;" /></a>
+<p>図 4‑9 ER図表示画面</p>
+<ol class="arabic simple" start="2">
+<li><p>操作説明</p></li>
+</ol>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>操作</strong></p></th>
+<th class="head"><p><strong>動作</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ER図の拡大・縮小</p></td>
+<td><p>マウスのホイールを上下に動かします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>移動</p></td>
+<td><p>マウスの右ボタンでドラッグします。</p></td>
+</tr>
+<tr class="row-even"><td><p>リ
+レーションの強調/解除</p></td>
+<td><p>リレーションのある項目をクリックします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>リレー
+ションの強調（一時）</p></td>
+<td><p>リ
+レーションのある項目にカーソルを合わせます。</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p>ER図の生成されるタイミング</p></li>
+</ol>
+<blockquote>
+<div><p>ER図の生成されるタイミングは以下の通りです。</p>
+</div></blockquote>
+<ol class="upperalpha simple">
+<li><p>ITAをインストール</p></li>
+<li><p>メニュー作成機能にてメニューを作成</p></li>
+<li><p>[メニューインポート]メニューでkymファイルのインポート</p></li>
+</ol>
+</section>
+<section id="id17">
+<h3>ER図メニュー管理<a class="headerlink" href="#id17" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[ER図メニュー管理]画面では、ER図表示に使用するメニューとテーブル/ビューの関連付けを管理します。</p></li>
+</ol>
+<p>本メニューでデータを挿入後、ER図項目管理で項目データを挿入することによってER図表示メニューでテーブル情報が表示されるようになりますが、ログインユーザに表示権限のないメニューは表示されません。</p>
+<p>BackYardで自動的に作成されますが、手動で変更したい場合は本メニューをメンテナンスしてください。</p>
+<p>ER図メニュー管理のデータは履歴がありません。再生成するタイミングでデータはすべて消えますが、最終更新者がユーザである場合は削除されません。</p>
+<p>インストール時『ER図メニュー管理』メニューは非表示の設定になっております。管理コンソールのロール・メニュー紐付管理メニューにて復活処理を行うことによって表示されるようになります。</p>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image12.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image12.png" src="v2.0/ja/IT_Automation_BASE/media/image12.png" style="width: 6.57292in; height: 2.92455in;" /></a>
+<p><strong>図 4‑10サブメニュー画面（ER図メニュー管理）</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>「登録」-「登録開始」ボタンより、ER図に表示するメニュー情報の登録を行います。</p></li>
+</ol>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image13.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image13.png" src="v2.0/ja/IT_Automation_BASE/media/image13.png" style="width: 5.625in; height: 0.73958in;" /></a>
+<p>図 4‑11 ER図メニュー管理</p>
+<ol class="arabic simple" start="3">
+<li><p>登録画面の項目一覧は以下のとおりです。</p></li>
+</ol>
+<p>表 4.1‑4 登録画面項目一覧（ER図メニュー管理）</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項目</strong></p></th>
+<th class="head"><p><strong>説明</strong></p></th>
+<th class="head"><p>**
+入
+力
+**</p>
+<p>**
+必
+須
+**</p>
+</th>
+<th class="head"><p><strong>入
+力形
+式</strong></p></th>
+<th class="head"><ul class="simple">
+<li></li>
+</ul>
+<p><em>制約事項*</em></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>メ
+ニューグ
+ループ：
+メニュー</p></td>
+<td><p>メニューが表示されます。</p>
+<p>ER図で表示
+させたいメニューを選択します。</p>
+</td>
+<td><p>○</p></td>
+<td><p>リ
+スト
+選択</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>テ
+ーブル名</p></td>
+<td><p>メニューグループ：メニューに
+紐付くテーブル名を登録します。</p></td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>ビュー名</p></td>
+<td><p>メニューグループ：メニュー
+に紐付くビュー名を登録します。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>備考</p></td>
+<td><p>自由記述欄です</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<section id="id20">
+<h4><a href="#id18"><span class="problematic" id="id19">**</span></a><a class="headerlink" href="#id20" title="この見出しへのパーマリンク">¶</a></h4>
+</section>
+</section>
+<section id="id21">
+<h3>ER図項目管理<a class="headerlink" href="#id21" title="この見出しへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>[ER図項目管理]画面では、ER図に関する設定を行います。表示するメニュー内の項目を設定します。</p></li>
+</ol>
+<p>BackYardで自動的に作成されますが、手動で変更したい場合は本メニューをメンテナンスしてください。</p>
+<p>ER図項目管理のデータは履歴がありません。再生成するタイミングでデータはすべて消えますが、最終更新者がユーザである場合は削除されません。</p>
+<p>インストール時『ER図項目管理』メニューは非表示の設定になっております。管理コンソールのロール・メニュー紐付管理メニューにて復活処理を行うことによって表示されるようになります。</p>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image14.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image14.png" src="v2.0/ja/IT_Automation_BASE/media/image14.png" style="width: 6.25584in; height: 2.77818in;" /></a>
+<p>図 4‑12 サブメニュー画面（ER図項目管理）</p>
+<ol class="arabic simple" start="2">
+<li><p>「登録」-「登録開始」ボタンより、ER図に表示するメニュー情報の登録を行います。</p></li>
+</ol>
+<a class="reference internal image-reference" href="v2.0/ja/IT_Automation_BASE/media/image15.png"><img alt="v2.0/ja/IT_Automation_BASE/media/image15.png" src="v2.0/ja/IT_Automation_BASE/media/image15.png" style="width: 6.11649in; height: 0.73033in;" /></a>
+<p>図 4‑13 ER図項目管理</p>
+<ol class="arabic simple" start="3">
+<li><p>登録画面の項目一覧は以下のとおりです。</p></li>
+</ol>
+<p>表 4.1‑5 登録画面項目一覧（ER図項目管理）</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項目</strong></p></th>
+<th class="head"><p><strong>説明</strong></p></th>
+<th class="head"><p>**
+入
+力
+**</p>
+<p>**
+必
+須
+**</p>
+</th>
+<th class="head"><p><strong>入
+力形
+式</strong></p></th>
+<th class="head"><ul class="simple">
+<li></li>
+</ul>
+<p><em>制約事項*</em></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>メ
+ニューグ
+ループ：
+メニュー</p></td>
+<td><p>ER図メニュー管理で設
+定したメニューが表示されます。</p>
+<p>ER図で表示
+させたいメニューを選択します。</p>
+</td>
+<td><p>○</p></td>
+<td><p>リ
+スト
+選択</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>表示順序</p></td>
+<td><p>ER図表示メニューで表
+示される際の順序を入力します。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>数値</p></td>
+</tr>
+<tr class="row-even"><td><p>項目</p></td>
+<td><p>任意の項目名を入力します。</p>
+<p>メニュ
+ー内で一意に指定してください。</p>
+</td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>項
+目タイプ</p></td>
+<td><p>グ
+ループかアイテムを選択します。</p></td>
+<td><p>○</p></td>
+<td><p>リ
+スト
+選択</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>親項目</p></td>
+<td><p>項目の
+所属するグループを指定します。</p>
+<p>グループに
+所属しない場合は入力不要です。</p>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>物理名</p></td>
+<td><p>項目の物理名を入力します。</p>
+<p>関連
+項目を指定する際に使用します。</p>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>論理名</p></td>
+<td><p>項目の論理名を入力します。</p>
+<p>ER図上で表示される名称です。</p>
+</td>
+<td><p>○</p></td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>関連テ
+ーブル名</p></td>
+<td><p>リレーションをつなげる項目が所
+属するテーブル名を入力します。</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-even"><td><p>関連項目</p></td>
+<td><p>リレーションをつな
+げる項目の物理名を入力します。</p>
+<p>登録
+のない物理名を設定した場合、リ
+レーションは紐付けされません。</p>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><p>最大
+長256バイト</p></td>
+</tr>
+<tr class="row-odd"><td><p>備考</p></td>
+<td><p>自由記述欄です</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>手動
+入力</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="id22">
+<h1><span class="section-number">1.9. </span>運用上の注意事項<a class="headerlink" href="#id22" title="この見出しへのパーマリンク">¶</a></h1>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<section id="id23">
+<h2>オペレーション作業履歴の定期削除<a class="headerlink" href="#id23" title="この見出しへのパーマリンク">¶</a></h2>
+<p>「投入オペレーション一覧」メニューに登録されているオペレーションの実施予定日時に紐づくデータを削除する機能を用意しております。</p>
+<p>詳細は、「利用手順マニュアル_管理コンソール」を参照してください。</p>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+    <li class="prev"><a href="System_architecture.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">1.1. </span>はじめに</a></li>
+    <li class="next"><a href="Connecting_AD.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">1.10. </span>目次</a></li>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>
