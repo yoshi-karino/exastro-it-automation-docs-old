@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'exastro-it-automation Documentation'
+project = 'Documentation'
 copyright = '2022 NEC Corporation'
 author = 'NEC'
 

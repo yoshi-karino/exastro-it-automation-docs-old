@@ -553,7 +553,7 @@ span.highlighted {
   z-index: 50;
   width: 100%;
   height: 64px;
-  background-color: #333;
+  background-color: #002B62;
 }
 
 #header .divInner {
@@ -582,7 +582,7 @@ span.highlighted {
 #logo img {
   width: auto;
   max-width: none;
-  height: 32px !important;
+  height: 56px !important;
 }
 
 #projectName a {
@@ -667,8 +667,8 @@ span.highlighted {
   z-index: 40;
   width: 100%;
   /* min-height: 32px; */
-  background-color: #DDD;
-}
+  background-color: white;
+  border-top: solid 4px #ffa500;}
 
 #toolbar .divInner {
   display: table;
@@ -742,7 +742,7 @@ span.highlighted {
   z-index: 30;
   width: 320px;
   height: 100%;
-  padding: 96px 0 24px;
+  padding: 100px 0 24px;
 }
 
 #sideMenu .divInner {
@@ -964,6 +964,7 @@ span.highlighted {
 #breadcrumbs {
   padding: 24px 24px 0;
   background-color: #FFF;
+  line-height: 1.5;
 }
 
 #breadcrumbs ul {
@@ -1312,7 +1313,7 @@ span.highlighted {
 }
 
 #article .menuselection {
-  border-bottom: solid 1px #00B5B8;
+  border-bottom: solid 1px #002B62;
   font-weight: 600;
 }
 
