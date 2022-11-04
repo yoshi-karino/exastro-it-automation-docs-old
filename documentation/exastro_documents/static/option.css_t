@@ -5,7 +5,7 @@
   background-color: {{ theme_main_color }} !important;
 }
 #sideMenu li.toctree-l1 > a {
-  border-left-color:  {{ theme_main_color }} !important;
+  border-left-color:  {{ theme_h1_color }} !important;
 }
 #article h1 {
   border-top-color: {{ theme_h1_color }} !important;
@@ -21,8 +21,8 @@
   color: {{ theme_h1_color }} !important;
 }
 #index #article .body .section {
-  border-top-color:  {{ theme_main_color }} !important;
+  border-top-color:  {{ theme_th_color }} !important;
 }
 #article #homeIndex li {
-  border-left-color:  {{ theme_main_color }} !important;
+  border-left-color:  {{ theme_th_color }} !important;
 }
