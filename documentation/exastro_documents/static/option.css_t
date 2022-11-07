@@ -7,6 +7,12 @@
 #sideMenu li.toctree-l1 > a {
   border-left-color:  {{ theme_h1_color }} !important;
 }
+#header {
+  background-color: {{ theme_main_color }} !important;
+}
+#toolbar {
+  border-top: solid 4px {{ theme_border_color }} !important;
+}
 #article h1 {
   border-top-color: {{ theme_h1_color }} !important;
 }
@@ -25,4 +31,7 @@
 }
 #article #homeIndex li {
   border-left-color:  {{ theme_th_color }} !important;
+}
+#article .menuselection {
+  border-bottom: solid 1px {{ theme_menuselection_color }} !important;
 }
