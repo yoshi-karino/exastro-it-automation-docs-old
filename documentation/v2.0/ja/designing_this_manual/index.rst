@@ -1,8 +1,9 @@
 ====================
-マニュアル記載ルール
+マニュアル構成法
 ====================
 
 .. toctree::
    :maxdepth: 2
 
-   design
+   document_rule
+   build_flow
