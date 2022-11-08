@@ -668,7 +668,7 @@ span.highlighted {
   width: 100%;
   /* min-height: 32px; */
   background-color: white;
-  border-top: solid 4px #ffa500;}
+}
 
 #toolbar .divInner {
   display: table;
@@ -1313,7 +1313,6 @@ span.highlighted {
 }
 
 #article .menuselection {
-  border-bottom: solid 1px #002B62;
   font-weight: 600;
 }
 
