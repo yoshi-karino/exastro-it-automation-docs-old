@@ -1,0 +1,37 @@
+@import "exastro_documents.css";
+
+/* COLOR */
+#projectName a {
+  background-color: #002B62 !important;
+}
+#sideMenu li.toctree-l1 > a {
+  border-left-color:  #ffa500 !important;
+}
+#header {
+  background-color: #002B62 !important;
+}
+#toolbar {
+  border-top: solid 4px #ffa500 !important;
+}
+#article h1 {
+  border-top-color: #ffa500 !important;
+}
+#article h2,
+#article .toctree-wrapper .caption {
+  border-left-color: #002B62 !important;
+}
+#article thead th {
+  background-color: #002B62 !important;
+}
+#article .toctree-wrapper li {
+  color: #ffa500 !important;
+}
+#index #article .body .section {
+  border-top-color:  #002B62 !important;
+}
+#article #homeIndex li {
+  border-left-color:  #002B62 !important;
+}
+#article .menuselection {
+  border-bottom: solid 1px #002B62 !important;
+}

@@ -21,6 +21,7 @@ Exastro-it-automation 2.0 操作マニュアル
    :maxdepth: 1
    :numbered: 2
 
+   designing_this_manual/index
    it_automation_base/index
    create_param/index
    ansible-driver/index
