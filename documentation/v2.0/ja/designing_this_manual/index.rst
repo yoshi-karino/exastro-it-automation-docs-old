@@ -5,5 +5,6 @@
 .. toctree::
    :maxdepth: 2
 
-   document_rule
+   manual_rule
    build_flow
+   manual_syntax
