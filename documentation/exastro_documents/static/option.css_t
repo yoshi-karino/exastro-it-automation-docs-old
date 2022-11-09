@@ -5,33 +5,37 @@
   background-color: {{ theme_main_color }} !important;
 }
 #sideMenu li.toctree-l1 > a {
-  border-left-color:  {{ theme_h1_color }} !important;
+  border-left-color:  {{ theme_border_color }} !important;
 }
 #header {
   background-color: {{ theme_main_color }} !important;
 }
 #toolbar {
   border-top: solid 4px {{ theme_border_color }} !important;
+  border-bottom: solid 4px #EEE !important;
 }
 #article h1 {
-  border-top-color: {{ theme_h1_color }} !important;
+  border-left: 12px solid;
+  border-left-color: {{ theme_border_color }} !important;
+  background-color: {{ theme_main_color }} !important;
+  color: #FFF
 }
 #article h2,
 #article .toctree-wrapper .caption {
-  border-left-color: {{ theme_h2_color }} !important;
+  border-left-color: {{ theme_border_color }} !important;
 }
 #article thead th {
-  background-color: {{ theme_th_color }} !important;
+  background-color: {{ theme_main_color }} !important;
 }
 #article .toctree-wrapper li {
-  color: {{ theme_h1_color }} !important;
+  color: {{ theme_border_color }} !important;
 }
 #index #article .body .section {
-  border-top-color:  {{ theme_th_color }} !important;
+  border-top-color:  {{ theme_border_color }} !important;
 }
 #article #homeIndex li {
-  border-left-color:  {{ theme_th_color }} !important;
+  border-left-color:  {{ theme_border_color }} !important;
 }
 #article .menuselection {
-  border-bottom: solid 1px {{ theme_menuselection_color }} !important;
+  border-bottom: solid 1px {{ theme_border_color }} !important;
 }
