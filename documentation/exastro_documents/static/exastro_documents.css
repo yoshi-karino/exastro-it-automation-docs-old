@@ -1018,8 +1018,6 @@ span.highlighted {
   margin-bottom: 16px;
   padding: 12px 24px 10px;
   /* background-image: linear-gradient( #FFF, #F6F6F6); */
-  border: 1px solid #CCC;
-  border-top: 4px solid;
   /* border-radius: 0 0 4px 4px; */
   line-height: 1.0;
   font-size: 1.8rem;
