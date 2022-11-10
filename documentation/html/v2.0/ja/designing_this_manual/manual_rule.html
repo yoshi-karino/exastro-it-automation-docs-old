@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="検索" href="../../../search.html" />
-    <link rel="next" title="1.2. マニュアルビルドについて" href="build_flow.html" />
+    <link rel="next" title="1.2. マニュアルのビルド" href="build_flow.html" />
     <link rel="prev" title="1. マニュアル構成法" href="index.html" /> 
   </head>
 <body id="page" class="ja">
@@ -98,7 +98,7 @@
     <div id="toolbarNavigation">
       <ul>
         <li class="prev"><a href="index.html" title="前のトピックへ"><span class="section-number">1. </span>マニュアル構成法</a></li>
-        <li class="next"><a href="build_flow.html" title="次のトピックへ"><span class="section-number">1.2. </span>マニュアルビルドについて</a></li>
+        <li class="next"><a href="build_flow.html" title="次のトピックへ"><span class="section-number">1.2. </span>マニュアルのビルド</a></li>
       </ul>
     </div>
   </div>
@@ -115,35 +115,15 @@
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">1. マニュアル構成法</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">1.1. マニュアル記述ルール</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#id2">文体，語句</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#id3">文体，語句</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#id4">表記のゆれ</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#id5">ターミノロジ</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">表記のゆれ</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">ターミノロジ</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="build_flow.html">1.2. マニュアルビルドについて</a></li>
-<li class="toctree-l4"><a class="reference internal" href="manual_syntax.html">1.3. マニュアルビルドについて</a></li>
+<li class="toctree-l4"><a class="reference internal" href="build_flow.html">1.2. マニュアルのビルド</a></li>
+<li class="toctree-l4"><a class="reference internal" href="manual_syntax.html">1.3. マニュアル構文</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../it_automation_base/index.html">2. Exastro-it-automation のシステム構成</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../create_param/index.html">3. コンテナ版</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html">4. <strong>目次</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#id2">5. はじめに</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#id3">6. 機能</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#id4">7. システム構成</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#id8">8. システム要件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#playbook">9. Playbook連携</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/architecture.html#id9">10. 初期設定</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html">11. 目次</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id2">12. はじめに</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#ansible-driver">13. Ansible driver概要</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id4">14. Ansible driverでの変数取り扱い</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id8">15. Ansible driver コンソールメニュー構成</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id10">16. Ansible driver利用手順</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id123">17. Ansible driver機能・操作方法説明</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id227">18. 構築コード記述方法</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id236">19. 運用操作</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ansible-driver/general_operations.html#id239">20. 付録</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../installation_appendix/index.html">21. コンテナ版</a></li>
 </ul>
 </li>
 </ul>
@@ -181,18 +161,6 @@
 <h1><span class="section-number">1.1. </span>マニュアル記述ルール<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="id2">
 <h2>文体，語句<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
-<div class="line-block">
-<div class="line">文体: ですます体 (体言止めなし)</div>
-<div class="line">長音記号有無:</div>
-<div class="line-block">
-<div class="line">つけない: 単語が 3 音以上 (e.g. ブラウザ)</div>
-<div class="line">つける  : 単語が 2 音以下 (e.g. エラー)</div>
-</div>
-<div class="line">※ JIS（日本工業規格）の「Z8301」準拠</div>
-</div>
-</section>
-<section id="id3">
-<h2>文体，語句<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
 <dl>
 <dt>文体:</dt><dd><div class="line-block">
 <div class="line">ですます体 (体言止めなし)</div>
@@ -206,8 +174,8 @@
 </dd>
 </dl>
 </section>
-<section id="id4">
-<h2>表記のゆれ<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<section id="id3">
+<h2>表記のゆれ<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
 <div class="line">同じ意味をもつ２つ以上の表現は避け、１つに統します。</div>
 <div class="line-block">
@@ -215,8 +183,8 @@
 </div>
 </div>
 </section>
-<section id="id5">
-<h2>ターミノロジ<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<section id="id4">
+<h2>ターミノロジ<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
 <div class="line">ターミノロジ（専門用語）を用いる場合は、必ずその意味を最初に説明してから使用します。</div>
 </div>
@@ -230,7 +198,7 @@
 <div id="articleNavigation">
   <ul>
     <li class="prev"><a href="index.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">1. </span>マニュアル構成法</a></li>
-    <li class="next"><a href="build_flow.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">1.2. </span>マニュアルビルドについて</a></li>
+    <li class="next"><a href="build_flow.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">1.2. </span>マニュアルのビルド</a></li>
   </ul>
 </div>
 

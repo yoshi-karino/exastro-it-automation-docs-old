@@ -12,13 +12,17 @@
 }
 #toolbar {
   border-top: solid 4px #ffa500 !important;
+  border-bottom: solid 4px #EEE !important;
 }
 #article h1 {
-  border-top-color: #ffa500 !important;
+  border-left: 12px solid;
+  border-left-color: #ffa500 !important;
+  background-color: #002B62 !important;
+  color: #FFF
 }
 #article h2,
 #article .toctree-wrapper .caption {
-  border-left-color: #002B62 !important;
+  border-left-color: #ffa500 !important;
 }
 #article thead th {
   background-color: #002B62 !important;
@@ -27,11 +31,11 @@
   color: #ffa500 !important;
 }
 #index #article .body .section {
-  border-top-color:  #002B62 !important;
+  border-top-color:  #ffa500 !important;
 }
 #article #homeIndex li {
-  border-left-color:  #002B62 !important;
+  border-left-color:  #ffa500 !important;
 }
 #article .menuselection {
-  border-bottom: solid 1px #002B62 !important;
+  border-bottom: solid 1px #ffa500 !important;
 }
