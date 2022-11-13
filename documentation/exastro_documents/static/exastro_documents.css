@@ -1147,24 +1147,17 @@ span.highlighted {
 #article pre {
   overflow: auto;
   margin-bottom: 24px;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
   line-height: 1.5;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-family: 'Consolas', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace, "MS PGothic", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif", "oase-web-font";
 }
 
 #article ul,
 #article ol {
   margin: 0 12px 12px 12px;
   padding-left: 1em;
-}
-
-#article li {
-  line-height: 1.75;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #444;
-  list-style: none;
 }
 
 #article li p {
@@ -1180,14 +1173,6 @@ span.highlighted {
 #article ul.simple li {
   line-height: 1.75;
   font-size: 1.2rem;
-  color: #444;
-  list-style: none;
-}
-
-#article li {
-  line-height: 1.75;
-  font-size: 1.2rem;
-  font-weight: bold;
   color: #444;
   list-style: none;
 }
@@ -2091,10 +2076,6 @@ span.highlighted {
 
   #article h1 {
     padding: 8px 12px 7px;
-  }
-
-  #article pre {
-    padding: 8px 16px;
   }
 
   #article #homeIndex {
