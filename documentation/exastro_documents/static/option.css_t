@@ -16,13 +16,26 @@
 }
 #article h1 {
   border-left: 12px solid;
-  border-left-color: {{ theme_border_color }} !important;
-  background-color: {{ theme_main_color }} !important;
+  border-left-color: {{ theme_border_color }};
+  background-color: {{ theme_main_color }};
+  line-height: 1.0;
   color: #FFF
 }
 #article h2,
 #article .toctree-wrapper .caption {
-  border-left-color: {{ theme_border_color }} !important;
+  border-left-color: {{ theme_main_color }} !important;
+  border-bottom-color: {{ theme_main_color }} !important;
+  color: #444;
+}
+#article h3 {
+  border-left-color: {{ theme_sub_color }} !important;
+  border-bottom-color: {{ theme_sub_color }} !important;
+  color: #444;
+}
+#article h4 {
+  border-left-color: {{ theme_sub_color }} !important;
+  border-bottom-color: {{ theme_sub_color }} !important;
+  color: #444;
 }
 #article thead th {
   background-color: {{ theme_main_color }} !important;
@@ -35,6 +48,7 @@
 }
 #article #homeIndex li {
   border-left-color:  {{ theme_border_color }} !important;
+  font-size: 1.5em;
 }
 #article .menuselection {
   border-bottom: solid 1px {{ theme_border_color }} !important;
