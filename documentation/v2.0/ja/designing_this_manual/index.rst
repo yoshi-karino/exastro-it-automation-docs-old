@@ -6,5 +6,5 @@
    :maxdepth: 2
 
    manual_rule
-   build_flow
    manual_syntax
+   build_flow
