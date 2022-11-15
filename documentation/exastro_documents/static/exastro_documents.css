@@ -1278,6 +1278,7 @@ span.highlighted {
 
 #article thead th.head * {
   color: #FFF;
+  padding: 3px 6px;
 }
 
 #article tbody th.head {
@@ -1285,8 +1286,9 @@ span.highlighted {
 }
 
 #article td {
-  text-align: left;
+  /* text-align: left; */
   word-break: break-all;
+  padding: 3px 6px;
 }
 
 #article tr.row-odd td {
