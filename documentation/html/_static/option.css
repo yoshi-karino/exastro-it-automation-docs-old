@@ -16,13 +16,26 @@
 }
 #article h1 {
   border-left: 12px solid;
-  border-left-color: #ffa500 !important;
-  background-color: #002B62 !important;
+  border-left-color: #ffa500;
+  background-color: #002B62;
+  line-height: 1.0;
   color: #FFF
 }
 #article h2,
 #article .toctree-wrapper .caption {
-  border-left-color: #ffa500 !important;
+  border-left-color: #002B62 !important;
+  border-bottom-color: #002B62 !important;
+  color: #444;
+}
+#article h3 {
+  border-left-color: #6680A1 !important;
+  border-bottom-color: #6680A1 !important;
+  color: #444;
+}
+#article h4 {
+  border-left-color: #6680A1 !important;
+  border-bottom-color: #6680A1 !important;
+  color: #444;
 }
 #article thead th {
   background-color: #002B62 !important;
@@ -35,6 +48,7 @@
 }
 #article #homeIndex li {
   border-left-color:  #ffa500 !important;
+  font-size: 1.5em;
 }
 #article .menuselection {
   border-bottom: solid 1px #ffa500 !important;
