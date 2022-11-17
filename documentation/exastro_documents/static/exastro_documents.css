@@ -1503,6 +1503,15 @@ span.highlighted {
   color: #a2000d;
 }
 
+/* Details */
+
+#article details {
+  margin-bottom: 24px;
+}
+
+#article details summary {
+  margin-bottom: 12px;
+}
 
 /* #article li *:last-child,
 #article th *:last-child,
