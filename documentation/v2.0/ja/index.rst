@@ -8,9 +8,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-===============================
-Exastro-it-automation 2.0 操作マニュアル
-===============================
+==================
+マニュアル(日本語)
+==================
 
 .. raw:: html
 
@@ -21,8 +21,10 @@ Exastro-it-automation 2.0 操作マニュアル
    :maxdepth: 1
    :numbered: 2
 
-   designing_this_manual/index
-   it_automation_base/index
+   installation/index
+   .. platform/index
+   .. designing_this_manual/index
+   .. it_automation_base/index
    .. create_param/index
    .. ansible-driver/index
    .. rest_api/index

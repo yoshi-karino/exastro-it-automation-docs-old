@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>マニュアル構文 &#8212; Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../_static/img/exastro.svg" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../index.html">Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v2.0/ja_manual_design/manual_syntax
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v2.0/ja_manual_design/manual_syntax
+                  <option value="#"
+                  selected
+                  >v2.0 (current)</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v2.0/ja/manual_syntax
+                hasdoc: False
+                file_path: v2.0/en/manual_syntax
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Exastro IT Automation 2.0</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">HOME</a></li>
+    
+    <li>マニュアル構文</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="id1">
+<h1>マニュアル構文<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<section id="index-rst">
+<h2>index.rst<a class="headerlink" href="#index-rst" title="Permalink to this heading">¶</a></h2>
+<section id="id2">
+<h3>役割1<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ビルド時、システムはドキュメントルート、大章ディレクトリの配下に置かれたindex.rst の内容を見て章と章を紐づけ、全体を構成します。</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/image229.png"><img alt="../../_images/image229.png" src="../../_images/image229.png" style="width: 5.84375in; height: 1.09375in;" /></a>
+</section>
+<section id="id3">
+<h3>役割2<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">ドキュメントルート直下の index.rst にてドキュメントの見出しを定義します。</div>
+</div>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">イベントリクエストのプロパティ</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>見出し箇所</p></th>
+<th class="head"><p>対象</p></th>
+<th class="head"><p><strong>記述内容(抜粋)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ルートドキ
+ュメント直下</p></td>
+<td><p>ルートドキ
+ュメント
+ュ</p></td>
+<td><p>ルートドキ
+ュメント直下</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id4">
+<h3>記述方法<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-text">構成要素</span><a class="headerlink" href="#id7" title="このテーブルへのパーマリンク">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>項目</strong></p></th>
+<th class="head"><p><strong>意味</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">　===============　</div>
+<div class="line">　Exastro OASE 1.7</div>
+<div class="line">　===============　</div>
+</div>
+</td>
+<td><p>ドキュメント全体の見出し</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">　ディレクトリ1/index</div>
+<div class="line">　ディレクトリ2/index</div>
+<div class="line">　ディレクトリ3/index</div>
+<div class="line">　ディレクトリ4/index</div>
+</div>
+</td>
+<td><p>各章が格納されているディレクトリ/index を記述します。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="rst">
+<h2>ドキュメント記述用 .rst ファイル<a class="headerlink" href="#rst" title="Permalink to this heading">¶</a></h2>
+<section id="id5">
+<h3>構文<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">getting_oase.rst 等、ドキュメントを記述する .rst ファイル内の構文は以下の通りです。</div>
+</div>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-text">.rst 構文1</span><a class="headerlink" href="#id8" title="このテーブルへのパーマリンク">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>種
+類</strong></p></th>
+<th class="head"><p><strong>構文</strong></p></th>
+<th class="head"><p><strong>ビルド結果</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>大
+見
+出</p></td>
+<td><div class="line-block">
+<div class="line">　======</div>
+<div class="line">　大見出</div>
+<div class="line">　======</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image137.png"><img alt="image1" src="../../_images/image137.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>中
+見
+出</p></td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">　中見出</div>
+<div class="line">　======</div>
+</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image230.png"><img alt="image2" src="../../_images/image230.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>小
+見
+出</p></td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">　小見出</div>
+<div class="line">　------</div>
+</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image326.png"><img alt="image3" src="../../_images/image326.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>パ
+ラ
+グ
+ラ
+フ</p></td>
+<td><div class="line-block">
+<div class="line">　| 第一パラグラフ</div>
+<div class="line">　| 第一パラグラフ続き</div>
+<div class="line"><br /></div>
+<div class="line">　| 第二パラグラフ</div>
+<div class="line">　| 第二パラグラフ続き</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">第一パラグラフ</div>
+<div class="line">第一パラグラフ続き</div>
+</div>
+<div class="line-block">
+<div class="line">第二パラグラフ</div>
+<div class="line">第二パラグラフ続き</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>見
+出
+要
+素</p></td>
+<td><p>- LinuxはLinus</p></td>
+<td><ul class="simple">
+<li><p>LinuxはLinus</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>番
+号
+付
+見
+出
+要
+素</p></td>
+<td><div class="line-block">
+<div class="line">　#. 要素1</div>
+<div class="line">　#. 要素2</div>
+</div>
+</td>
+<td><ol class="arabic simple">
+<li><p>要素1</p></li>
+<li><p>要素1</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p>強
+調</p></td>
+<td><p>**強調**</p></td>
+<td><p><strong>強調</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>イ
+ン
+デ
+ン
+ト</p></td>
+<td><div class="line-block">
+<div class="line">　見出</div>
+<div class="line">　  | 内容1</div>
+<div class="line">　  | 内容2</div>
+</div>
+</td>
+<td><dl>
+<dt>見出</dt><dd><div class="line-block">
+<div class="line">内容1</div>
+<div class="line">内容2</div>
+</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><p>画
+像
+差
+込</p></td>
+<td><div class="line-block">
+<div class="line">.. figure::</div>
+<div class="line">./path/imagefile</div>
+<div class="line">　:scale: xx%</div>
+<div class="line">　:align: xxx</div>
+</div>
+</td>
+<td><p>フォルダ内に
+格納された画像が差し込まれます。</p></td>
+</tr>
+<tr class="row-odd"><td><p>表
+差
+込
+1</p></td>
+<td><p><a class="reference internal" href="../../_images/image718.png"><img alt="image7" src="../../_images/image718.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+<td><p><a class="reference internal" href="../../_images/image817.png"><img alt="image8" src="../../_images/image817.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>表
+差
+込
+2</p></td>
+<td><div class="line-block">
+<div class="line">.. csv-table:: 表組例2</div>
+<div class="line">　 :header: 見出1, 見出2, 見出3</div>
+<div class="line">　 :widths: 20, 20, 40</div>
+<div class="line"><br /></div>
+<div class="line">　 内容1, 内容2, 内容3</div>
+</div>
+</td>
+<td><p><a href="#id10"><span class="problematic" id="id11">|image9|</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<div class="line-block">
+<div class="line">表組1 では以下の記号をいれることができません。</div>
+<div class="line">※ (こめじるし),  ①などの〇付記号</div>
+</div>
+</div>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">.rst ファイル内構文2</span><a class="headerlink" href="#id9" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 43%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>種類</p></th>
+<th class="head"><p>構文</p></th>
+<th class="head"><p>ビルド結果</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ボタン</p></td>
+<td><p>:guilabel:<cite> アクション</cite></p></td>
+<td><p><span class="guilabel"> アクション</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>メモ</p></td>
+<td><div class="line-block">
+<div class="line">.. note:: | 補足的な情報を示しています。</div>
+<div class="line">　　　　 | Note に記載されている内容は読み飛ばしても困ることは無いでしょう。</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image148.png"><img alt="image14" src="../../_images/image148.png" style="width: 5.68735in; height: 0.56253in;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>メモ(Tip)</p></td>
+<td><div class="line-block">
+<div class="line">.. tip:: | 操作や作業におけるノウハウを示しています。</div>
+<div class="line">　　　　 | Tip に記載されている内容を読み飛ばした場合ユーザに混乱が生じる可能性があります。</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image157.png"><img alt="image15" src="../../_images/image157.png" style="width: 5.60102in; height: 0.52416in;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>メモ(Warning)</p></td>
+<td><div class="line-block">
+<div class="line">.. warning:: | 操作上の注意点を示しています。</div>
+<div class="line">　　　　 | Warning に記載された内容はユーザが把握しておくほうが適切な情報です。</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image167.png"><img alt="image16" src="../../_images/image167.png" style="width: 5.27072in; height: 0.49804in;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>メモ(Danger)</p></td>
+<td><div class="line-block">
+<div class="line">.. danger:: | 正常なサービスへ影響を与える可能性がある操作についての危険性を示しています。</div>
+<div class="line">　　　　 | Danger に記載された内容を知らない場合、大きな問題を引き起こす可能性があります。</div>
+</div>
+</td>
+<td><p><a class="reference internal" href="../../_images/image177.png"><img alt="image17" src="../../_images/image177.png" style="width: 5.54284in; height: 0.53672in;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

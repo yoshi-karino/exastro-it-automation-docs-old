@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Organization (オーガナイゼーション) &#8212; Documentation  ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+  
+    <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="検索" href="../../../search.html" /> 
+  </head>
+<body id="page" class="ja">
+
+
+<div id="container">
+
+<div id="header">
+  <header class="divInner">
+    <!-- Exastro logo -->
+    <div id="logo"><img src="../../../_static/img/exastro.svg" alt="Exastro"></div>
+    <!-- Project name -->
+    <div id="projectName"><a href="../../../index.html">Documentation</a></div>
+    <!-- Heaedr navigation -->
+    <div id="headerSearch">
+      <form class="search" action="../../../search.html" method="get">
+        <input type="text" name="q" aria-labelledby="searchlabel">
+        <button type="submit" value="検索"><img src="../../../_static/img/search.png" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+</div><!-- End #header -->
+
+
+<div id="toolbar">
+  <div class="divInner">
+    
+    <div id="documentVersion">
+      <dl>
+        <dt>Document version</dt>
+        <dd>
+          <div>
+            <select name="version" onchange="location.href=value;">
+                file_path: v2.0/ja/platform/organization
+                  <option value="#"
+                  selected
+                  >current</option>
+                file_path: v2.0/ja/platform/organization
+                  <option value="#"
+                  selected
+                  >v2.0 (current)</option>
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+
+    <div id="documentLanguage">
+      <dl>
+        <dt>Language</dt>
+        <dd>
+          <div>
+            <select name="lang" onchange="location.href=value;">
+                file_path: v2.0/ja/platform/organization
+                hasdoc: True
+                  <option value="#"
+                  selected
+                  >日本語</option>
+                file_path: v2.0/en/platform/organization
+                hasdoc: False
+            </select>
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="toolbarNavigation">
+      <ul>
+      </ul>
+    </div>
+  </div>
+</div><!-- End #toolbar -->
+
+<div id="sideMenu">
+
+  <div id="menuButton"></div>
+  
+  <aside class="divInner">
+    <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Exastro IT Automation 2.0</a></li>
+</ul>
+
+    <!-- <ul>
+      <li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">索引</a></li>
+    </ul> -->
+    
+  </aside>
+</div><!-- End #sideMenu -->
+
+<div id="contents">
+<main class="divInner">
+
+
+<div id="breadcrumbs">
+  <ul>
+    <li><a href="../../../index.html">HOME</a></li>
+    
+    <li>Organization (オーガナイゼーション)</li>
+  </ul>
+</div>
+
+
+<div id="article">
+<article class="divInner">
+<div class="body" role="main">
+
+  <section id="organization">
+<h1>Organization (オーガナイゼーション)<a class="headerlink" href="#organization" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">本章では、Exastro Suite (IT Automation 2.0系)でオーガナイゼーションの管理について説明します。</div>
+</div>
+</section>
+<section id="id2">
+<h2>オーガナイゼーションとは<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Exastro IT Automation2.0
+から導入されるマルチテナント機能においてテナントを意味する用語になります。</div>
+<div class="line">オーガナイゼーションを作成することで、IT
+Automationの利用を開始することができます。</div>
+</div>
+</section>
+<section id="id3">
+<h2>オーガナイゼーションの作成<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">オーガナイゼーション作成を行うことで、オーガナイゼーション管理者のアカウントが作成され、オーガナイゼーション用のURLにアクセスすることができるようになります。</div>
+<div class="line">また、システム内部では、</div>
+</div>
+<ul class="simple">
+<li><p>Database に、オーガナイゼーション用のデータが登録されます。</p></li>
+<li><p>Exastro IT Automation の永続ボリュームに、オーガナイゼーション用のディレクトリが作成されます。</p></li>
+<li><p>認証認可基盤に使用している Keycloak へ、オーガナイゼーション用のrealmデータと管理者ユーザーが登録されます。</p></li>
+<li><p>Gitlabに、オーガナイゼーション用のユーザーが登録されます。</p></li>
+</ul>
+<section id="id4">
+<h3>前提条件<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Platform管理者用サイトに、cURL アクセスできる作業用のLinuxサーバー。
+(shellスクリプトから、REST APIを実行します。)</p></li>
+<li><p>作業用のLinuxサーバーが、gitのコマンドが使用できること。（資材をリポジトリからダウンロードするために使います。）</p></li>
+<li><p>作業用のLinuxサーバーが、jqのコマンドが使用できること。（必須ではないですが、使用できない状態の時はエラー時の日本語がエンコードされた状態で表示されます。）</p></li>
+<li><p>shellスクリプトの実行に、Platform管理者アカウントが必要になります。（<a class="reference external" href="http://10.197.17.190:30400/631aac9174a18b0047bb938c">Platform管理者アカウントの追加</a>）</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>オーガナイゼーション作成手順<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>gitリポジトリから取得した資材の中にある、shellスクリプトを実行しオーガナイゼーションを作成します。</p>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">オーガナイゼーション作成用shellスクリプトを、リポジトリから git
+cloneしダウンロードします。</div>
+<div class="line">| アプリケーション名 | リポジトリ | フォルダ | | —————— |
+——————————————————– | ————- | | 共通認証基盤 |
+<a class="reference external" href="https://github.com/exastro-suite/exastro-platform.git">https://github.com/exastro-suite/exastro-platform.git</a> |
+./test/tools/ |</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">オーガナイゼーション作成用shellスクリプト内のAPI実行先URLを、Platform管理者用サイトアドレスに変更します。</div>
+<div class="line">```bash vi ./exastro-platform/test/tools/create-organization.conf</div>
+</div>
+<p>CONF_BASE_URL={Platform管理者用サイトアドレス} CURL_OPT=-svk
+``<code class="docutils literal notranslate"><span class="pre">※HTTPSで実行する場合は、</span></code>CURL_OPT=-sv<code class="docutils literal notranslate"><span class="pre">から</span></code>CURL_OPT=-svk`に変更してください。</p>
+</li>
+<li><p>オーガナイゼーション情報jsonファイルの準備
+<code class="docutils literal notranslate"><span class="pre">./exastro-platform/test/tools/create-organization.sample.json</span></code>を参考にして、作成するオーガナイゼーションの情報を指定したjsonファイルを作成します。</p>
+<p>以下、サンプルファイルの内容</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="w">    </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;org002&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="w">  </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;org002-name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;organization_managers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;username&quot;</span><span class="w">  </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;email&quot;</span><span class="w">     </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;admin@example.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;firstName&quot;</span><span class="w"> </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;lastName&quot;</span><span class="w">  </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;credentials&quot;</span><span class="w">   </span><span class="p">:</span><span class="w">   </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;type&quot;</span><span class="w">      </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;password&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;value&quot;</span><span class="w">     </span><span class="p">:</span><span class="w">   </span><span class="s2">&quot;password&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;temporary&quot;</span><span class="w"> </span><span class="p">:</span><span class="w">   </span><span class="kc">true</span><span class="w"></span>
+<span class="w">                </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;requiredActions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="s2">&quot;UPDATE_PROFILE&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">],</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>optionsの値に<code class="docutils literal notranslate"><span class="pre">&quot;sslRequired&quot;:</span> <span class="pre">&quot;none&quot;</span></code>を指定することで、オーガナイゼーションユーザーがhttpでのアクセスが可能となります。</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>項目の内容</p></th>
+<th class="head"><p>形式</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>オ
+ーガナイゼーションID</p></td>
+<td><p>英小文
+字、数字、ハイフン、アンダ
+ースコア　最大３６文字※先頭
+文字は英小文字であること※予
+約語(後述)に合致しないこと</p></td>
+</tr>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>オ
+ーガナイゼーション名</p></td>
+<td><p>最大２５５文字</p></td>
+</tr>
+<tr class="row-even"><td><p>organi
+zation_managers</p></td>
+<td><p>オーガナイゼ
+ーション管理者の情報</p></td>
+<td><p>※複数名登録
+するときは繰り返し指定可能</p></td>
+</tr>
+<tr class="row-odd"><td><p>org
+anization_manag
+ers[*].username</p></td>
+<td><p>オーガナイゼーション
+管理者のユーザ名（ロ
+グインするときのID）</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>organization_ma
+nagers[*].email</p></td>
+<td><p>オ
+ーガナイゼーション管
+理者のE-mailアドレス</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>orga
+nization_manage
+rs[*].firstName</p></td>
+<td><p>オーガナイ
+ゼーション管理者の名</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>org
+anization_manag
+ers[*].lastName</p></td>
+<td><p>オーガナイ
+ゼーション管理者の姓</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>organization_ma
+nagers[*].crede
+ntials[0].value</p></td>
+<td><p>オ
+ーガナイゼーション管
+理者の初期パスワード</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>opti
+ons.sslRequired</p></td>
+<td><p>“external”:(
+既定)プライベートIPア
+ドレスに固定する限り
+、ユーザーはSSL無しで
+Keycloakと通信可能。
+“n
+one”：SSLの設定なし。
+“all”：すべてのIPアド
+レスに対し、SSLを要求
+。(内部のAPIがHTTPア
+クセスのため選択不可)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><div class="line-block">
+<div class="line">オーガナイゼーション作成実行</div>
+<div class="line">Platform管理者アカウントを登録していない場合は、<a class="reference external" href="http://10.197.17.190:30400/631aac9174a18b0047bb938c">Platform管理者アカウントの追加</a></div>
+</div>
+<ul>
+<li><p>コマンド
+<code class="docutils literal notranslate"><span class="pre">bash</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">./exastro-platform/test/tools/create-organization.sh</span> <span class="pre">{作成したオーガナイゼーション情報jsonファイル}</span></code></p></li>
+<li><p>コマンド実行後に入力 ``` your username :
+Platform管理者のユーザー名を入力します your password :
+Platform管理者のパスワードを入力します</p>
+<p>Create an organization, are you sure? (Y/other) :
+“Y”を入力すると実行します ```</p>
+</li>
+<li><p>成功時の結果表示
+resultが”000-00000”が、オーガナイゼーションの作成に成功したことを示しています。
+<code class="docutils literal notranslate"><span class="pre">...</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">HTTP/1.1</span> <span class="pre">200</span> <span class="pre">OK</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Date:</span> <span class="pre">Thu,</span> <span class="pre">18</span> <span class="pre">Aug</span> <span class="pre">2022</span> <span class="pre">01:49:13</span> <span class="pre">GMT</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Server:</span> <span class="pre">Apache/2.4.37</span> <span class="pre">(Red</span> <span class="pre">Hat</span> <span class="pre">Enterprise</span> <span class="pre">Linux)</span> <span class="pre">mod_wsgi/4.7.1</span> <span class="pre">Python/3.9</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Length:</span> <span class="pre">107</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Type:</span> <span class="pre">application/json</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">{</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;data&quot;:</span> <span class="pre">null,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;message&quot;:</span> <span class="pre">&quot;SUCCESS&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;result&quot;:</span> <span class="pre">&quot;000-00000&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;ts&quot;:</span> <span class="pre">&quot;2022-08-18T01:49:17.251Z&quot;</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">}</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">*</span> <span class="pre">Connection</span> <span class="pre">#0</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">platform-auth</span> <span class="pre">left</span> <span class="pre">intact</span></code></p></li>
+<li><p>失敗時の結果表示イメージ
+<code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">HTTP/1.1</span> <span class="pre">400</span> <span class="pre">BAD</span> <span class="pre">REQUEST</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Date:</span> <span class="pre">Thu,</span> <span class="pre">18</span> <span class="pre">Aug</span> <span class="pre">2022</span> <span class="pre">05:29:35</span> <span class="pre">GMT</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Server:</span> <span class="pre">Apache/2.4.37</span> <span class="pre">(Red</span> <span class="pre">Hat</span> <span class="pre">Enterprise</span> <span class="pre">Linux)</span> <span class="pre">mod_wsgi/4.7.1</span> <span class="pre">Python/3.9</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Length:</span> <span class="pre">252</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Connection:</span> <span class="pre">close</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Type:</span> <span class="pre">application/json</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">{</span> <span class="pre">[252</span> <span class="pre">bytes</span> <span class="pre">data]</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">*</span> <span class="pre">Closing</span> <span class="pre">connection</span> <span class="pre">0</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">{</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;data&quot;:</span> <span class="pre">null,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;message&quot;:</span> <span class="pre">&quot;指定されたorganization(org002)は作成済みのため、作成できません。&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;result&quot;:</span> <span class="pre">&quot;400-23001&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;ts&quot;:</span> <span class="pre">&quot;2022-08-18T05:29:35.643Z&quot;</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">}</span></code></p></li>
+</ul>
+</li>
+<li><p>オーガナイゼーション用サイトが表示できるかWebブラウザから確認します。</p>
+<ul class="simple">
+<li><p>接続URL
+{Exastro Suite
+オーガナイゼーション用サイトアドレス}/{オーガナイゼーションID}/platform/
+例. <a class="reference external" href="https://exastro-suite.co.jp/org002/platform/">https://exastro-suite.co.jp/org002/platform/</a></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id6">
+<h3>その他制約事項・備考<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="id">
+<h3>オーガナイゼーションIDの予約語<a class="headerlink" href="#id" title="Permalink to this heading">¶</a></h3>
+<p>以下に示すパターンに合致するワードは、オーガナイゼーションIDに使用できません。
+| 予約語 | | ———————- | | master | | platform | | account | |
+account-console | | admin-cli | | broker | | realm-management |
+| security-admin-console | | <em>-workspaces | | system-</em>-auth |</p>
+</section>
+<section id="id7">
+<h3>オーガナイゼーション作成を再実行する場合<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>オーガナイゼーション作成で失敗し、再実行しても「指定されたorganization(xxx)は作成済みのため、作成できません。」のエラーが表示され失敗したオーガナイゼーションIDのオーガナイゼーションの作成ができない場合は、
+コマンドパラメータに<code class="docutils literal notranslate"><span class="pre">--retry</span></code>を付与して実行する。</p>
+<p>コマンドイメージ：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">exastro</span><span class="o">-</span><span class="n">platform</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">create</span><span class="o">-</span><span class="n">organization</span><span class="o">.</span><span class="n">sh</span> <span class="o">--</span><span class="n">retry</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">exastro</span><span class="o">-</span><span class="n">platform</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">create</span><span class="o">-</span><span class="n">organization</span><span class="o">.</span><span class="n">sh</span> <span class="o">--</span><span class="n">retry</span> <span class="o">./</span><span class="n">exastro</span><span class="o">-</span><span class="n">platform</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">create</span><span class="o">-</span><span class="n">organization</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h3>画面でオーガナイゼーション情報を入力して作成<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<p>画面の指示に従ってオーガナイゼーション情報を指定し、オーガナイゼーションを作成します
+※この方法の場合、オーガナイゼーション管理者は１名のみ指定できます（複数名いるときはファイル指定で行ってください）</p>
+<ul>
+<li><p>コマンド
+<code class="docutils literal notranslate"><span class="pre">bash</span>&#160;&#160;&#160;&#160; <span class="pre">./exastro-platform/test/tools/create-organization.sh</span></code></p></li>
+<li><p>コマンド実行後に入力 ``` Please enter the organization information
+to be created</p>
+<p>organization id : オーガナイゼーションIDを入力します organization
+name : オーガナイゼーション名を入力します organization manager’s
+username :
+オーガナイゼーション管理者のユーザ名（ログインするときのID）を入力します
+organization manager’s email :
+オーガナイゼーション管理者のE-mailアドレスを入力します organization
+manager’s first name : オーガナイゼーション管理者の名を入力します
+organization manager’s last name :
+オーガナイゼーション管理者の姓を入力します organization manager’s
+initial password :
+オーガナイゼーション管理者の初期パスワードを入力します</p>
+<p>your username : Platform管理者自身のユーザー名を入力します your
+password : Platform管理者自身のパスワードを入力します</p>
+<p>Create an organization, are you sure? (Y/other) :
+“Y”を入力すると実行します ```</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>項目の内容</p></th>
+<th class="head"><p>形式</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>organization id</p></td>
+<td><p>オ
+ーガナイゼーションID</p></td>
+<td><p>英小文
+字、数字、ハイフン、アンダ
+ースコア　最大３６文字※先頭
+文字は英小文字であること※予
+約語(後述)に合致しないこと</p></td>
+</tr>
+<tr class="row-odd"><td><p>organization
+name</p></td>
+<td><p>オ
+ーガナイゼーション名</p></td>
+<td><p>最大２５５文字</p></td>
+</tr>
+<tr class="row-even"><td><p>organization
+manager’s
+username</p></td>
+<td><p>オーガナイゼーション
+管理者のユーザ名（ロ
+グインするときのID）</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>organization
+manager’s email</p></td>
+<td><p>オ
+ーガナイゼーション管
+理者のE-mailアドレス</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>organization
+manager’s first
+name</p></td>
+<td><p>オーガナイ
+ゼーション管理者の名</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>organization
+manager’s last
+name</p></td>
+<td><p>オーガナイ
+ゼーション管理者の姓</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>organization
+manager’s
+initial
+password</p></td>
+<td><p>オ
+ーガナイゼーション管
+理者の初期パスワード</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>成功時の結果表示
+resultが”000-00000”が、オーガナイゼーションの作成に成功したことを示しています
+<code class="docutils literal notranslate"><span class="pre">...</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">HTTP/1.1</span> <span class="pre">200</span> <span class="pre">OK</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Date:</span> <span class="pre">Thu,</span> <span class="pre">18</span> <span class="pre">Aug</span> <span class="pre">2022</span> <span class="pre">01:49:13</span> <span class="pre">GMT</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Server:</span> <span class="pre">Apache/2.4.37</span> <span class="pre">(Red</span> <span class="pre">Hat</span> <span class="pre">Enterprise</span> <span class="pre">Linux)</span> <span class="pre">mod_wsgi/4.7.1</span> <span class="pre">Python/3.9</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Length:</span> <span class="pre">107</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Type:</span> <span class="pre">application/json</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">{</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;data&quot;:</span> <span class="pre">null,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;message&quot;:</span> <span class="pre">&quot;SUCCESS&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;result&quot;:</span> <span class="pre">&quot;000-00000&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;ts&quot;:</span> <span class="pre">&quot;2022-08-18T01:49:17.251Z&quot;</span>&#160;&#160;&#160;&#160; <span class="pre">}</span>&#160;&#160;&#160;&#160; <span class="pre">*</span> <span class="pre">Connection</span> <span class="pre">#0</span> <span class="pre">to</span> <span class="pre">host</span> <span class="pre">platform-auth</span> <span class="pre">left</span> <span class="pre">intact</span></code></p></li>
+<li><p>失敗時の結果表示イメージ
+<code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">HTTP/1.1</span> <span class="pre">400</span> <span class="pre">BAD</span> <span class="pre">REQUEST</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Date:</span> <span class="pre">Thu,</span> <span class="pre">18</span> <span class="pre">Aug</span> <span class="pre">2022</span> <span class="pre">05:29:35</span> <span class="pre">GMT</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Server:</span> <span class="pre">Apache/2.4.37</span> <span class="pre">(Red</span> <span class="pre">Hat</span> <span class="pre">Enterprise</span> <span class="pre">Linux)</span> <span class="pre">mod_wsgi/4.7.1</span> <span class="pre">Python/3.9</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Length:</span> <span class="pre">252</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Connection:</span> <span class="pre">close</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span> <span class="pre">Content-Type:</span> <span class="pre">application/json</span>&#160;&#160;&#160;&#160; <span class="pre">&lt;</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">{</span> <span class="pre">[252</span> <span class="pre">bytes</span> <span class="pre">data]</span>&#160;&#160;&#160;&#160; <span class="pre">*</span> <span class="pre">Closing</span> <span class="pre">connection</span> <span class="pre">0</span>&#160;&#160;&#160;&#160; <span class="pre">{</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;data&quot;:</span> <span class="pre">null,</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;message&quot;:</span> <span class="pre">&quot;指定されたorganization(org002)は作成済みのため、作成できません。&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;result&quot;:</span> <span class="pre">&quot;400-23001&quot;,</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&quot;ts&quot;:</span> <span class="pre">&quot;2022-08-18T05:29:35.643Z&quot;</span>&#160;&#160;&#160;&#160; <span class="pre">}</span></code></p></li>
+</ul>
+</section>
+<section id="api">
+<h3>APIを直接実行する場合<a class="headerlink" href="#api" title="Permalink to this heading">¶</a></h3>
+<p>shell
+スクリプトを介さずに、APIを直接実行する場合は、以下の様なコマンドを実行してください。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">BASE64_BASIC</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> -n <span class="s2">&quot;Platform管理者のユーザー名を設定してください:Platform管理者のパスワードを設定してください&quot;</span> <span class="p">|</span> base64<span class="k">)</span>
+<span class="nv">BASE_URL</span><span class="o">=</span>Platform管理者用サイトアドレスを設定してください
+
+curl -k -X POST <span class="se">\</span>
+    -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
+    -H <span class="s2">&quot;Authorization: basic </span><span class="si">${</span><span class="nv">BASE64_BASIC</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
+    -d  @- <span class="se">\</span>
+    <span class="s2">&quot;</span><span class="si">${</span><span class="nv">BASE_URL</span><span class="si">}</span><span class="s2">/api/platform/organizations?retry=1&quot;</span> <span class="se">\</span>
+    <span class="s">&lt;&lt; EOF</span>
+<span class="s">{</span>
+<span class="s">  &quot;id&quot;: &quot;org002&quot;,</span>
+<span class="s">  &quot;name&quot;: &quot;org002-name&quot;,</span>
+<span class="s">  &quot;organization_managers&quot;: [</span>
+<span class="s">    {</span>
+<span class="s">      &quot;username&quot;: &quot;admin&quot;,</span>
+<span class="s">      &quot;email&quot;: &quot;admin@example.com&quot;,</span>
+<span class="s">      &quot;firstName&quot;: &quot;admin&quot;,</span>
+<span class="s">      &quot;lastName&quot;: &quot;admin&quot;,</span>
+<span class="s">      &quot;credentials&quot;: [</span>
+<span class="s">        {</span>
+<span class="s">          &quot;type&quot;: &quot;password&quot;,</span>
+<span class="s">          &quot;value&quot;: &quot;password&quot;,</span>
+<span class="s">          &quot;temporary&quot;: true</span>
+<span class="s">        }</span>
+<span class="s">      ],</span>
+<span class="s">      &quot;requiredActions&quot;: [</span>
+<span class="s">        &quot;UPDATE_PROFILE&quot;</span>
+<span class="s">      ],</span>
+<span class="s">      &quot;enabled&quot;: true</span>
+<span class="s">    }</span>
+<span class="s">  ],</span>
+<span class="s">  &quot;options&quot;: {}</span>
+<span class="s">}</span>
+<span class="s">EOF</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+</div>
+
+
+<div id="articleNavigation">
+  <ul>
+  </ul>
+</div>
+
+
+<div id="pageTopLink">
+  <a href="#container"><i>↑</i> Page Top</a>
+</div>
+
+</article>
+</div>
+</main>
+</div><!-- End #contents -->
+<div id="footer">
+  <footer class="divInner">
+    <small>Copyright © 2022 NEC Corporation</small>
+  </footer>
+</div><!-- End #footer -->
+
+<div id="overlay"></div>
+
+</div><!-- End #container -->
+  </body>
+</html>

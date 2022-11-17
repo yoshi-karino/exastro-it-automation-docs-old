@@ -20,7 +20,6 @@
     <script src="../../../../_static/underscore.js"></script>
     <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
-    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/clipboard.min.js"></script>
     <script src="../../../../_static/copybutton.js"></script>
     <script src="../../../../_static/translations.js"></script>
@@ -106,7 +105,7 @@
   
   <aside class="divInner">
     <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Exastro-it-automation Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Exastro IT Automation 2.0</a></li>
 </ul>
 
     <!-- <ul>
@@ -172,7 +171,7 @@
 <p>なお、® マーク、TMマークは本書に明記しておりません。</p>
 <p>※本書では「Exastro IT Automation」を「ITA」として記載します。</p>
 <section id="id1">
-<h1>目次<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>目次<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="#目次">目次</a> <a class="reference external" href="#目次">2</a></p>
 <p><a class="reference external" href="#はじめに">はじめに</a> <a class="reference external" href="#はじめに">5</a></p>
 <p><a class="reference external" href="#itaシステム-rest-apiの概要">1 ITAシステム　REST APIの概要</a>
@@ -335,14 +334,14 @@ Movement作業実行を対象としたRestAPI</a>
 <a class="reference external" href="#トラブルシューティング">24</a></p>
 </section>
 <section id="id2">
-<h1>はじめに<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>はじめに<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h1>
 <p>本書は、ITAシステムのRestAPIの概要および操作方法について説明します。</p>
 </section>
 <section id="ita-rest-api">
-<h1>ITAシステム　REST APIの概要<a class="headerlink" href="#ita-rest-api" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>ITAシステム　REST APIの概要<a class="headerlink" href="#ita-rest-api" title="Permalink to this heading">¶</a></h1>
 <p>本章ではITAを操作するための標準REST APIについて説明します。</p>
 <section id="rest-api">
-<h2>REST APIについて<a class="headerlink" href="#rest-api" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>REST APIについて<a class="headerlink" href="#rest-api" title="Permalink to this heading">¶</a></h2>
 <p>ITAでは、外部プログラムからITAで管理されているリソースに対して、各種操作を行うことが可能なREST
 APIを提供しています。</p>
 <ul class="simple">
@@ -550,11 +549,11 @@ EDIT、UPLOAD_SPREADSHEETのみ利用不可）</p>
 </section>
 </section>
 <section id="rest">
-<h1>標準REST機能の利用<a class="headerlink" href="#rest" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>標準REST機能の利用<a class="headerlink" href="#rest" title="Permalink to this heading">¶</a></h1>
 <p>外部プログラムからREST
 APIを利用して、ITAで管理されているリソースに対し、操作を行うことが可能です。以下に、呼び出し規約を示します。</p>
 <section id="id3">
-<h2>リクエストの形式<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>リクエストの形式<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <p>ITAのREST
 APIでは、ITA上の各メニューのパスに対してHTTPリクエストを発行します。</p>
 <p>パス：</p>
@@ -625,7 +624,7 @@ orization</p></td>
 <p>X-Command: INFO</p>
 </section>
 <section id="id4">
-<h2>利用可能なメソッドとコマンド<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>利用可能なメソッドとコマンド<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p>HTTPリクエストメソッドは、原則POSTを指定してください。</p>
 <p>例外として、ITAで認証不要と設定したメニューにアクセスする場合のみGETを指定できます。</p>
 <p>利用可能なメソッドとコマンドの階層は以下のとおりです。</p>
@@ -644,7 +643,7 @@ orization</p></td>
 <p>└【UPLOAD_SPREADSHEET】 ‐　⑧</p>
 </div></blockquote>
 <section id="get-method">
-<h3>GET（Method）<a class="headerlink" href="#get-method" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>GET（Method）<a class="headerlink" href="#get-method" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>列情報（列番号と列名）および、通常ステータス（廃止または活性中）の全レコードの行数とレコード内容を返却します。</p>
 <p>・HTTPヘッダ</p>
@@ -782,7 +781,7 @@ orization</p></td>
 </table>
 </section>
 <section id="info-x-command">
-<h3>INFO(X-Command)<a class="headerlink" href="#info-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>INFO(X-Command)<a class="headerlink" href="#info-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>列情報のみを取得します。</p>
 <p>X-Command(FILTER、FILTER_DATAONLY)またはX-Command(EDIT)を実行する際に必要な情報を取得することができます。</p>
@@ -812,7 +811,7 @@ orization</p></td>
 </div></blockquote>
 </section>
 <section id="filterfilter-dataonly-x-command">
-<h3>FILTER・FILTER_DATAONLY (X-Command)<a class="headerlink" href="#filterfilter-dataonly-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>FILTER・FILTER_DATAONLY (X-Command)<a class="headerlink" href="#filterfilter-dataonly-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>パラメータで指定した条件に合致したレコードの、列情報（列番号と列名）および、</p>
 <p>通常ステータス（廃止または活性中）の全レコードの行数とレコード内容を返却します。</p>
@@ -847,7 +846,7 @@ Webページの表示フィルタにプルダウンが表示されている列�
 <p>※GUI上番号範囲を指定するようなカラム（項番など）の場合、RANGEのSTARTのみ指定した検索とNORMALの検索は同様の検索結果となります。</p>
 <p>例）{&quot;2&quot;:{&quot;NORMAL&quot;:&quot;1&quot;}}</p>
 <p>{&quot;2&quot;:{&quot;RANGE&quot;:{&quot;START&quot;:&quot;1&quot;,&quot;END&quot;:&quot;&quot;}}}</p>
-<a class="reference internal image-reference" href="../../../../_images/image227.png"><img alt="../../../../_images/image227.png" src="../../../../_images/image227.png" style="width: 2.35449in; height: 1.29185in;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image228.png"><img alt="../../../../_images/image228.png" src="../../../../_images/image228.png" style="width: 2.35449in; height: 1.29185in;" /></a>
 <p>2)指定形式</p>
 <p>JSON形式で指定。フィルタ種類ごとの形式で、フィルタ条件を格納します。</p>
 <p>JSON形式にする前段階では、１つの連想配列の中に、列番号ごとの連想配列を入れ子にする形で指定します。</p>
@@ -1135,7 +1134,7 @@ Webページの表示フィルタにプルダウンが表示されている列�
 </div></blockquote>
 </section>
 <section id="edit-x-command">
-<h3>EDIT(X-Command)<a class="headerlink" href="#edit-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>EDIT(X-Command)<a class="headerlink" href="#edit-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>レコードの登録、既存レコードの更新、廃止、復活を行います。</p>
 <p>・HTTPヘッダ</p>
@@ -1951,7 +1950,7 @@ PHP関数(checkdate)で正常に処理できる範囲外。</p></td>
 </table>
 </section>
 <section id="list-options-x-command">
-<h3>LIST_OPTIONS(X-Command)<a class="headerlink" href="#list-options-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>LIST_OPTIONS(X-Command)<a class="headerlink" href="#list-options-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>各メニューのプルダウン項目で選択可能な値の一覧を取得します。</p>
 <p>※アクセス権/アクセス許可ロールの選択可能な値は取得されません。</p>
@@ -2064,7 +2063,7 @@ PHP関数(checkdate)で正常に処理できる範囲外。</p></td>
 </table>
 </section>
 <section id="download-spreadsheet-x-command">
-<h3>DOWNLOAD_SPREADSHEET(X-Command)<a class="headerlink" href="#download-spreadsheet-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>DOWNLOAD_SPREADSHEET(X-Command)<a class="headerlink" href="#download-spreadsheet-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>各メニューを、フィルタをかけた状態でEXCELダウンロードします。EXCEL出力最大行数を超えている場合は、SCSVファイルをダウンロードします。</p>
 <p>パラメータの指定方法はFILTERと同様です。</p>
@@ -2155,7 +2154,7 @@ PHP関数(checkdate)で正常に処理できる範囲外。</p></td>
 </table>
 </section>
 <section id="upload-spreadsheet-x-command">
-<h3>UPLOAD_SPREADSHEET(X-Command)<a class="headerlink" href="#upload-spreadsheet-x-command" title="この見出しへのパーマリンク">¶</a></h3>
+<h3>UPLOAD_SPREADSHEET(X-Command)<a class="headerlink" href="#upload-spreadsheet-x-command" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>各メニューの登録・更新用EXCELファイル（またはSCSVファイル）をREST
 APIでアップロードします。</p>
@@ -2298,9 +2297,9 @@ APIでアップロードします。</p>
 </section>
 </section>
 <section id="id5">
-<h1>メニューエクスポート/インポート利用編<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>メニューエクスポート/インポート利用編<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h1>
 <section id="restapi">
-<h2>メニューエクスポートを対象としたRestAPI<a class="headerlink" href="#restapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>メニューエクスポートを対象としたRestAPI<a class="headerlink" href="#restapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>メニューエクスポートの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[エクスポート/インポート]の、[メニューエクスポート]メニューに相当する操作です。</p>
@@ -2576,7 +2575,7 @@ IDをキーとしてメニューの<strong>配列を構成する</strong></p></t
 </table>
 </section>
 <section id="id7">
-<h2>メニューインポートを対象としたRestAPI<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>メニューインポートを対象としたRestAPI<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>メニューエクスポートの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[エクスポート/インポート]の、[メニューインポート]メニューに相当する操作です。</p>
@@ -2928,9 +2927,9 @@ ability_upload_file_name</p></td>
 </section>
 </section>
 <section id="excel">
-<h1>Excel一括エクスポート/インポート利用編<a class="headerlink" href="#excel" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>Excel一括エクスポート/インポート利用編<a class="headerlink" href="#excel" title="Permalink to this heading">¶</a></h1>
 <section id="execlrestapi">
-<h2>Execl一括エクスポートを対象としたRestAPI<a class="headerlink" href="#execlrestapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Execl一括エクスポートを対象としたRestAPI<a class="headerlink" href="#execlrestapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Excel一括エクスポートの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[エクスポート/インポート]の、[Excel一括エクスポート]メニューに相当する操作です。</p>
@@ -3195,7 +3194,7 @@ el一括エクスポート・インポート管理]メニューを
 </table>
 </section>
 <section id="excelrestapi">
-<h2>Excel一括インポートを対象としたRestAPI<a class="headerlink" href="#excelrestapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Excel一括インポートを対象としたRestAPI<a class="headerlink" href="#excelrestapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Excel一括インポートの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[エクスポート/インポート]の、[Excel一括ーインポート]メニューに相当する操作です。</p>
@@ -3561,9 +3560,9 @@ ability_upload_file_name</p></td>
 </section>
 </section>
 <section id="symphony">
-<h1>Symphony利用編<a class="headerlink" href="#symphony" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>Symphony利用編<a class="headerlink" href="#symphony" title="Permalink to this heading">¶</a></h1>
 <section id="symphonyrestapi">
-<h2>Symphony登録作業を対象としたRestAPI<a class="headerlink" href="#symphonyrestapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Symphony登録作業を対象としたRestAPI<a class="headerlink" href="#symphonyrestapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Symphonyの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Symphony]の、[Symphonyクラス編集]メニューに相当する操作です。</p>
@@ -4034,7 +4033,7 @@ ymphonyク
 </div></blockquote>
 </section>
 <section id="id12">
-<h2>Symphony作業実行を対象としたRestAPI<a class="headerlink" href="#id12" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Symphony作業実行を対象としたRestAPI<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Symphonyの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Symphony]の、[Symphony作業実行]メニュー、[Symphony作業確認]メニューに相当する操作です。</p>
@@ -4412,7 +4411,7 @@ phony作業確認</p></td>
 </table>
 </section>
 <section id="id14">
-<h2>Symphony作業確認を対象としたRestAPI<a class="headerlink" href="#id14" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Symphony作業確認を対象としたRestAPI<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Symphonyの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Symphony]の、[Symphony作業確認]メニューに相当する操作です。</p>
@@ -4832,7 +4831,7 @@ phony作業確認</p></td>
 </table>
 </section>
 <section id="id17">
-<h2>Symphony作業一覧を対象としたRestAPI<a class="headerlink" href="#id17" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Symphony作業一覧を対象としたRestAPI<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h2>
 <blockquote id="id18">
 <div><p>下記の情報でHTTPリクエストを発行します。</p>
 <p>・パス</p>
@@ -5083,9 +5082,9 @@ SynphonyインスタンスNoをカンマ区切り</p></td>
 </section>
 </section>
 <section id="conductor">
-<h1>Conductor利用編<a class="headerlink" href="#conductor" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>Conductor利用編<a class="headerlink" href="#conductor" title="Permalink to this heading">¶</a></h1>
 <section id="conductorrestapi">
-<h2>Conductor登録作業を対象としたRestAPI<a class="headerlink" href="#conductorrestapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Conductor登録作業を対象としたRestAPI<a class="headerlink" href="#conductorrestapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Conductorの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Conductor]の、[Conductorクラス編集]メニューに相当する操作です。</p>
@@ -6200,7 +6199,7 @@ terminal-n)・・・・</strong></p>
 </div></blockquote>
 </section>
 <section id="id20">
-<h2>Conductor作業実行を対象としたRestAPI<a class="headerlink" href="#id20" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Conductor作業実行を対象としたRestAPI<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Conductorの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Conductor]の、[Conductor作業実行]メニュー、[Conductor作業確認]メニューに相当する操作です。</p>
@@ -6594,7 +6593,7 @@ Conductor作業確認を対象としたRestAPI』を参照。</p>
 </table>
 </section>
 <section id="id23">
-<h2>Conductor作業確認を対象としたRestAPI<a class="headerlink" href="#id23" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Conductor作業確認を対象としたRestAPI<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Conductorの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[Conductor]の、[Conductor作業実行]メニュー、[Conductor作業確認]メニューに相当する操作です。</p>
@@ -7014,7 +7013,7 @@ vementで出力されたステータスファイルの値</p></td>
 </table>
 </section>
 <section id="id26">
-<h2>Conductor作業一覧を対象としたRestAPI<a class="headerlink" href="#id26" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Conductor作業一覧を対象としたRestAPI<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h2>
 <blockquote id="id27">
 <div><p>下記の情報でHTTPリクエストを発行します。</p>
 <p>・パス</p>
@@ -7266,9 +7265,9 @@ ductorインスタンスNoをカンマ区切り</p></td>
 </section>
 </section>
 <section id="movement">
-<h1>Movement利用編<a class="headerlink" href="#movement" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>Movement利用編<a class="headerlink" href="#movement" title="Permalink to this heading">¶</a></h1>
 <section id="movementrestapi">
-<h2>Movement作業実行を対象としたRestAPI<a class="headerlink" href="#movementrestapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Movement作業実行を対象としたRestAPI<a class="headerlink" href="#movementrestapi" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>Movementの操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、以下メニューグループに該当する『作業実行』、『作業状態確認』に相当する操作です。</p>
@@ -7585,9 +7584,9 @@ horization</p></td>
 </section>
 </section>
 <section id="id30">
-<h1>バージョン確認<a class="headerlink" href="#id30" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>バージョン確認<a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h1>
 <section id="id31">
-<h2>バージョン確認を対象としたRestAPI<a class="headerlink" href="#id31" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>バージョン確認を対象としたRestAPI<a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>インストールされているITAのバージョンとドライバーの一覧を取得するRestAPIを行うことができます。</p>
 <p>利用可能な機能は、メニューグループ[管理コンソール]の、[バージョン確認]メニューに相当する操作です。</p>
@@ -7697,9 +7696,9 @@ horization</p></td>
 </section>
 </section>
 <section id="id33">
-<h1>比較実行<a class="headerlink" href="#id33" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>比較実行<a class="headerlink" href="#id33" title="Permalink to this heading">¶</a></h1>
 <section id="id34">
-<h2>比較実行を対象としたRestAPI<a class="headerlink" href="#id34" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>比較実行を対象としたRestAPI<a class="headerlink" href="#id34" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>比較の操作をRestAPIで行うことができます。</p>
 <p>利用可能な機能は、以下メニューグループに該当する『比較実行』に相当する操作です。</p>
@@ -7881,9 +7880,9 @@ horization</p></td>
 </section>
 </section>
 <section id="id36">
-<h1>付録<a class="headerlink" href="#id36" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>付録<a class="headerlink" href="#id36" title="Permalink to this heading">¶</a></h1>
 <section id="id37">
-<h2>トラブルシューティング<a class="headerlink" href="#id37" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>トラブルシューティング<a class="headerlink" href="#id37" title="Permalink to this heading">¶</a></h2>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><blockquote>
