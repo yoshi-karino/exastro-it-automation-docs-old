@@ -1,6 +1,6 @@
-===================================
-Exastro-it-automation Documentation
-===================================
+=========================
+Exastro IT Automation 2.0
+=========================
 
 .. raw:: html
 
@@ -12,6 +12,8 @@ Exastro-it-automation Documentation
 
    ja/index
    .. en/index
+   .. ja_manual_design/index
+   .. en_manual_design/index
 
 .. raw:: html
 

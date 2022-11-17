@@ -20,7 +20,6 @@
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/translations.js"></script>
@@ -106,7 +105,7 @@
   
   <aside class="divInner">
     <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Exastro-it-automation Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Exastro IT Automation 2.0</a></li>
 </ul>
 
     <!-- <ul>
@@ -215,17 +214,17 @@
 <p><a class="reference external" href="#表示フィルタ">5.3 表示フィルタ</a> <a class="reference external" href="#表示フィルタ">46</a></p>
 <p><a class="reference external" href="#_Toc65672915">5.4 RestAPI表示フィルタ</a> <a class="reference external" href="#_Toc65672915">52</a></p>
 <section id="id1">
-<h1>はじめに<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>はじめに<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <p>本書では、データレコード毎のロールベースアクセス制御（RBAC）の機能および操作方法について説明します。</p>
 </section>
 <section id="rbac">
-<h1>データレコード毎のロールベースアクセス制御（RBAC）の概要<a class="headerlink" href="#rbac" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>データレコード毎のロールベースアクセス制御（RBAC）の概要<a class="headerlink" href="#rbac" title="Permalink to this heading">¶</a></h1>
 <p>ユーザ毎にアクセスを許可するロールを付与し、データレコード毎にロールを付与することでデータレコード毎のアクセスを制御できます。</p>
 <p>上記機能を利用しない場合、デフォルトアクセス権およびアクセス許可ロールは空白のままとして下さい。</p>
 <p>本書では、「データレコード毎のロールベースアクセス制御（RBAC）」を以降「ロールベースアクセス制御（RBAC）」と表記します。</p>
 </section>
 <section id="id2">
-<h1>ロールベースアクセス制御 (RBAC)の主要機能<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>ロールベースアクセス制御 (RBAC)の主要機能<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h1>
 <p>ロールベースアクセス制御
 (RBAC)の主要機能は次のカテゴリーに分類されます。</p>
 <ul>
@@ -242,7 +241,7 @@
 </ul>
 </section>
 <section id="id3">
-<h1>ユーザ毎のロール紐付<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>ユーザ毎のロール紐付<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h1>
 <p>ロールベースアクセス制御
 (RBAC)を行うには、ユーザ毎にアクセスを許可するロールを設定します。</p>
 <p>例として「表3-1」の登録例をもとに以降（章立て3.1～3.4）の手順にて説明します。</p>
@@ -380,14 +379,14 @@
 <p>※メニューの作成について、詳細は「利用手順マニュアル
 メニュー作成機能」を参照ください。</p>
 <p>上記の「表 3-1」を図化すると以下のような関係になります。</p>
-<a class="reference internal image-reference" href="../../../_images/image215.png"><img alt="../../../_images/image215.png" src="../../../_images/image215.png" style="width: 6.69236in; height: 3.96528in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image225.png"><img alt="../../../_images/image225.png" src="../../../_images/image225.png" style="width: 6.69236in; height: 3.96528in;" /></a>
 <p>図　3- 1　全体図</p>
 <p>上記における「パターン：d」の場合、以下のダイアログが表示されます。</p>
-<a class="reference internal image-reference" href="../../../_images/image313.png"><img alt="../../../_images/image313.png" src="../../../_images/image313.png" style="width: 4.89652in; height: 1.97944in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image318.png"><img alt="../../../_images/image318.png" src="../../../_images/image318.png" style="width: 4.89652in; height: 1.97944in;" /></a>
 <p><strong>図 3-2 表示権限が無い場合に表示されるダイアログ</strong></p>
 <p>例えば、ユーザ「User_A」が紐付けの設定がされていないメニュー「Menu_B」にアクセスを試みた場合、メニューに対し権限がないためトップページに遷移します。</p>
 <section id="id4">
-<h2>アクセスを制御するロールを設計しロール管理に登録<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>アクセスを制御するロールを設計しロール管理に登録<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>アクセスを制御するロールを設計し
 「管理コンソール」メニューグループ&gt;「ロール管理」メニュー
@@ -403,7 +402,7 @@
 <div><p>各メニューへのアクセス権は
 「管理コンソール」メニューグループ&gt;「ロール・メニュー紐付管理」メニュー
 より登録します。</p>
-<a class="reference internal image-reference" href="../../../_images/image514.png"><img alt="../../../_images/image514.png" src="../../../_images/image514.png" style="width: 5.70866in; height: 1.33646in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image519.png"><img alt="../../../_images/image519.png" src="../../../_images/image519.png" style="width: 5.70866in; height: 1.33646in;" /></a>
 </div></blockquote>
 <p><strong>図 3.1-1
 「管理コンソール」メニューグループ&gt;「ロール・メニュー紐付管理」メニュー</strong></p>
@@ -414,14 +413,14 @@
 <div><p>ユーザ毎に各データに付与するロールは
 「管理コンソール」メニューグループ&gt;「ロール・ユーザ紐付管理」メニュー
 より登録します。</p>
-<a class="reference internal image-reference" href="../../../_images/image616.png"><img alt="../../../_images/image616.png" src="../../../_images/image616.png" style="width: 5.70866in; height: 1.3565in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image617.png"><img alt="../../../_images/image617.png" src="../../../_images/image617.png" style="width: 5.70866in; height: 1.3565in;" /></a>
 </div></blockquote>
 <p><strong>図 3.1-2
 「管理コンソール」メニューグループ&gt;「ロール・ユーザ紐付管理」メニュー</strong></p>
 <blockquote>
 <div><p>ITAをインストールすると、デフォルトの設定として以下のロールが登録されますが、更新等の操作は行わないでください。</p>
 </div></blockquote>
-<a class="reference internal image-reference" href="../../../_images/image715.png"><img alt="../../../_images/image715.png" src="../../../_images/image715.png" style="width: 6.33772in; height: 0.7189in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image716.png"><img alt="../../../_images/image716.png" src="../../../_images/image716.png" style="width: 6.33772in; height: 0.7189in;" /></a>
 <p><strong>図　3.1-3　「管理コンソール」メニューグループ&gt;「ロール管理」メニュー</strong></p>
 <blockquote>
 <div><p>また、本書ではロールの2つの役割のうち、「②データレコード毎に付与するロール」について説明していきます。（
@@ -431,13 +430,13 @@
 </div></blockquote>
 </section>
 <section id="id5">
-<h2>ロールとメニューの紐付をロール・メニュー紐付管理に登録<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>ロールとメニューの紐付をロール・メニュー紐付管理に登録<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>各ロールとメニューの紐付を
 「管理コンソール」メニューグループ&gt;「ロール・メニュー紐付管理」メニュー
 より登録します。</p>
 <p>ロールを新規に登録した場合、「ロール・メニュー紐付管理」メニューで、ロールと各メニューへの紐付けを行う必要があります。</p>
-<a class="reference internal image-reference" href="../../../_images/image814.png"><img alt="../../../_images/image814.png" src="../../../_images/image814.png" style="width: 6.10236in; height: 1.49299in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image815.png"><img alt="../../../_images/image815.png" src="../../../_images/image815.png" style="width: 6.10236in; height: 1.49299in;" /></a>
 </div></blockquote>
 <p><strong>図　3.1-4　「管理コンソール」メニューグループ&gt;「ロール・メニュー紐付管理」メニュー</strong></p>
 <blockquote>
@@ -455,11 +454,11 @@
 <p><strong>図 3.2-6 「入力用」メニューグループ&gt;「Menu_A」メニュー</strong></p>
 </section>
 <section id="id6">
-<h2>ユーザ（アカウント）をユーザ管理に登録<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>ユーザ（アカウント）をユーザ管理に登録<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>ユーザ（アカウント）を　「管理コンソール」メニューグループ&gt;「ユーザ管理」メニュー
 より登録します。</p>
-<a class="reference internal image-reference" href="../../../_images/image119.png"><img alt="../../../_images/image119.png" src="../../../_images/image119.png" style="width: 5.89263in; height: 1.45831in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image1112.png"><img alt="../../../_images/image1112.png" src="../../../_images/image1112.png" style="width: 5.89263in; height: 1.45831in;" /></a>
 </div></blockquote>
 <p><strong>図 3.3-1 「管理コンソール」メニューグループ&gt;「ユーザ管理」メニュー</strong></p>
 <blockquote>
@@ -469,7 +468,7 @@
 <p><strong>図 3.3-2 「管理コンソール」メニューグループ&gt;「ユーザ管理」メニュー</strong></p>
 </section>
 <section id="id7">
-<h2>ユーザとロールの紐付をロール・ユーザ管理に登録<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>ユーザとロールの紐付をロール・ユーザ管理に登録<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>ユーザとロールの紐付を　「管理コンソール」メニューグループ&gt;「ロール・ユーザ紐付管理」メニュー
 より登録します。</p>
@@ -489,7 +488,7 @@
 </section>
 </section>
 <section id="id8">
-<h1>データ毎のロール紐付<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>データ毎のロール紐付<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h1>
 <p>以降の説明では、以下の「表 4-1」が設定されていることを前提とします。</p>
 <p>表　4- 1 メニューと登録例</p>
 <table class="docutils align-default">
@@ -863,7 +862,7 @@ n</strong>（B_admin）</p></td>
 </div></blockquote>
 <p><strong>図 4-5 「基本コンソール」メニューグループ&gt;「オペレーション」メニュー</strong></p>
 <section id="id35">
-<h2>新規データ<a class="headerlink" href="#id35" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>新規データ<a class="headerlink" href="#id35" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>データ登録時、登録するデータに対し「アクセス権」を設定することが可能です。</p>
 <p>以下「図 4.1-1」は、
@@ -895,7 +894,7 @@ n</strong>（B_admin）</p></td>
 「管理コンソール」メニューグループ&gt;「ロール・ユーザ紐付管理」メニュー</strong></p>
 <p>例）ユーザ「A_user03」でログインした場合</p>
 <p>ユーザ「A_user03」には「デフォルトアクセス権」を設定していないため、登録時「アクセス許可ロール」欄にはデフォルトで何も表示されません。</p>
-<a class="reference internal image-reference" href="../../../_images/image225.png"><img alt="../../../_images/image225.png" src="../../../_images/image225.png" style="width: 5.30694in; height: 1.41944in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image226.png"><img alt="../../../_images/image226.png" src="../../../_images/image226.png" style="width: 5.30694in; height: 1.41944in;" /></a>
 <p><strong>図 4.1-3
 「基本コンソール」メニューグループ&gt;「オペレーション一覧」メニュー</strong></p>
 <p>例）ユーザ「B_user03」でログインした場合</p>
@@ -929,11 +928,11 @@ n</strong>（B_admin）</p></td>
 </div></blockquote>
 <p><strong>図 4.1-5 アクセス許可ロールを変更するダイアログ</strong></p>
 <section id="id38">
-<h3><a href="#id36"><span class="problematic" id="id37">**</span></a><a class="headerlink" href="#id38" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id36"><span class="problematic" id="id37">**</span></a><a class="headerlink" href="#id38" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 <section id="id39">
-<h2>データ更新<a class="headerlink" href="#id39" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>データ更新<a class="headerlink" href="#id39" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><div class="line-block">
 <div class="line">「アクセス許可ロール」欄には、データレコードへのアクセスを許可するロールが表示されます。</div>
@@ -959,7 +958,7 @@ n</strong>（B_admin）</p></td>
 「基本コンソール」メニューグループ&gt;「オペレーション」メニュー</strong></p>
 </div></blockquote>
 <section id="id42">
-<h3><a href="#id40"><span class="problematic" id="id41">**</span></a><a class="headerlink" href="#id42" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id40"><span class="problematic" id="id41">**</span></a><a class="headerlink" href="#id42" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>「図
 4.2-2」の状態で「更新」ボタンを押下すると、「アクセス許可ロール」欄から廃止されたロールが削除されます（この場合、「ID変換失敗」が消え「A社_関東」のみが表示されます）。</p>
@@ -969,7 +968,7 @@ n</strong>（B_admin）</p></td>
 </div></blockquote>
 <p>「一覧/更新」サブメニューの「更新」ボタンを押下しない限り、「アクセス許可ロール」欄には廃止されたロールが「ID変換失敗」という表示で残ります。</p>
 <section id="id43">
-<h4>ユーザとロールの紐付を廃止したロールの扱い<a class="headerlink" href="#id43" title="この見出しへのパーマリンク">¶</a></h4>
+<h4>ユーザとロールの紐付を廃止したロールの扱い<a class="headerlink" href="#id43" title="Permalink to this heading">¶</a></h4>
 <p>「管理コンソール」メニューグループ&gt;「ロール・ユーザ管理」メニュー
 でロールの紐付を廃止した場合、紐付を廃止したロールは「アクセス許可ロール」欄の表示が「<strong>****</strong>」となります。</p>
 <p>例）ユーザ「B_user03」からロール「B社_関西」の紐付けを廃止、ユーザ「B_user03」でログイン</p>
@@ -989,13 +988,13 @@ n</strong>（B_admin）</p></td>
 </div></blockquote>
 </section>
 <section id="id44">
-<h4>特定のデータを複数のロールで共有した場合の扱い<a class="headerlink" href="#id44" title="この見出しへのパーマリンク">¶</a></h4>
+<h4>特定のデータを複数のロールで共有した場合の扱い<a class="headerlink" href="#id44" title="Permalink to this heading">¶</a></h4>
 <blockquote>
 <div><p>データに対し複数のアクセス許可ロールが登録されている場合、「ロール・ユーザ紐付管理」メニューで紐付が無いロールは「アクセス許可ロール」欄にて「<strong>***</strong>」と表示されます。</p>
 </div></blockquote>
 <p>例）ユーザ「B_user03」でログインし、「アクセス許可ロール」欄をデフォルトの状態でデータ登録します。</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/image318.png"><img alt="../../../_images/image318.png" src="../../../_images/image318.png" style="width: 5.90718in; height: 2.83358in;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/image319.png"><img alt="../../../_images/image319.png" src="../../../_images/image319.png" style="width: 5.90718in; height: 2.83358in;" /></a>
 <p><strong>図 4.2-6
 「基本コンソール」メニューグループ&gt;「オペレーション」メニュー</strong></p>
 <p>ユーザ「B_user01」でログインします。ユーザ「B_user01」にはロール「B社_関西」との紐付がありません。紐付がないロールはアクセス許可ロールの表示が「<strong>****</strong>」となります。</p>
@@ -1016,15 +1015,15 @@ n</strong>（B_admin）</p></td>
 </section>
 </section>
 <section id="id45">
-<h2>データ廃止<a class="headerlink" href="#id45" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>データ廃止<a class="headerlink" href="#id45" title="Permalink to this heading">¶</a></h2>
 <p>データを廃止してもアクセス許可ロールは変更されることはありません。</p>
 </section>
 <section id="id46">
-<h2>データ復活<a class="headerlink" href="#id46" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>データ復活<a class="headerlink" href="#id46" title="Permalink to this heading">¶</a></h2>
 <p>データを復活してもアクセス許可ロールは変更されることはありません。</p>
 </section>
 <section id="excel">
-<h2>Excelからのアップロード<a class="headerlink" href="#excel" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>Excelからのアップロード<a class="headerlink" href="#excel" title="Permalink to this heading">¶</a></h2>
 <p>「表　4- 1」を基に登録した以下の情報を用いて説明します。</p>
 <a class="reference internal image-reference" href="../../../_images/image354.png"><img alt="../../../_images/image354.png" src="../../../_images/image354.png" style="width: 5.90551in; height: 2.06256in;" /></a>
 <p><strong>図　4.5-1
@@ -1129,11 +1128,11 @@ n</strong>（B_admin）</p></td>
 ※<strong>図 4.5-3</strong>）。</p>
 <p>ロールベースアクセス制御（RBAC）を導入しない場合、アクセス許可ロールは設定しないで下さい。</p>
 <section id="id57">
-<h3><a href="#id55"><span class="problematic" id="id56">**</span></a><a class="headerlink" href="#id57" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id55"><span class="problematic" id="id56">**</span></a><a class="headerlink" href="#id57" title="Permalink to this heading">¶</a></h3>
 </section>
 </section>
 <section id="restapi">
-<h2>RestAPIからのアップロード<a class="headerlink" href="#restapi" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>RestAPIからのアップロード<a class="headerlink" href="#restapi" title="Permalink to this heading">¶</a></h2>
 <p>RestAPIからのアップロード（登録・更新・廃止・復活）については前述の「4.5
 Excelからのアップロード」と同様です。</p>
 <p>ただし、Excelからのアップロードと異なり、「アクセス許可ロール」はデフォルトで指定がありません。</p>
@@ -1188,7 +1187,7 @@ RestAPI表示フィルタ</em>」で後述します。</p>
 </section>
 </section>
 <section id="id58">
-<h1>紐付けロールによる表示制御<a class="headerlink" href="#id58" title="この見出しへのパーマリンク">¶</a></h1>
+<h1>紐付けロールによる表示制御<a class="headerlink" href="#id58" title="Permalink to this heading">¶</a></h1>
 <p>本章以降では、
 「基本コンソール」メニューグループ&gt;「オペレーション一覧」メニュー
 に以下のデータが登録されていることを前提とします。</p>
@@ -1470,7 +1469,7 @@ B_user03）</p>
 <p>表 5- 1 ユーザごとに表示されるデータ一覧</p>
 <p>◆：各ユーザで表示対象となるデータ</p>
 <section id="id59">
-<h2>一覧表示<a class="headerlink" href="#id59" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>一覧表示<a class="headerlink" href="#id59" title="Permalink to this heading">¶</a></h2>
 <p>「一覧/更新」サブメニューに表示されるデータは、
 「管理コンソール」メニューグループ&gt;「ロール・ユーザ紐付管理」メニュー
 でユーザに紐付けたロールが、アクセス許可ロールに付与されているデータになります。</p>
@@ -1515,7 +1514,7 @@ B_user03）</p>
 <p><strong>表 5.1-4 「表　4- 1」の抜粋</strong></p>
 </div></blockquote>
 <section id="id66">
-<h3><a href="#id64"><span class="problematic" id="id65">**</span></a><a class="headerlink" href="#id66" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id64"><span class="problematic" id="id65">**</span></a><a class="headerlink" href="#id66" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="#id67"><span class="problematic" id="id68">**</span></a>ユーザ名：A社_user01　<a href="#id69"><span class="problematic" id="id70">**</span></a>（ユーザID：A_user01）</p></li>
 </ul>
@@ -1527,7 +1526,7 @@ B_user03）</p>
 </div></blockquote>
 <p><strong>表 5.1-5 「表 5- 1」の抜粋</strong></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../../_images/image519.png"><img alt="../../../_images/image519.png" src="../../../_images/image519.png" style="width: 5.90718in; height: 1.84683in;" /></a>
+<div><a class="reference internal image-reference" href="../../../_images/image5110.png"><img alt="../../../_images/image5110.png" src="../../../_images/image5110.png" style="width: 5.90718in; height: 1.84683in;" /></a>
 <p><strong>図　5.1-4
 「A_user01」でログインした場合の「一覧/更新」サブメニュー</strong></p>
 <p>ユーザ「A_user01」と各ロールの紐付は以下のとおりです（前述の「表　4-1」から抜粋したものです）。</p>
@@ -1554,7 +1553,7 @@ B_user03）</p>
 </div></blockquote>
 </section>
 <section id="id77">
-<h3><a href="#id75"><span class="problematic" id="id76">**</span></a><a class="headerlink" href="#id77" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id75"><span class="problematic" id="id76">**</span></a><a class="headerlink" href="#id77" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="#id78"><span class="problematic" id="id79">**</span></a>ユーザ名：A社_user03　<a href="#id80"><span class="problematic" id="id81">**</span></a>（ユーザID：A_user03）</p></li>
 </ul>
@@ -1587,12 +1586,12 @@ B_user03）</p>
 <p><strong>図　5.1-7
 「B_admin」でログインした場合の「一覧/更新」サブメニュー</strong></p>
 <p>ユーザ「B_admin」と各ロールの紐付は以下のとおりです（前述の「表　4-1」から抜粋したものです）。</p>
-<a class="reference internal image-reference" href="../../../_images/image617.png"><img alt="../../../_images/image617.png" src="../../../_images/image617.png" style="width: 5.70866in; height: 0.96615in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image618.png"><img alt="../../../_images/image618.png" src="../../../_images/image618.png" style="width: 5.70866in; height: 0.96615in;" /></a>
 <p><strong>表 5.1-12 「表　4- 1」の抜粋</strong></p>
 </div></blockquote>
 </section>
 <section id="id86">
-<h3><a href="#id84"><span class="problematic" id="id85">**</span></a><a class="headerlink" href="#id86" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id84"><span class="problematic" id="id85">**</span></a><a class="headerlink" href="#id86" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="#id87"><span class="problematic" id="id88">**</span></a>ユーザ名：B社_user01　<a href="#id89"><span class="problematic" id="id90">**</span></a>（ユーザID：B_user01）</p></li>
 </ul>
@@ -1631,7 +1630,7 @@ B_user03）</p>
 </div></blockquote>
 </section>
 <section id="id97">
-<h3><a href="#id95"><span class="problematic" id="id96">**</span></a><a class="headerlink" href="#id97" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id95"><span class="problematic" id="id96">**</span></a><a class="headerlink" href="#id97" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><a href="#id98"><span class="problematic" id="id99">**</span></a>ユーザ名：B社_user03　<a href="#id100"><span class="problematic" id="id101">**</span></a>（ユーザID：B_user03）</p></li>
 </ul>
@@ -1653,7 +1652,7 @@ B_user03）</p>
 </section>
 </section>
 <section id="id102">
-<h2>変更履歴<a class="headerlink" href="#id102" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>変更履歴<a class="headerlink" href="#id102" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">「一覧/更新」サブメニューに表示されるデータのみ「変更履歴」サブメニューへも表示が可能です。</div>
 <div class="line">また、履歴にもアクセス許可ロールが付与されています。</div>
@@ -1661,7 +1660,7 @@ B_user03）</p>
 <p>例）ユーザ「B_user02」でログインした場合</p>
 <blockquote>
 <div><p>「一覧/更新」サブメニューに表示されるデータ（オペレーションID：6、9）が、「変更履歴」サブメニューで表示可能です。</p>
-<a class="reference internal image-reference" href="../../../_images/image716.png"><img alt="../../../_images/image716.png" src="../../../_images/image716.png" style="width: 6.04052in; height: 1.70015in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image717.png"><img alt="../../../_images/image717.png" src="../../../_images/image717.png" style="width: 6.04052in; height: 1.70015in;" /></a>
 <a class="reference internal image-reference" href="../../../_images/image723.png"><img alt="../../../_images/image723.png" src="../../../_images/image723.png" style="width: 6.07036in; height: 1.41098in;" /></a>
 </div></blockquote>
 <p><strong>図 5.2-1
@@ -1703,7 +1702,7 @@ B_user03）</p>
 <p><strong>図 5.2-6
 「基本コンソール」メニューグループ&gt;「オペレーション一覧」メニュー</strong></p>
 <section id="id105">
-<h3><a href="#id103"><span class="problematic" id="id104">**</span></a><a class="headerlink" href="#id105" title="この見出しへのパーマリンク">¶</a></h3>
+<h3><a href="#id103"><span class="problematic" id="id104">**</span></a><a class="headerlink" href="#id105" title="Permalink to this heading">¶</a></h3>
 <blockquote>
 <div><p>ユーザ「administrator」からログアウトし、ユーザ「B_admin」でログインしなおした場合、「一覧/更新」サブメニューには「オペレーションID：1、2、3、4、6、7、8、9」の計8件が表示されます。</p>
 <a class="reference internal image-reference" href="../../../_images/image783.png"><img alt="../../../_images/image783.png" src="../../../_images/image783.png" style="width: 5.94718in; height: 2.84691in;" /></a>
@@ -1724,14 +1723,14 @@ B_user03）</p>
 「基本コンソール」メニューグループ&gt;「オペレーション一覧」メニュー</strong></p>
 <blockquote>
 <div><p>「変更履歴」サブメニューにて、「オペレーションID：2」のデータを指定した結果、ロールが「A社サイド」だったころに登録されていた「極秘１」は表示されず、今回登録した「社外秘２」のみが表示されます。</p>
-<a class="reference internal image-reference" href="../../../_images/image815.png"><img alt="../../../_images/image815.png" src="../../../_images/image815.png" style="width: 5.90718in; height: 1.63347in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image816.png"><img alt="../../../_images/image816.png" src="../../../_images/image816.png" style="width: 5.90718in; height: 1.63347in;" /></a>
 </div></blockquote>
 <p><strong>図 5.2-10
 「基本コンソール」メニューグループ&gt;「オペレーション一覧」メニュー</strong></p>
 </section>
 </section>
 <section id="id106">
-<h2>表示フィルタ<a class="headerlink" href="#id106" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>表示フィルタ<a class="headerlink" href="#id106" title="Permalink to this heading">¶</a></h2>
 <p>「一覧/更新」サブメニューに表示できるデータのみ「表示フィルタ」サブメニューで絞り込んだ表示が可能です。</p>
 <a class="reference internal image-reference" href="../../../_images/image822.png"><img alt="../../../_images/image822.png" src="../../../_images/image822.png" style="width: 6.43008in; height: 3.07896in;" /></a>
 <p><strong>図 5.3-1
@@ -1912,7 +1911,7 @@ o
 </ol>
 </section>
 <section id="id107">
-<h2>RestAPI表示フィルタ<a class="headerlink" href="#id107" title="この見出しへのパーマリンク">¶</a></h2>
+<h2>RestAPI表示フィルタ<a class="headerlink" href="#id107" title="Permalink to this heading">¶</a></h2>
 <p>ReatAPIのFILTER(X-Command)でのアクセス許可ロールの扱い方について説明します。</p>
 <p>FILTER(X-Command)の列毎のフィルタの種類が3種類あります。</p>
 <p><strong>表 5.4-1 フィルタの種類</strong></p>
