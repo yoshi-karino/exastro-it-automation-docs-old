@@ -1,6 +1,6 @@
-===================================
+====================================
 Exastro-it-automation Documentation
-===================================
+====================================
 
 .. raw:: html
 
@@ -11,6 +11,7 @@ Exastro-it-automation Documentation
    :maxdepth: 1
 
    ja/index
+   ja_manual_design/index
    .. en/index
 
 .. raw:: html

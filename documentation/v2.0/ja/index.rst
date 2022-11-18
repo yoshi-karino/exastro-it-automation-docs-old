@@ -23,8 +23,8 @@ Exastro-it-automation 2.0 操作マニュアル
 
    designing_this_manual/index
    it_automation_base/index
-   .. create_param/index
-   .. ansible-driver/index
+   create_param/index
+   ansible-driver/index
    .. rest_api/index
    .. installation_appendix/index
 
