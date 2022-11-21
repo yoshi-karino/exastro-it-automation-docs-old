@@ -3,8 +3,8 @@
 ================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    manual_rule
-   manual_syntax
    build_flow
+   manual_syntax

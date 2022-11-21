@@ -29,7 +29,8 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="prev" title="マニュアル構文" href="manual_syntax.html" /> 
+    <link rel="next" title="マニュアル構文" href="manual_syntax.html" />
+    <link rel="prev" title="マニュアル記述ルール" href="manual_rule.html" /> 
   </head>
 <body id="page" class="ja">
 
@@ -93,7 +94,8 @@
     </div>
     <div id="toolbarNavigation">
       <ul>
-        <li class="prev"><a href="manual_syntax.html" title="前のトピックへ">マニュアル構文</a></li>
+        <li class="prev"><a href="manual_rule.html" title="前のトピックへ">マニュアル記述ルール</a></li>
+        <li class="next"><a href="manual_syntax.html" title="次のトピックへ">マニュアル構文</a></li>
       </ul>
     </div>
   </div>
@@ -105,11 +107,10 @@
   
   <aside class="divInner">
     <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Exastro-it-automation Documentation</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Exastro IT Automation Documentation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../ja/index.html">マニュアル(日本語)</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">マニュアル構成法</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="manual_rule.html">マニュアル記述ルール</a></li>
-<li class="toctree-l3"><a class="reference internal" href="manual_syntax.html">マニュアル構文</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">マニュアルのビルド</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">前提</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">ビルドについて</a></li>
@@ -126,6 +127,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="manual_syntax.html">マニュアル構文</a></li>
 </ul>
 </li>
 </ul>
@@ -146,7 +148,7 @@
 <div id="breadcrumbs">
   <ul>
     <li><a href="../../index.html">HOME</a></li>
-    <li><a href="../index.html">Exastro-it-automation Documentation</a></li>
+    <li><a href="../index.html">Exastro IT Automation Documentation</a></li>
     <li><a href="index.html">マニュアル構成法</a></li>
     
     <li>マニュアルのビルド</li>
@@ -180,7 +182,7 @@
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../_images/before_after_2_0.png"><img alt="build_before_after" src="../../_images/before_after_2_0.png" style="width: 5.84375in; height: 1.09375in;" /></a>
 <figcaption>
-<p><span class="caption-number">図 7 </span><span class="caption-text">ビルド元とビルド結果</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 1 </span><span class="caption-text">ビルド元とビルド結果</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -210,7 +212,7 @@
 <figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../_images/image420.png"><img alt="build_sample_target" src="../../_images/image420.png" style="width: 5.1083in; height: 2.3537in;" /></a>
 <figcaption>
-<p><span class="caption-number">図 8 </span><span class="caption-text">サンプルビルド対象</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
+<p><span class="caption-number">図 2 </span><span class="caption-text">サンプルビルド対象</span><a class="headerlink" href="#id11" title="この画像へのパーマリンク">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -237,8 +239,14 @@
 <h3>大章一覧を記述したindex.rstファイルを作成<a class="headerlink" href="#index-rst" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ドキュメントルート<span class="o">(</span>documentation/v2.0/ja<span class="o">)</span>
 　<span class="p">|</span>-- install
-　<span class="p">|</span>-- index.rst <span class="o">(</span>大章一覧を記載します。<span class="o">)</span> ★ <span class="o">(</span>記述方法は「マニュアル構文」を参照下さい。<span class="o">)</span>
+　<span class="p">|</span>-- index.rst <span class="o">(</span>大章一覧を記載します。<span class="o">)</span> ★
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">index.rst ファイルの構文については <a class="reference internal" href="manual_syntax.html#index-rns"><span class="std std-ref">index.rst</span></a> をご参照下さい</div>
+</div>
 </div>
 </section>
 <section id="rst">
@@ -248,9 +256,15 @@
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ドキュメントルート<span class="o">(</span>documentation/v2.0/ja<span class="o">)</span>
 　<span class="p">|</span>-- install
-　<span class="p">|</span>　 <span class="p">|</span>-- installation.rst <span class="o">(</span>中章の内容を記述します。<span class="o">)</span>  ★ <span class="o">(</span>詳細は「マニュアル構文」をご参照下さい。<span class="o">)</span>
+　<span class="p">|</span>　 <span class="p">|</span>-- installation.rst <span class="o">(</span>中章の内容を記述します。<span class="o">)</span>  ★
 　<span class="p">|</span>-- index.rst
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">.rst ファイルの構文については <a class="reference internal" href="manual_syntax.html#doc-rns"><span class="std std-ref">ドキュメント記述用 .rst ファイル</span></a> をご参照下さい</div>
+</div>
 </div>
 </section>
 <section id="id7">
@@ -258,7 +272,7 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ドキュメントルート<span class="o">(</span>documentation/v2.0/ja<span class="o">)</span>
  　<span class="p">|</span>-- install
  　<span class="p">|</span>　 <span class="p">|</span>-- installation.rst
- 　<span class="p">|</span>　 <span class="p">|</span>-- installation 画像ファイル格納用ディレクトリ <span class="o">(</span>.rst ファイル名と同名にします。<span class="o">)</span>  ★
+ 　<span class="p">|</span>　 <span class="p">|</span>-- installation 画像ファイル格納用ディレクトリ  ★ <span class="o">(</span>.rst ファイル名と同名にします。<span class="o">)</span>
  　<span class="p">|</span>-- index.rst
 </pre></div>
 </div>
@@ -278,9 +292,6 @@
 <h3>ビルド先ディレクトリを作成<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
 <div class="line">documentation ディレクトリ配下に html ディレクトリを作成します。</div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>documentation
 　<span class="p">|</span>-- html ★
@@ -316,7 +327,8 @@
 
 <div id="articleNavigation">
   <ul>
-    <li class="prev"><a href="manual_syntax.html" title="前のトピックへ"><span>前のトピックへ</span>マニュアル構文</a></li>
+    <li class="prev"><a href="manual_rule.html" title="前のトピックへ"><span>前のトピックへ</span>マニュアル記述ルール</a></li>
+    <li class="next"><a href="manual_syntax.html" title="次のトピックへ"><span>次のトピックへ</span>マニュアル構文</a></li>
   </ul>
 </div>
 

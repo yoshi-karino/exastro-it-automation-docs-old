@@ -66,7 +66,9 @@
 
    ドキュメントルート(documentation/v2.0/ja)
    　|-- install
-   　|-- index.rst (大章一覧を記載します。) ★ (記述方法は「マニュアル構文」を参照下さい。) 
+   　|-- index.rst (大章一覧を記載します。) ★
+
+.. note:: | index.rst ファイルの構文については :ref:`index-rns` をご参照下さい
 
 中章の内容を記述した 「.rst ファイル」 を作成
 ---------------------------------------------
@@ -76,8 +78,10 @@
 
    ドキュメントルート(documentation/v2.0/ja)
    　|-- install
-   　|　 |-- installation.rst (中章の内容を記述します。)  ★ (詳細は「マニュアル構文」をご参照下さい。) 
+   　|　 |-- installation.rst (中章の内容を記述します。)  ★
    　|-- index.rst
+
+.. note:: | .rst ファイルの構文については :ref:`doc-rns` をご参照下さい
 
 画像ファイル格納用ディレクトリを作成
 ------------------------------------
@@ -87,7 +91,7 @@
   ドキュメントルート(documentation/v2.0/ja)
    　|-- install
    　|　 |-- installation.rst
-   　|　 |-- installation 画像ファイル格納用ディレクトリ (.rst ファイル名と同名にします。)  ★
+   　|　 |-- installation 画像ファイル格納用ディレクトリ  ★ (.rst ファイル名と同名にします。) 
    　|-- index.rst
 
 中章一覧を記述したファイルを作成
@@ -106,7 +110,6 @@
 --------------------------------
 
 | documentation ディレクトリ配下に html ディレクトリを作成します。
-.. code-block:: bash
 
 .. code-block:: bash
 
