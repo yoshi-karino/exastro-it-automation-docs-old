@@ -6,9 +6,9 @@ Exastro-it-automation のシステム構成
    :maxdepth: 2
 
    architecture
-   .. basic_console
+   basic_console
    .. connecting_ad
    .. sso
-   .. management_console
+   management_console_2
    .. rbac
    .. conductor

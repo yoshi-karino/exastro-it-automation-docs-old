@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>ITA_システム構成/環境構築ガイド &#8212; Documentation  ドキュメント</title>
+    <title>2.1. ITA_システム構成/環境構築ガイド &#8212; Documentation  ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/option.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
@@ -20,6 +20,7 @@
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/translations.js"></script>
@@ -27,7 +28,9 @@
     <script type="text/javascript" src="../../../_static/exastro_documents.js"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../../../genindex.html" />
-    <link rel="search" title="検索" href="../../../search.html" /> 
+    <link rel="search" title="検索" href="../../../search.html" />
+    <link rel="next" title="2.2. ITA_利用手順マニュアル" href="basic_console.html" />
+    <link rel="prev" title="2. Exastro-it-automation のシステム構成" href="index.html" /> 
   </head>
 <body id="page" class="ja">
 
@@ -94,6 +97,8 @@
     </div>
     <div id="toolbarNavigation">
       <ul>
+        <li class="prev"><a href="index.html" title="前のトピックへ"><span class="section-number">2. </span>Exastro-it-automation のシステム構成</a></li>
+        <li class="next"><a href="basic_console.html" title="次のトピックへ"><span class="section-number">2.2. </span>ITA_利用手順マニュアル</a></li>
       </ul>
     </div>
   </div>
@@ -104,8 +109,31 @@
   <div id="menuButton"></div>
   
   <aside class="divInner">
-    <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Exastro IT Automation 2.0</a></li>
+    <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Exastro IT Automation Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">マニュアル(日本語)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../installation/index.html">1. インストール</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">2. Exastro-it-automation のシステム構成</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2.1. ITA_システム構成/環境構築ガイド</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id1">2.1.1. はじめに</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id2">2.1.2. システム要件</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id12">2.1.3. システム構成</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="basic_console.html">2.2. ITA_利用手順マニュアル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html">2.3. BackYardコンテンツ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html#id8">2.4. インストールの開始</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html#id9">2.5. オペレーション作業履歴の定期削除</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html#id10">2.6. ログレベルの変更</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html#id11">2.7. メンテナンス</a></li>
+<li class="toctree-l4"><a class="reference internal" href="management_console_2.html#id15">2.8. トラブルシューティング</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ja_manual_design/index.html">マニュアル構成法</a></li>
+</ul>
+</li>
 </ul>
 
     <!-- <ul>
@@ -122,8 +150,11 @@
 <div id="breadcrumbs">
   <ul>
     <li><a href="../../../index.html">HOME</a></li>
+    <li><a href="../../index.html">Exastro IT Automation Documentation</a></li>
+    <li><a href="../index.html">マニュアル(日本語)</a></li>
+    <li><a href="index.html"><span class="section-number">2. </span>Exastro-it-automation のシステム構成</a></li>
     
-    <li>ITA_システム構成/環境構築ガイド</li>
+    <li><span class="section-number">2.1. </span>ITA_システム構成/環境構築ガイド</li>
   </ul>
 </div>
 
@@ -133,8 +164,8 @@
 <div class="body" role="main">
 
   <section id="ita">
-<h1>ITA_システム構成/環境構築ガイド<a class="headerlink" href="#ita" title="Permalink to this heading">¶</a></h1>
-<a class="reference internal image-reference" href="../../../_images/image118.png"><img alt="../../../_images/image118.png" src="../../../_images/image118.png" style="width: 3.35079in; height: 0.78559in;" /></a>
+<h1><span class="section-number">2.1. </span>ITA_システム構成/環境構築ガイド<a class="headerlink" href="#ita" title="この見出しへのパーマリンク">¶</a></h1>
+<a class="reference internal image-reference" href="../../../_images/image116.png"><img alt="../../../_images/image116.png" src="../../../_images/image116.png" style="width: 3.35079in; height: 0.78559in;" /></a>
 <div class="line-block">
 <div class="line">基本編</div>
 <div class="line">－第1.10版－</div>
@@ -176,11 +207,11 @@
 <div class="line">※本書では「Exastro IT Automation」を「ITA」として記載します。</div>
 </div>
 <section id="id1">
-<h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.1. </span>はじめに<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <p>本書では、ITAシステム運用の為のシステム構成と環境構築について説明します。</p>
 </section>
 <section id="id2">
-<h2>システム要件<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.2. </span>システム要件<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">¶</a></h2>
 <ol class="arabic simple">
 <li></li>
 <li></li>
@@ -188,14 +219,14 @@
 <li></li>
 </ol>
 <section id="id3">
-<h3>サーバ動作要件<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<h3>サーバ動作要件<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">¶</a></h3>
 <p><a href="#id4"><span class="problematic" id="id5">|</span></a>本システムはLinuxサーバで稼働し、クライアントPCからブラウザ経由でアクセスします。
 <a href="#id6"><span class="problematic" id="id7">|</span></a>システムインストールするにあたっては、次の要件を満たしているサーバをご用意ください。</p>
 </section>
 <section id="id8">
-<h3>サーバ構成<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default" id="id18">
-<caption><span class="caption-text">サーバ構成一覧</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3>サーバ構成<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id16">
+<caption><span class="caption-number">表 2.1 </span><span class="caption-text">サーバ構成一覧</span><a class="headerlink" href="#id16" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>カテゴリ</strong></p></th>
 <th class="head"><p><strong>必須
@@ -215,8 +246,7 @@
 <td></td>
 <td><p>CentOS</p></td>
 <td><p>7.x</p>
-<p>8.xは2021/12/3
-1にEOLとなったため対象外</p>
+<p>8.xは2021/12/31にEOLとなったため対象外</p>
 </td>
 </tr>
 <tr class="row-even"><td></td>
@@ -238,13 +268,11 @@
 <td><p>必須</p></td>
 <td><p>PHP</p></td>
 <td><p>ITAv1.9.1以前：7.2</p>
-<p>ITAv
-1.10.0以降：7.2または7.4</p>
+<p>ITAv1.10.0以降：7.2または7.4</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>PHPライブラリ</p></td>
-<td><p>す
-べて必須</p></td>
+<td><p>すべて必須</p></td>
 <td><p>PhpSpreadsheet</p></td>
 <td><p>1.10.1以上</p></td>
 </tr>
@@ -262,13 +290,12 @@
 </table>
 </section>
 <section id="id9">
-<h3>サーバ最小スペック<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default" id="id19">
-<caption><span class="caption-text">サーバ最小スペック一覧</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3>サーバ最小スペック<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id17">
+<caption><span class="caption-number">表 2.2 </span><span class="caption-text">サーバ最小スペック一覧</span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>カテゴリ</p></th>
-<th class="head"><p>最
-小スペック値</p></th>
+<th class="head"><p>最小スペック値</p></th>
 <th class="head"><p>備考</p></th>
 </tr>
 </thead>
@@ -289,7 +316,7 @@
 </table>
 </section>
 <section id="id10">
-<h3>サイジング<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<h3>サイジング<a class="headerlink" href="#id10" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
 <div class="line">サーバスペックについて、下記三つの観点を目安に設計を行ってください。</div>
 </div>
@@ -299,8 +326,8 @@
 </div>
 </dd>
 </dl>
-<table class="docutils align-default" id="id20">
-<caption><span class="caption-text">メニューあたりの項目数とサーバスペック一覧</span><a class="headerlink" href="#id20" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-number">表 2.3 </span><span class="caption-text">メニューあたりの項目数とサーバスペック一覧</span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>メニュー項目数</p></th>
 <th class="head"><p>CPU</p></th>
@@ -328,8 +355,8 @@
 </div>
 </dd>
 </dl>
-<table class="docutils align-default" id="id21">
-<caption><span class="caption-text">Ansible作業実行の同時実行数とサーバスペック一覧</span><a class="headerlink" href="#id21" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">表 2.4 </span><span class="caption-text">Ansible作業実行の同時実行数とサーバスペック一覧</span><a class="headerlink" href="#id19" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>作業実行の同時実行数</p></th>
 <th class="head"><p>CPU</p></th>
@@ -370,7 +397,7 @@
 </div>
 </section>
 <section id="id11">
-<h3>クライアント動作要件<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<h3>クライアント動作要件<a class="headerlink" href="#id11" title="この見出しへのパーマリンク">¶</a></h3>
 <p>本システムの機能を利用するにあたって、クライアント側PCの動作環境は以下を推奨します。</p>
 <div class="line-block">
 <div class="line">※1 Excelファイルダウンロードを行う場合に必須です（ダウンロードファイル形式がExcelのため）。</div>
@@ -378,14 +405,14 @@
 </section>
 </section>
 <section id="id12">
-<h2>システム構成<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.3. </span>システム構成<a class="headerlink" href="#id12" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="id13">
-<h3>システム構成<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<h3>システム構成<a class="headerlink" href="#id13" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
 <div class="line">本ソフトウェアのWeb/AP機能、BackYard機能、データベース、データストレージは、次のようなサーバ構成で運用が可能です。</div>
 </div>
-<table class="docutils align-default" id="id22">
-<caption><span class="caption-text">システム構成パターン</span><a class="headerlink" href="#id22" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id20">
+<caption><span class="caption-number">表 2.5 </span><span class="caption-text">システム構成パターン</span><a class="headerlink" href="#id20" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>N
 o</p></th>
@@ -398,14 +425,14 @@ o</p></th>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>オール
 インワン構成</p></td>
-<td><p>シ
-ステムを一つのサーバ上で
+<td><p>システムを一つのサーバ上で
 組み立てる構成パターン。</p></td>
-<td><p>ITA-BASE機
-能とオールインワン構
+<td><p>ITA-BASE機能とオールインワン構
 成可能な連携ドライバ</p>
-<p>・Ansibler-driver</p>
-<p>・Cobbler-driver</p>
+<ol class="arabic simple">
+<li><p>Ansibler-driver</p></li>
+<li><p>Cobbler-driver</p></li>
+</ol>
 </td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
@@ -429,30 +456,15 @@ o</p></th>
 <div class="line">以降に、代表例としてAnsible Driverおよび Ansible</div>
 <div class="line">Coreを利用するシステムのイメージ図を記載します。</div>
 </div>
-<table class="docutils align-default" id="id23">
-<caption><span class="caption-text">システム構成パターン2</span><a class="headerlink" href="#id23" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id21">
+<caption><span class="caption-number">表 2.6 </span><span class="caption-text">システム構成パターン2</span><a class="headerlink" href="#id21" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li></li>
-</ul>
-<p><em>通
-信
-番
-号
-1*</em></p>
-</th>
-<th class="head"><p><strong>F
-ROM</strong></p></th>
+<tr class="row-odd"><th class="head"><p><strong>通信番号1</strong></p></th>
+<th class="head"><p><strong>FROM</strong></p></th>
 <th class="head"><p><strong>TO</strong></p></th>
-<th class="head"><p>**
-プロトコル**</p>
-<ul class="simple">
-<li></li>
-</ul>
-<dl class="simple">
-<dt><a href="#id14"><span class="problematic" id="id15">*</span></a>[ポート番号</dt><dd><p>2]**</p>
-</dd>
-</dl>
+<th class="head"><p><strong>プロトコル</strong></p>
+<p><strong>[ポート番
+号2]</strong></p>
 </th>
 <th class="head"><p><strong>主な用途</strong></p></th>
 </tr>
@@ -460,28 +472,27 @@ ROM</strong></p></th>
 <tbody>
 <tr class="row-even"><td></td>
 <td><p>端末</p></td>
-<td><p>We
-b/APサーバ</p></td>
+<td><p>Web/APサーバ</p></td>
 <td><p>http(s)</p>
 <p>[
 80(443)/tcp]</p>
 </td>
-<td><p>Exastro
-ITAのW
-ebコンテンツへのアクセス</p></td>
+<td><p>Exastro ITAのWebコンテンツへのアクセス</p></td>
 </tr>
 </tbody>
 </table>
-<p>各利用Driverのシステム構成の詳細については、各システム構成／環境構築ガイドを参照ください。</p>
-<a class="reference internal image-reference" href="../../../_images/image215.png"><img alt="ダイアグラム 自動的に生成された説明" class="align-center" src="../../../_images/image215.png" style="width: 6.69236in; height: 3.82153in;" /></a>
+<div class="line-block">
+<div class="line">各利用Driverのシステム構成の詳細については、各システム構成／環境構築ガイドを参照ください。</div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/image213.png"><img alt="ダイアグラム 自動的に生成された説明" class="align-center" src="../../../_images/image213.png" style="width: 6.69236in; height: 3.82153in;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="../../../_images/image313.png"><img alt="ダイアグラム 自動的に生成された説明" class="align-center" src="../../../_images/image313.png" style="width: 6.69236in; height: 3.72431in;" /></a>
+<a class="reference internal image-reference" href="../../../_images/image310.png"><img alt="ダイアグラム 自動的に生成された説明" class="align-center" src="../../../_images/image310.png" style="width: 6.69236in; height: 3.72431in;" /></a>
 </section>
-<section id="id16">
-<h3>システムの通信要件<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="id14">
+<h3>システムの通信要件<a class="headerlink" href="#id14" title="この見出しへのパーマリンク">¶</a></h3>
 <dl>
 <dt>本システム構成において、各サービス間の通信要件は以下の通りです。</dt><dd><div class="line-block">
 <div class="line">Ansible Driverおよび Terraform</div>
@@ -496,8 +507,8 @@ ebコンテンツへのアクセス</p></td>
 <div class="line">※2 ポート番号は標準的なポート番号を記載。</div>
 </div>
 </section>
-<section id="id17">
-<h3>サーバ拡張性の影響ポイント<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="id15">
+<h3>サーバ拡張性の影響ポイント<a class="headerlink" href="#id15" title="この見出しへのパーマリンク">¶</a></h3>
 <dl>
 <dt>本システム構成において、サーバ拡張性に影響するポイントと構成の考え方は以下の通りです。</dt><dd><div class="line-block">
 <div class="line">CPU/メモリ/ディスクのうち主に何が消費されているか</div>
@@ -505,8 +516,8 @@ ebコンテンツへのアクセス</p></td>
 </div>
 </dd>
 </dl>
-<table class="docutils align-default" id="id24">
-<caption><span class="caption-text">システム構成パターン2</span><a class="headerlink" href="#id24" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-number">表 2.7 </span><span class="caption-text">システム構成パターン2</span><a class="headerlink" href="#id22" title="このテーブルへのパーマリンク">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>N
 o</p></th>
@@ -520,10 +531,10 @@ o</p></th>
 <td><p>オールインワン構成</p></td>
 <td><p>システムを一つのサーバ上で組み立てる構成パターン。</p></td>
 <td><p>ITA-BASE機能とオールインワン構成可能な連携ドライバ</p>
-<blockquote>
-<div><p>Ansibler-driver
-Cobbler-driver</p>
-</div></blockquote>
+<ul class="simple">
+<li><p>Ansibler-driver</p></li>
+<li><p>Cobbler-driver</p></li>
+</ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
@@ -555,6 +566,8 @@ Cobbler-driver</p>
 
 <div id="articleNavigation">
   <ul>
+    <li class="prev"><a href="index.html" title="前のトピックへ"><span>前のトピックへ</span><span class="section-number">2. </span>Exastro-it-automation のシステム構成</a></li>
+    <li class="next"><a href="basic_console.html" title="次のトピックへ"><span>次のトピックへ</span><span class="section-number">2.2. </span>ITA_利用手順マニュアル</a></li>
   </ul>
 </div>
 
