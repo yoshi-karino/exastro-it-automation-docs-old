@@ -9,6 +9,6 @@ Exastro-it-automation のシステム構成
    basic_console
    .. connecting_ad
    .. sso
-   management_console_2
+   .. management_console
    .. rbac
    .. conductor
